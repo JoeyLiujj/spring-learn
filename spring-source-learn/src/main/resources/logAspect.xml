@@ -20,7 +20,7 @@
        <!-- <aop:advisor advice-ref="logAspect" pointcut="execution(* cn.joey.aop.aspectj.PuchaseService(..))" order="2" />
         <aop:advisor advice-ref="logAspect" pointcut-ref="example" order="3"/>-->
         <aop:aspect id="aspect1" ref="logAspect">
-            <aop:pointcut  id="purchase"  expression="(execution(* cn.*.*.*.*.*(..)))" />
+            <aop:pointcut  id="purchase"  expression="(execution(* cn.*.*.*.*(..)))" />
             <aop:after-throwing  method="addExceptionLog" pointcut-ref="purchase" throwing="e"/>
             <aop:after-returning method="addSuccessLog" pointcut-ref="purchase" returning="name"/>
         </aop:aspect>
