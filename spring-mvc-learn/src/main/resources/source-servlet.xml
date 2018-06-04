@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+		http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<bean name="/test1" class="cn.joey.interceptor.TestController" />
+	<bean name="/hello" class="cn.joey.HelloWorldController" />
+	<bean name="/error" class="cn.joey.HandlerExceptionResolverDemo" />
+	<bean name="/helloworld"
+		class="cn.joey.HelloWorldWithoutReturnModelAndViewController" />
+	<bean name="/helloLastModified"
+		class="cn.joey.HelloWorldWithoutReturnModelAndViewController" />
+	<!-- 
+		<bean id="handlerInterceptor1" class="cn.joey.interceptor.HandlerInterceptor1"></bean>
+		<bean id="handlerInterceptor2" class="cn.joey.interceptor.HandlerInterceptor2"></bean>
+		<bean id="handlerInterceptor3" class="cn.joey.interceptor.HandlerInterceptor3"></bean>
+		<bean id="handlerInterceptor4" class="cn.joey.interceptor.HandlerInterceptor4"></bean> 
+	-->
+	<!--
+	<bean class="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping">
+		<property name="interceptors">
+			<list>
+				<ref bean="handlerInterceptor3" />
+				<ref bean="handlerInterceptor4" />
+			</list>
+		</property>
+	</bean>
+	<bean class="org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter"/> -->
+	<bean
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<!-- 表示JSP模板页面必须包含Jstl标签库，classpath中必须包含相关的jar包 -->
+		<property name="viewClass"
+			value="org.springframework.web.servlet.view.JstlView"></property>
+		<!-- 前缀 -->
+		<!-- 表示查找视图的前缀和后缀，比如传进来的逻辑视图为hello, 则该jsp视图页面应该存放在“jsp/hello.jsp” -->
+		<property name="prefix" value="/jsp/"></property>
+		<!-- 后缀 -->
+		<property name="suffix" value=".jsp"></property>
+	</bean>
+</beans> 

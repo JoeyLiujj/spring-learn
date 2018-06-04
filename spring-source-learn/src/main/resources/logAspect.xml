@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bea:beans xmlns:bea="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:context = "http://www.springframework.org/schema/context"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
+        http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.1.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.2.xsd">
+
+    <aop:aspectj-autoproxy proxy-target-class="true"/>
+    <context:annotation-config/>
+    <!--<context:component-scan base-package="com"/>-->
+    <bea:bean id="logAspect" class="cn.joey.aop.LogAspect"/>
+
+    <!--  aop config 为运行时的aop，在编译阶段会将下面的全部生成为BeanDefinition -->
+    <aop:config>
+        <!--config 中的三个项以pointcut、advisor、aspect的顺序定义-->
+        <!--<aop:pointcut id="example" expression="execution(* cn.joey.aop.aspectj.PuchaseService(..))"/>-->
+       <!-- <aop:advisor advice-ref="logAspect" pointcut="execution(* cn.joey.aop.aspectj.PuchaseService(..))" order="2" />
+        <aop:advisor advice-ref="logAspect" pointcut-ref="example" order="3"/>-->
+        <aop:aspect id="aspect1" ref="logAspect">
+            <aop:pointcut  id="purchase"  expression="(execution(* cn.*.*.*.*.*(..)))" />
+            <aop:after-throwing  method="addExceptionLog" pointcut-ref="purchase" throwing="e"/>
+            <aop:after-returning method="addSuccessLog" pointcut-ref="purchase" returning="name"/>
+        </aop:aspect>
+        <!--<aop:declare-parent/> 以透明的方式为被通知的对象引入额外的接口，和使用introduction的方式一致-->
+    </aop:config>
+    <bea:bean id="purchaseService"  class="cn.joey.aop.PuchaseService" />
+</bea:beans>

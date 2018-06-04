@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd
+        http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.3.xsd">
+	<!-- Handler Mapping 表示将请求的URL和Bean名称映射，如URL为“上下文/hello”, 则spring配置文件必须有一个名称为hello的Bean。 -->
+	<bean
+		class="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping" />
+	<!-- Handler Adapter 表示所有实现了org.springframework.web.servlet.mvc.Controller接口的Bean 
+		可以作为Spring Web MVC中 的处理器。如果需要其他类型的处理器可以通过实现HandlerAdapter实现 -->
+	<bean
+		class="org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter" />
+	<mvc:annotation-driven/>
+	<context:component-scan base-package="cn.joey"/>
+	<!-- <context:component-scan base-package="com.spring,test.springmvc,org.annotation.demo"/> -->
+	<!-- 当在web.xml中DispatcherServlet使用<url-pattern></url-pattern> 映射时，能映射静态资源（当Spring 
+		web MVC框架没有处理请求对应的控制器时，转交给默认的servlet来响应静态文件， 否则报404找不到资源错误） -->
+	<!-- <mvc:default-servlet-handler/>  -->
+	<!-- 注册自定义的处理器拦截器 -->
+	<!-- <mvc:interceptors/>  -->
+	<!-- 逻辑静态资源路径到物理静态资源路径的支持-->
+	<!--<mvc:resources location="" mapping="/"/>-->
+</beans>
