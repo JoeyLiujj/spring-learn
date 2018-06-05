@@ -5,13 +5,6 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
         http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd
         http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.3.xsd">
-	<!-- Handler Mapping 表示将请求的URL和Bean名称映射，如URL为“上下文/hello”, 则spring配置文件必须有一个名称为hello的Bean。 -->
-	<bean
-		class="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping" />
-	<!-- Handler Adapter 表示所有实现了org.springframework.web.servlet.mvc.Controller接口的Bean 
-		可以作为Spring Web MVC中 的处理器。如果需要其他类型的处理器可以通过实现HandlerAdapter实现 -->
-	<bean
-		class="org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter" />
 	<mvc:annotation-driven/>
 	<context:component-scan base-package="cn.joey"/>
 	<!-- <context:component-scan base-package="com.spring,test.springmvc,org.annotation.demo"/> -->

@@ -6,16 +6,14 @@ import java.io.InputStream;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 public class ContentTypeDemo {
 	
-	@RequestMapping(value="/ContentType",method=RequestMethod.GET)
-	public String showForm() throws IOException{
-		return "consumesproduces/Content-Type";
+	@RequestMapping(value="/testRESTController",method=RequestMethod.GET)
+	public String showForm() {
+		return "This is a test String";
 	}
 	@RequestMapping(value="/ContentType",method=RequestMethod.POST,headers="Content-Type=application/x-www-form-urlencoded")
 	public String request1(HttpServletRequest request) throws IOException{
@@ -61,7 +59,29 @@ public class ContentTypeDemo {
 	public void response1(HttpServletResponse response) throws IOException{
 		response.setContentType("text/html;charset=utf-8");
 		String xmlData = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>";  
-	    xmlData += "<user><username>zhang</username><password>123</password></user>"; 
+	    xmlData += "<user><username>zhang</username><password>123</password></user>";
 		response.getWriter().write(xmlData);  
 	}
+
+//	@PathVariable 注解将会绑定 URL 占位符到入参
+	@RequestMapping(value = "/paramTest/{id}")
+	//可将指定参数名称的值传递给name
+	public void testParam(HttpServletResponse response,@RequestParam("age") String name,@PathVariable String id) throws IOException{
+//		int i=1/0;
+		response.setContentType("text/html;charset=utf-8");
+		response.getWriter().write("是否会打印url路径的ID："+id);
+		response.getWriter().write(name);
+	}
+
+	//类中的方法出现异常时，会执行此方法，参数为异常Throwable的子类型
+	@ExceptionHandler({java.lang.IllegalStateException.class,java.lang.ArithmeticException.class})
+	public void testExceptionHandler(HttpServletResponse response) throws Exception{
+		response.setContentType("text/html;charset=utf-8");
+		response.getWriter().write("出现异常时，执行此方法");
+	}
+	//@ControllerAdvice
+	//使一个Contoller成为全局的异常处理类，
+	// 类中用@ExceptionHandler方法注解的方法可以处理所有Controller发生的异常
+	//	@PathVariable
+	//　绑定URL占位符到入参
 }

@@ -15,8 +15,8 @@
         <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
         <init-param>
             <param-name>contextConfigLocation</param-name>
-            <param-value>classpath:source-servlet.xml,
-                classpath:annotation-servlet.xml
+            <param-value>classpath:xmlConfig-servlet.xml,
+                classpath:annotationConfig-servlet.xml
             </param-value>
         </init-param>
     </servlet>

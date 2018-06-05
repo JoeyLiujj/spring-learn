@@ -22,7 +22,7 @@ public class LoginMonitorInterceptor extends HandlerInterceptorAdapter{
 			return true;
 		}
 		//4、非法登陆 即这些请求需要登录后才能访问
-		response.sendRedirect(request.getContextPath() + "loginUrl");
+		response.sendRedirect(request.getContextPath() + "/jsp/error.jsp");
 		return false;
 	}
 }
