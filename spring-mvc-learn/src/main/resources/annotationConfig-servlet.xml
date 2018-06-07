@@ -5,14 +5,23 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
         http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd
         http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.3.xsd">
-	<mvc:annotation-driven/>
 	<context:component-scan base-package="cn.joey"/>
-	<!-- <context:component-scan base-package="com.spring,test.springmvc,org.annotation.demo"/> -->
+	<!--<mvc:annotation-driven/>-->
 	<!-- 当在web.xml中DispatcherServlet使用<url-pattern></url-pattern> 映射时，能映射静态资源（当Spring 
 		web MVC框架没有处理请求对应的控制器时，转交给默认的servlet来响应静态文件， 否则报404找不到资源错误） -->
-	<!-- <mvc:default-servlet-handler/>  -->
+	<!--<mvc:default-servlet-handler/>-->
 	<!-- 注册自定义的处理器拦截器 -->
 	<!-- <mvc:interceptors/>  -->
 	<!-- 逻辑静态资源路径到物理静态资源路径的支持-->
-	<!--<mvc:resources location="" mapping="/"/>-->
+	<!--<mvc:resources location="/WEB-INF/jsp/" mapping="/jsp/"/>-->
+	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<!-- 表示JSP模板页面必须包含Jstl标签库，classpath中必须包含相关的jar包 -->
+		<property name="viewClass"
+				  value="org.springframework.web.servlet.view.JstlView"></property>
+		<!-- 前缀 -->
+		<!-- 表示查找视图的前缀和后缀，比如传进来的逻辑视图为hello, 则该jsp视图页面应该存放在“jsp/hello.jsp” -->
+		<property name="prefix" value="/jsp/"></property>
+		<!-- 后缀 -->
+		<property name="suffix" value=".jsp"></property>
+	</bean>
 </beans>
