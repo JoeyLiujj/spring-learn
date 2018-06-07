@@ -72,10 +72,10 @@ public class TestExpression {
         Expression expression = parser.parseExpression("#end+#end");
 
         //设置上下文环境中的变量值
-        context.setVariable("end", "200");
+        context.setVariable("end", 200);
 
         //执行表达式，获取运行结果
-        String value = (String) expression.getValue(context);
+        Integer value = (Integer) expression.getValue(context);
         System.out.println("the str=" + value);
     }
 }
