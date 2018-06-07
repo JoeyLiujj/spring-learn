@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/GOFDesignPattern-learn/GOFDesignPattern-learn.iml" filepath="$PROJECT_DIR$/GOFDesignPattern-learn/GOFDesignPattern-learn.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mybatis-learn/mybatis-learn.iml" filepath="$PROJECT_DIR$/mybatis-learn/mybatis-learn.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-learn.iml" filepath="$PROJECT_DIR$/spring-learn.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-mvc-learn/spring-mvc-learn.iml" filepath="$PROJECT_DIR$/spring-mvc-learn/spring-mvc-learn.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-source-learn/spring-source-learn.iml" filepath="$PROJECT_DIR$/spring-source-learn/spring-source-learn.iml" />
+    </modules>
+  </component>
+</project>

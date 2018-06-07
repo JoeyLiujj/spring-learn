@@ -1,0 +1,152 @@
+GET http://localhost:8080/smvc/jsp/uploadFile.jsp?age=asdfasdfasdfasdf
+Accept:*/*
+Cache-Control:no-cache
+
+<> 2018-06-06T094111.200.html
+
+###
+
+GET http://localhost:8080/smvc/paramTest/idvalue?age=asdfasdfasdfasdf
+Accept:*/*
+Cache-Control:no-cache
+
+<> 2018-06-05T045221.200.html
+
+###
+
+GET http://localhost:8080/smvc/paramTest/idvalue?age=asdfasdfasdfasdf
+Accept:*/*
+Cache-Control:no-cache
+
+<> 2018-06-05T045154.200.txt
+
+###
+
+GET http://localhost:8080/smvc/paramTest/idvalue?age=asdfasdfasdfasdf
+Accept:*/*
+Cache-Control:no-cache
+
+<> 2018-06-05T045153-1.200.txt
+
+###
+
+GET http://localhost:8080/smvc/paramTest/idvalue?age=asdfasdfasdfasdf
+Accept:*/*
+Cache-Control:no-cache
+
+<> 2018-06-05T045153.200.txt
+
+###
+
+GET http://localhost:8080/smvc/paramTest/idvalue?age=asdfasdfasdfasdf
+Accept:*/*
+Cache-Control:no-cache
+
+<> 2018-06-05T045151.200.txt
+
+###
+
+GET http://localhost:8080/smvc/paramTest/idvalue?age=asdfasdfasdfasdf
+Accept:*/*
+Cache-Control:no-cache
+
+<> 2018-06-05T045117.200.txt
+
+###
+
+GET http://localhost:8080/smvc/paramTest?age=asdfasdfasdfasdf
+Accept:*/*
+Cache-Control:no-cache
+
+<> 2018-06-05T044737.200.html
+
+###
+
+GET http://localhost:8080/smvc/paramTest?age=asdfasdfasdfasdf
+Accept:*/*
+Cache-Control:no-cache
+
+<> 2018-06-05T044503.200.txt
+
+###
+
+GET http://localhost:8080/smvc/paramTest?age=asdfasdfasdfasdf
+Accept:*/*
+Cache-Control:no-cache
+
+<> 2018-06-05T044419.500.html
+
+###
+
+GET http://localhost:8080/smvc/paramTest?age=asdfasdfasdfasdf
+Accept:*/*
+Cache-Control:no-cache
+
+<> 2018-06-05T044058.500.html
+
+###
+
+GET http://localhost:8080/smvc/paramTest?age=asdfasdfasdfasdf
+Accept:*/*
+Cache-Control:no-cache
+
+<> 2018-06-05T043916.500.html
+
+###
+
+POST http://localhost:8080/smvc/request/ContentType?age=asdfasdfasdfasdf
+Accept:*/*
+Cache-Control:no-cache
+
+<> 2018-06-05T043345.200.txt
+
+###
+
+GET http://localhost:8080/smvc/request/ContentType?age=asdfasdfasdfasdf
+Accept:*/*
+Cache-Control:no-cache
+
+<> 2018-06-05T043334.405.html
+
+###
+
+GET http://localhost:8080/smvc/response/ContentType2?age=asdfasdfasdfasdf
+Accept:*/*
+Cache-Control:no-cache
+
+<> 2018-06-05T043306.200.html
+
+###
+
+GET http://localhost:8080/smvc/paramTest?age=asdfasdfasdfasdf
+Accept:*/*
+Cache-Control:no-cache
+
+<> 2018-06-05T043248.200.txt
+
+###
+
+GET http://localhost:8080/smvc/paramTest
+Accept:*/*
+Cache-Control:no-cache
+
+<> 2018-06-05T043215.400.html
+
+###
+
+GET http://localhost:8080/smvc/test
+Accept:*/*
+Cache-Control:no-cache
+
+<> 2018-06-05T043118.200.html
+
+###
+
+GET http://localhost:8080/smvc
+Accept:*/*
+Cache-Control:no-cache
+
+<> 2018-06-05T043102.200.html
+
+###
+
