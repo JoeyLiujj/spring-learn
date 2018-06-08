@@ -5,6 +5,7 @@ import cn.joey.aop.introduction.Auto;
 import cn.joey.aop.introduction.Intelligent;
 import cn.joey.aop.introduction.Seller;
 import cn.joey.aop.introduction.Waiter;
+import cn.joey.aop.xmlconfig.UserService;
 import cn.joey.util.SortAlgorithm;
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;

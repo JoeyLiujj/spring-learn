@@ -1,4 +1,4 @@
-package cn.joey.aop;
+package cn.joey.aop.xmlconfig;
 
 import java.io.IOException;
 

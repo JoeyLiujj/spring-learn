@@ -1,6 +1,5 @@
 package cn.joey.aop.xmlconfig;
 
-import cn.joey.aop.UserService;
 import cn.joey.aop.annotationconfig.CustomAnnotation;
 
 import java.io.IOException;

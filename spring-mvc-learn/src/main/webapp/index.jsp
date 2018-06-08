@@ -6,7 +6,28 @@
   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
   <title>Insert title here2</title>
 </head>
+<script !src="">
+    function requestJson(){
+
+        var jsonData = {
+            "name" : "??",
+            "price" : "999"
+        };
+        $.ajax({
+            type:'post',
+            url:'${pageContext.request.contextPath }/requestJson',
+            contentType:'application/json;charset=utf-8',//???json??
+            //?????json??????
+            data:JSON.stringify(jsonData),
+            success:function(data){//??json??
+                alert(data.name);
+            }
+        });
+    }
+
+</script>
 <body>
+<input value="??" type="button" onclick="requestJson()"/>
 <a href="hello?lang=en_US">en</a><br/>
 <a href="hello?lang=zh_CN">zh</a><br/>
 </body>
