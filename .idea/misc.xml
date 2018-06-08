@@ -10,5 +10,8 @@
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
+  <component name="PropertiesSeparatorManager">
+    <file url="file://$PROJECT_DIR$/spring-mvc-learn/src/main/resources/messages" separator="\u002f" />
+  </component>
   <component name="WebServicesPlugin" addRequiredLibraries="true" />
 </project>
