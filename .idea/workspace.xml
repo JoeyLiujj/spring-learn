@@ -1,96 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="ArtifactsWorkspaceSettings">
-    <artifacts-to-build>
-      <artifact name="spring-mvc-learn:war exploded" />
-    </artifacts-to-build>
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="666c6c49-4dbf-45b6-a3d9-c93dfa02a636" name="Default" comment="Merge branch 'master' of https://github.com/JoeyLiujj/spring-learn&#10;&#10;# Conflicts:&#10;#&#9;spring-source-learn/src/main/resources/applicationContext.xml&#10;#&#9;spring-source-learn/src/main/resources/logAspect.xml&#10;#&#9;spring-source-learn/src/main/resources/testAspectJExpression.xml&#10;#&#9;spring-source-learn/src/test/java/cn/joey/aop/CustomGenericTest.java">
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/spring_mvc_learn_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/spring_mvc_learn_war_exploded.xml" />
+    <list default="true" id="41c07dcd-3989-418a-aea2-5a25fecdd483" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/spring-mvc-learn/src/main/java/cn/joey/mvc/I18nController.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/spring-mvc-learn/src/main/java/cn/joey/mvc/validator/Items.java" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/GOFDesignPattern-learn/GOFDesignPattern-learn.iml" afterPath="$PROJECT_DIR$/GOFDesignPattern-learn/GOFDesignPattern-learn.iml" />
-      <change beforePath="$PROJECT_DIR$/GOFDesignPattern-learn/pom.xml" afterPath="$PROJECT_DIR$/GOFDesignPattern-learn/pom.xml" />
       <change beforePath="$PROJECT_DIR$/GOFDesignPattern-learn/target/GOFDesignPattern-learn-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/GOFDesignPattern-learn/target/GOFDesignPattern-learn-1.0-SNAPSHOT.jar" />
-      <change beforePath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/adapter/Adapter.class" afterPath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/adapter/Adapter.class" />
-      <change beforePath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/adapter/Source.class" afterPath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/adapter/Source.class" />
-      <change beforePath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/adapter/Targetable.class" afterPath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/adapter/Targetable.class" />
-      <change beforePath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/bridge/Bridge.class" afterPath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/bridge/Bridge.class" />
-      <change beforePath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/bridge/MyBridge.class" afterPath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/bridge/MyBridge.class" />
-      <change beforePath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/bridge/SourceSub1.class" afterPath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/bridge/SourceSub1.class" />
-      <change beforePath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/bridge/SourceSub2.class" afterPath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/bridge/SourceSub2.class" />
-      <change beforePath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/bridge/Sourceable.class" afterPath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/bridge/Sourceable.class" />
-      <change beforePath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/chain/AbstractHandler.class" afterPath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/chain/AbstractHandler.class" />
-      <change beforePath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/chain/Handler.class" afterPath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/chain/Handler.class" />
-      <change beforePath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/chain/MyHandler.class" afterPath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/chain/MyHandler.class" />
-      <change beforePath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/command/Command.class" afterPath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/command/Command.class" />
-      <change beforePath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/command/Invoker.class" afterPath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/command/Invoker.class" />
-      <change beforePath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/command/MyCommand.class" afterPath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/command/MyCommand.class" />
-      <change beforePath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/command/Receiver.class" afterPath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/command/Receiver.class" />
-      <change beforePath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/decorator/Decorator.class" afterPath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/decorator/Decorator.class" />
-      <change beforePath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/decorator/Source.class" afterPath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/decorator/Source.class" />
-      <change beforePath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/decorator/Sourceable.class" afterPath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/decorator/Sourceable.class" />
-      <change beforePath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/flyweight/ConnectionPool.class" afterPath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/flyweight/ConnectionPool.class" />
-      <change beforePath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/interpreter/Context.class" afterPath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/interpreter/Context.class" />
-      <change beforePath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/interpreter/Expression.class" afterPath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/interpreter/Expression.class" />
-      <change beforePath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/interpreter/Minus.class" afterPath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/interpreter/Minus.class" />
-      <change beforePath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/interpreter/Plus.class" afterPath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/interpreter/Plus.class" />
-      <change beforePath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/mediator/Mediator.class" afterPath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/mediator/Mediator.class" />
-      <change beforePath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/mediator/MyMediator.class" afterPath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/mediator/MyMediator.class" />
-      <change beforePath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/mediator/User.class" afterPath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/mediator/User.class" />
-      <change beforePath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/mediator/User1.class" afterPath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/mediator/User1.class" />
-      <change beforePath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/mediator/User2.class" afterPath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/mediator/User2.class" />
-      <change beforePath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/memento/Memento.class" afterPath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/memento/Memento.class" />
-      <change beforePath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/memento/Original.class" afterPath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/memento/Original.class" />
-      <change beforePath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/memento/Storage.class" afterPath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/memento/Storage.class" />
-      <change beforePath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/memento/User.class" afterPath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/memento/User.class" />
-      <change beforePath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/observer/AbstractSubject.class" afterPath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/observer/AbstractSubject.class" />
-      <change beforePath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/observer/MySubject.class" afterPath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/observer/MySubject.class" />
-      <change beforePath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/observer/Observer.class" afterPath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/observer/Observer.class" />
-      <change beforePath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/observer/Observer1.class" afterPath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/observer/Observer1.class" />
-      <change beforePath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/observer/Observer2.class" afterPath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/observer/Observer2.class" />
-      <change beforePath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/observer/Subject.class" afterPath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/observer/Subject.class" />
-      <change beforePath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/prototype/Professor.class" afterPath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/prototype/Professor.class" />
-      <change beforePath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/prototype/Prototype.class" afterPath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/prototype/Prototype.class" />
-      <change beforePath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/prototype/SerializableObj.class" afterPath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/prototype/SerializableObj.class" />
-      <change beforePath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/prototype/Student.class" afterPath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/prototype/Student.class" />
-      <change beforePath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/proxy/Proxy.class" afterPath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/proxy/Proxy.class" />
-      <change beforePath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/proxy/Source.class" afterPath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/proxy/Source.class" />
-      <change beforePath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/proxy/Sourceable.class" afterPath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/proxy/Sourceable.class" />
-      <change beforePath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/state/Context.class" afterPath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/state/Context.class" />
-      <change beforePath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/state/State.class" afterPath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/state/State.class" />
-      <change beforePath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/templatemethod/AbstractCalculator.class" afterPath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/templatemethod/AbstractCalculator.class" />
-      <change beforePath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/templatemethod/Plus.class" afterPath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/templatemethod/Plus.class" />
-      <change beforePath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/visitor/MySubject.class" afterPath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/visitor/MySubject.class" />
-      <change beforePath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/visitor/MyVisitor.class" afterPath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/visitor/MyVisitor.class" />
-      <change beforePath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/visitor/Subject.class" afterPath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/visitor/Subject.class" />
-      <change beforePath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/visitor/Visitor.class" afterPath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/visitor/Visitor.class" />
+      <change beforePath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/adapter/Adapter.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/adapter/Source.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/adapter/Targetable.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/bridge/Bridge.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/bridge/MyBridge.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/bridge/SourceSub1.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/bridge/SourceSub2.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/bridge/Sourceable.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/chain/AbstractHandler.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/chain/Handler.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/chain/MyHandler.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/command/Command.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/command/Invoker.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/command/MyCommand.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/command/Receiver.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/decorator/Decorator.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/decorator/Source.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/decorator/Sourceable.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/flyweight/ConnectionPool.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/interpreter/Context.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/interpreter/Expression.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/interpreter/Minus.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/interpreter/Plus.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/mediator/Mediator.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/mediator/MyMediator.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/mediator/User.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/mediator/User1.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/mediator/User2.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/memento/Memento.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/memento/Original.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/memento/Storage.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/memento/User.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/observer/AbstractSubject.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/observer/MySubject.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/observer/Observer.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/observer/Observer1.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/observer/Observer2.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/observer/Subject.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/prototype/Professor.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/prototype/Prototype.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/prototype/SerializableObj.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/prototype/Student.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/proxy/Proxy.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/proxy/Source.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/proxy/Sourceable.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/state/Context.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/state/State.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/templatemethod/AbstractCalculator.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/templatemethod/Plus.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/visitor/MySubject.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/visitor/MyVisitor.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/visitor/Subject.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/GOFDesignPattern-learn/target/classes/cn/joey/visitor/Visitor.class" afterPath="" />
       <change beforePath="$PROJECT_DIR$/GOFDesignPattern-learn/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/GOFDesignPattern-learn/target/maven-archiver/pom.properties" />
       <change beforePath="$PROJECT_DIR$/GOFDesignPattern-learn/target/test-classes/cn/joey/CustomGenericTest.class" afterPath="$PROJECT_DIR$/GOFDesignPattern-learn/target/test-classes/cn/joey/CustomGenericTest.class" />
-      <change beforePath="$PROJECT_DIR$/mybatis-learn/mybatis-learn.iml" afterPath="$PROJECT_DIR$/mybatis-learn/mybatis-learn.iml" />
       <change beforePath="$PROJECT_DIR$/mybatis-learn/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/mybatis-learn/target/maven-archiver/pom.properties" />
       <change beforePath="$PROJECT_DIR$/mybatis-learn/target/mybatis-learn-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/mybatis-learn/target/mybatis-learn-1.0-SNAPSHOT.jar" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/spring-learn.iml" afterPath="$PROJECT_DIR$/spring-learn.iml" />
-      <change beforePath="$PROJECT_DIR$/spring-mvc-learn/spring-mvc-learn.iml" afterPath="$PROJECT_DIR$/spring-mvc-learn/spring-mvc-learn.iml" />
-      <change beforePath="$PROJECT_DIR$/spring-mvc-learn/src/main/java/cn/joey/I18nController.java" afterPath="$PROJECT_DIR$/spring-mvc-learn/src/main/java/cn/joey/I18nController.java" />
-      <change beforePath="$PROJECT_DIR$/spring-mvc-learn/src/main/java/cn/joey/interceptor/HandlerInterceptor1.java" afterPath="$PROJECT_DIR$/spring-mvc-learn/src/main/java/cn/joey/mvc/interceptor/HandlerInterceptor1.java" />
-      <change beforePath="$PROJECT_DIR$/spring-mvc-learn/src/main/java/cn/joey/interceptor/HandlerInterceptor2.java" afterPath="$PROJECT_DIR$/spring-mvc-learn/src/main/java/cn/joey/mvc/interceptor/HandlerInterceptor2.java" />
-      <change beforePath="$PROJECT_DIR$/spring-mvc-learn/src/main/java/cn/joey/interceptor/HandlerInterceptor3.java" afterPath="$PROJECT_DIR$/spring-mvc-learn/src/main/java/cn/joey/mvc/interceptor/HandlerInterceptor3.java" />
-      <change beforePath="$PROJECT_DIR$/spring-mvc-learn/src/main/java/cn/joey/interceptor/HandlerInterceptor4.java" afterPath="$PROJECT_DIR$/spring-mvc-learn/src/main/java/cn/joey/mvc/interceptor/HandlerInterceptor4.java" />
-      <change beforePath="$PROJECT_DIR$/spring-mvc-learn/src/main/java/cn/joey/interceptor/LoginMonitorInterceptor.java" afterPath="$PROJECT_DIR$/spring-mvc-learn/src/main/java/cn/joey/mvc/interceptor/LoginMonitorInterceptor.java" />
-      <change beforePath="$PROJECT_DIR$/spring-mvc-learn/src/main/java/cn/joey/interceptor/TestController.java" afterPath="$PROJECT_DIR$/spring-mvc-learn/src/main/java/cn/joey/mvc/interceptor/TestController.java" />
-      <change beforePath="$PROJECT_DIR$/spring-mvc-learn/src/main/resources/messages_en_US.properties" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-mvc-learn/src/main/resources/messages_zh_CN.properties" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-mvc-learn/src/main/resources/xmlConfig-servlet.xml" afterPath="$PROJECT_DIR$/spring-mvc-learn/src/main/resources/xmlConfig-servlet.xml" />
-      <change beforePath="$PROJECT_DIR$/spring-mvc-learn/src/main/webapp/jsp/test.jsp" afterPath="$PROJECT_DIR$/spring-mvc-learn/src/main/webapp/jsp/test.jsp" />
-      <change beforePath="$PROJECT_DIR$/spring-mvc-learn/src/main/webapp/jsp/welcome.jsp" afterPath="$PROJECT_DIR$/spring-mvc-learn/src/main/webapp/jsp/welcome.jsp" />
+      <change beforePath="$PROJECT_DIR$/spring-mvc-learn/src/main/java/cn/joey/ContentTypeDemo.java" afterPath="$PROJECT_DIR$/spring-mvc-learn/src/main/java/cn/joey/mvc/ContentTypeDemo.java" />
+      <change beforePath="$PROJECT_DIR$/spring-mvc-learn/src/main/java/cn/joey/FileUploadController.java" afterPath="$PROJECT_DIR$/spring-mvc-learn/src/main/java/cn/joey/mvc/FileUploadController.java" />
+      <change beforePath="$PROJECT_DIR$/spring-mvc-learn/src/main/java/cn/joey/RequestParamExampleController.java" afterPath="$PROJECT_DIR$/spring-mvc-learn/src/main/java/cn/joey/mvc/RequestParamExampleController.java" />
+      <change beforePath="$PROJECT_DIR$/spring-mvc-learn/target/classes/cn/joey/I18nController.class" afterPath="$PROJECT_DIR$/spring-mvc-learn/target/classes/cn/joey/I18nController.class" />
       <change beforePath="$PROJECT_DIR$/spring-mvc-learn/target/classes/messages_en_US.properties" afterPath="" />
       <change beforePath="$PROJECT_DIR$/spring-mvc-learn/target/classes/messages_zh_CN.properties" afterPath="" />
       <change beforePath="$PROJECT_DIR$/spring-mvc-learn/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/spring-mvc-learn/target/maven-archiver/pom.properties" />
       <change beforePath="$PROJECT_DIR$/spring-mvc-learn/target/spring-mvc-learn-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/spring-mvc-learn/target/spring-mvc-learn-1.0-SNAPSHOT.jar" />
-      <change beforePath="$PROJECT_DIR$/spring-source-learn/spring-source-learn.iml" afterPath="$PROJECT_DIR$/spring-source-learn/spring-source-learn.iml" />
       <change beforePath="$PROJECT_DIR$/spring-source-learn/target/classes/applicationContext.xml" afterPath="$PROJECT_DIR$/spring-source-learn/target/classes/applicationContext.xml" />
       <change beforePath="$PROJECT_DIR$/spring-source-learn/target/classes/logAspect.xml" afterPath="$PROJECT_DIR$/spring-source-learn/target/classes/logAspect.xml" />
       <change beforePath="$PROJECT_DIR$/spring-source-learn/target/classes/testAspectJExpression.xml" afterPath="$PROJECT_DIR$/spring-source-learn/target/classes/testAspectJExpression.xml" />
@@ -102,57 +83,11 @@
       <change beforePath="$PROJECT_DIR$/spring-source-learn/target/spring-source-learn-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/spring-source-learn/target/spring-source-learn-1.0-SNAPSHOT.jar" />
       <change beforePath="$PROJECT_DIR$/spring-source-learn/target/test-classes/cn/joey/aop/CustomGenericTest.class" afterPath="$PROJECT_DIR$/spring-source-learn/target/test-classes/cn/joey/aop/CustomGenericTest.class" />
     </list>
-    <ignored path="$PROJECT_DIR$/mybatis-learn/target/" />
     <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/spring-mvc-learn/target/" />
+    <ignored path="$PROJECT_DIR$/mybatis-learn/target/" />
     <ignored path="$PROJECT_DIR$/GOFDesignPattern-learn/target/" />
     <ignored path="$PROJECT_DIR$/spring-source-learn/target/" />
-    <ignored path="$PROJECT_DIR$/spring-mvc-learn/target/" />
-    <ignored path="$PROJECT_DIR$/.idea/httpRequests/" />
-    <ignored path="spring-mvc-learn/out/artifacts/spring_mvc_learn_war_exploded/jsp/error.jsp" />
-    <ignored path="spring-mvc-learn/out/artifacts/spring_mvc_learn_war_exploded/jsp/test.jsp" />
-    <ignored path="spring-mvc-learn/out/artifacts/spring_mvc_learn_war_exploded/jsp/uploadFile.jsp" />
-    <ignored path="spring-mvc-learn/out/artifacts/spring_mvc_learn_war_exploded/jsp/uploadResult.jsp" />
-    <ignored path="spring-mvc-learn/out/artifacts/spring_mvc_learn_war_exploded/META-INF/MANIFEST.MF" />
-    <ignored path="spring-mvc-learn/out/artifacts/spring_mvc_learn_war_exploded/upload/0.0.0.0 account.jetbrains.com.txt" />
-    <ignored path="spring-mvc-learn/out/artifacts/spring_mvc_learn_war_exploded/WEB-INF/classes/cn/joey/interceptor/HandlerInterceptor1.class" />
-    <ignored path="spring-mvc-learn/out/artifacts/spring_mvc_learn_war_exploded/WEB-INF/classes/cn/joey/interceptor/HandlerInterceptor2.class" />
-    <ignored path="spring-mvc-learn/out/artifacts/spring_mvc_learn_war_exploded/WEB-INF/classes/cn/joey/interceptor/HandlerInterceptor3.class" />
-    <ignored path="spring-mvc-learn/out/artifacts/spring_mvc_learn_war_exploded/WEB-INF/classes/cn/joey/interceptor/HandlerInterceptor4.class" />
-    <ignored path="spring-mvc-learn/out/artifacts/spring_mvc_learn_war_exploded/WEB-INF/classes/cn/joey/interceptor/LoginMonitorInterceptor.class" />
-    <ignored path="spring-mvc-learn/out/artifacts/spring_mvc_learn_war_exploded/WEB-INF/classes/cn/joey/interceptor/TestController.class" />
-    <ignored path="spring-mvc-learn/out/artifacts/spring_mvc_learn_war_exploded/WEB-INF/classes/cn/joey/ContentTypeDemo.class" />
-    <ignored path="spring-mvc-learn/out/artifacts/spring_mvc_learn_war_exploded/WEB-INF/classes/cn/joey/FileUploadController.class" />
-    <ignored path="spring-mvc-learn/out/artifacts/spring_mvc_learn_war_exploded/WEB-INF/classes/annotationConfig-servlet.xml" />
-    <ignored path="spring-mvc-learn/out/artifacts/spring_mvc_learn_war_exploded/WEB-INF/classes/xmlConfig-servlet.xml" />
-    <ignored path="spring-mvc-learn/out/artifacts/spring_mvc_learn_war_exploded/WEB-INF/jsp/test.jsp" />
-    <ignored path="spring-mvc-learn/out/artifacts/spring_mvc_learn_war_exploded/WEB-INF/lib/aspectjweaver-1.8.13.jar" />
-    <ignored path="spring-mvc-learn/out/artifacts/spring_mvc_learn_war_exploded/WEB-INF/lib/commons-beanutils-1.7.0.jar" />
-    <ignored path="spring-mvc-learn/out/artifacts/spring_mvc_learn_war_exploded/WEB-INF/lib/commons-chain-1.1.jar" />
-    <ignored path="spring-mvc-learn/out/artifacts/spring_mvc_learn_war_exploded/WEB-INF/lib/commons-digester-1.8.jar" />
-    <ignored path="spring-mvc-learn/out/artifacts/spring_mvc_learn_war_exploded/WEB-INF/lib/commons-fileupload-1.3.1.jar" />
-    <ignored path="spring-mvc-learn/out/artifacts/spring_mvc_learn_war_exploded/WEB-INF/lib/commons-io-2.5.jar" />
-    <ignored path="spring-mvc-learn/out/artifacts/spring_mvc_learn_war_exploded/WEB-INF/lib/commons-logging-1.0.4.jar" />
-    <ignored path="spring-mvc-learn/out/artifacts/spring_mvc_learn_war_exploded/WEB-INF/lib/commons-validator-1.3.1.jar" />
-    <ignored path="spring-mvc-learn/out/artifacts/spring_mvc_learn_war_exploded/WEB-INF/lib/javax.servlet-api-3.1.0.jar" />
-    <ignored path="spring-mvc-learn/out/artifacts/spring_mvc_learn_war_exploded/WEB-INF/lib/jstl-1.2.jar" />
-    <ignored path="spring-mvc-learn/out/artifacts/spring_mvc_learn_war_exploded/WEB-INF/lib/junit-4.5.jar" />
-    <ignored path="spring-mvc-learn/out/artifacts/spring_mvc_learn_war_exploded/WEB-INF/lib/mybatis-3.4.4.jar" />
-    <ignored path="spring-mvc-learn/out/artifacts/spring_mvc_learn_war_exploded/WEB-INF/lib/opentest4j-1.0.0.jar" />
-    <ignored path="spring-mvc-learn/out/artifacts/spring_mvc_learn_war_exploded/WEB-INF/lib/spring-aop-5.0.4.RELEASE.jar" />
-    <ignored path="spring-mvc-learn/out/artifacts/spring_mvc_learn_war_exploded/WEB-INF/lib/spring-beans-5.0.4.RELEASE.jar" />
-    <ignored path="spring-mvc-learn/out/artifacts/spring_mvc_learn_war_exploded/WEB-INF/lib/spring-context-5.0.4.RELEASE.jar" />
-    <ignored path="spring-mvc-learn/out/artifacts/spring_mvc_learn_war_exploded/WEB-INF/lib/spring-core-5.0.4.RELEASE.jar" />
-    <ignored path="spring-mvc-learn/out/artifacts/spring_mvc_learn_war_exploded/WEB-INF/lib/spring-expression-5.0.4.RELEASE.jar" />
-    <ignored path="spring-mvc-learn/out/artifacts/spring_mvc_learn_war_exploded/WEB-INF/lib/spring-jcl-5.0.4.RELEASE.jar" />
-    <ignored path="spring-mvc-learn/out/artifacts/spring_mvc_learn_war_exploded/WEB-INF/lib/spring-jdbc-4.3.7.RELEASE.jar" />
-    <ignored path="spring-mvc-learn/out/artifacts/spring_mvc_learn_war_exploded/WEB-INF/lib/spring-tx-4.3.7.RELEASE.jar" />
-    <ignored path="spring-mvc-learn/out/artifacts/spring_mvc_learn_war_exploded/WEB-INF/lib/spring-web-5.0.4.RELEASE.jar" />
-    <ignored path="spring-mvc-learn/out/artifacts/spring_mvc_learn_war_exploded/WEB-INF/lib/spring-webmvc-5.0.4.RELEASE.jar" />
-    <ignored path="spring-mvc-learn/out/artifacts/spring_mvc_learn_war_exploded/WEB-INF/lib/standard-1.1.2.jar" />
-    <ignored path="spring-mvc-learn/out/artifacts/spring_mvc_learn_war_exploded/WEB-INF/lib/struts-core-1.3.8.jar" />
-    <ignored path="spring-mvc-learn/out/artifacts/spring_mvc_learn_war_exploded/WEB-INF/web.xml" />
-    <ignored path="spring-mvc-learn/out/artifacts/spring_mvc_learn_war_exploded/index.jsp" />
-    <ignored path="spring-mvc-learn/out/artifacts/spring_mvc_learn_war_exploded/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -160,37 +95,19 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/spring_learn$Tomcat.coverage" NAME="Tomcat Coverage Results" MODIFIED="1528266224031" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-  </component>
-  <component name="FavoritesManager">
-    <favorites_list name="spring-learn" />
-  </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Jsp File" />
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>doget</find>
-      <find>&lt;c:out value=&quot;#request&quot; default=&quot;null&quot;/&gt;</find>
-      <find>getAttributesMap</find>
-      <find>doService</find>
-      <find>Dispatcher.properties</find>
-      <find>dos</find>
-      <find>InternalResourceViewResolver</find>
-      <find>ViewResolver</find>
-      <find>parse(</find>
-      <find>Controller.class</find>
-      <find>isHandler</find>
-    </findStrings>
+    <leaf>
+      <file leaf-file-name="compiler.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.idea/compiler.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -200,124 +117,16 @@
       <projects_view />
     </option>
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/spring-mvc-learn/src/main/webapp/index.jsp" />
-        <option value="$PROJECT_DIR$/spring-mvc-learn/src/main/webapp/WEB-INF/hello.jsp" />
-        <option value="$PROJECT_DIR$/spring-mvc-learn/src/main/webapp/WEB-INF/jsp/hello.jsp" />
-        <option value="$PROJECT_DIR$/spring-mvc-learn/pom.xml" />
-        <option value="$PROJECT_DIR$/spring-mvc-learn/src/main/java/cn/joey/MyDemoClient.java" />
-        <option value="$PROJECT_DIR$/spring-mvc-learn/src/main/java/cn/joey/HelloWorldTest.java" />
-        <option value="$PROJECT_DIR$/spring-mvc-learn/src/main/webapp/WEB-INF/jsp/test.jsp" />
-        <option value="$PROJECT_DIR$/spring-mvc-learn/src/main/resources/annotation-servlet.xml" />
-        <option value="$PROJECT_DIR$/spring-mvc-learn/src/main/resources/source-servlet.xml" />
-        <option value="$PROJECT_DIR$/spring-mvc-learn/src/main/webapp/jsp/error.jsp" />
-        <option value="$PROJECT_DIR$/spring-mvc-learn/src/main/java/cn/joey/interceptor/LoginMonitorInterceptor.java" />
-        <option value="$PROJECT_DIR$/spring-mvc-learn/src/main/java/cn/joey/ContentTypeDemo.java" />
-        <option value="$PROJECT_DIR$/spring-mvc-learn/src/main/webapp/jsp/uploadFile.jsp" />
-        <option value="$PROJECT_DIR$/spring-mvc-learn/src/main/java/com/sinosoft/lis/service/impl/RiskAmntServiceImpl.java" />
-        <option value="$PROJECT_DIR$/spring-mvc-learn/src/main/java/com/sinosoft/lis/pubfun/SpelUtilsExt.java" />
-        <option value="$PROJECT_DIR$/spring-mvc-learn/src/main/webapp/jsp/uploadResult.jsp" />
-        <option value="$PROJECT_DIR$/spring-mvc-learn/src/main/java/cn/joey/FileUpload.java" />
-        <option value="$PROJECT_DIR$/spring-mvc-learn/src/main/webapp/jsp/userInfo.jsp" />
-        <option value="$PROJECT_DIR$/spring-mvc-learn/src/main/resources/xmlConfig-servlet.xml" />
-        <option value="$PROJECT_DIR$/spring-mvc-learn/out/artifacts/spring_mvc_learn_war_exploded/WEB-INF/classes/annotationConfig-servlet.xml" />
-        <option value="$PROJECT_DIR$/spring-mvc-learn/src/main/resources/messages_en_US.properties" />
-        <option value="$PROJECT_DIR$/spring-mvc-learn/src/main/webapp/WEB-INF/jsp/welcome.jsp" />
-        <option value="$PROJECT_DIR$/spring-mvc-learn/src/main/java/cn/joey/FileUploadController.java" />
-        <option value="$PROJECT_DIR$/spring-mvc-learn/src/main/webapp/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/spring-mvc-learn/src/main/resources/annotationConfig-servlet.xml" />
-        <option value="$PROJECT_DIR$/spring-mvc-learn/src/main/java/cn/joey/RequestParamExampleController.java" />
-        <option value="$PROJECT_DIR$/spring-source-learn/src/test/java/cn/joey/expression/TestExpression.java" />
-        <option value="$PROJECT_DIR$/spring-source-learn/src/main/java/cn/joey/aop/xmlconfig/LogAspect.java" />
-        <option value="$PROJECT_DIR$/spring-source-learn/src/main/java/cn/joey/aop/annotationconfig/AnnotationAspectJ.java" />
-        <option value="$PROJECT_DIR$/spring-source-learn/src/main/java/cn/joey/aop/annotationconfig/AspectJExpression.java" />
-        <option value="$PROJECT_DIR$/spring-source-learn/src/main/java/cn/joey/aop/annotationconfig/PuchaseService.java" />
-        <option value="$PROJECT_DIR$/spring-source-learn/src/main/java/cn/joey/aop/annotationconfig/FileLog.java" />
-        <option value="$PROJECT_DIR$/spring-source-learn/src/main/java/cn/joey/aop/xmlconfig/UserServiceImpl.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/spring-mvc-learn/src/main/webapp/jsp/test.jsp" />
-        <option value="$PROJECT_DIR$/spring-mvc-learn/src/main/webapp/jsp/welcome.jsp" />
-        <option value="$PROJECT_DIR$/spring-mvc-learn/src/main/java/cn/joey/I18nController.java" />
-        <option value="$PROJECT_DIR$/spring-mvc-learn/src/main/java/cn/joey/mvc/RequestParamExampleController.java" />
-        <option value="$PROJECT_DIR$/spring-mvc-learn/src/main/java/cn/joey/mvc/validator/Item.java" />
-        <option value="$PROJECT_DIR$/spring-mvc-learn/src/main/java/cn/joey/mvc/validator/Items.java" />
-      </list>
-    </option>
-  </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="LogFilters">
-    <option name="FILTER_ERRORS" value="false" />
-    <option name="FILTER_WARNINGS" value="false" />
-    <option name="FILTER_INFO" value="false" />
-    <option name="FILTER_DEBUG" value="false" />
-    <option name="CUSTOM_FILTER" />
-  </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="mavenHome" value="D:/apache-maven-3.5.0" />
-      </MavenGeneralSettings>
-    </option>
-  </component>
-  <component name="MavenProjectNavigator">
-    <treeState>
-      <expand>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="spring-learn" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="spring-learn" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
-        </path>
-      </expand>
-      <select />
-    </treeState>
-  </component>
-  <component name="MavenRunner">
-    <option name="skipTests" value="true" />
-  </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="676" />
     <option name="width" value="697" />
     <option name="height" value="735" />
-  </component>
-  <component name="ProjectInspectionProfilesVisibleTreeState">
-    <entry key="Project Default">
-      <profile-state>
-        <expanded-state>
-          <State>
-            <id />
-          </State>
-          <State>
-            <id>Android &gt; Lint &gt; Correctness</id>
-          </State>
-          <State>
-            <id>Gradle</id>
-          </State>
-          <State>
-            <id>Kotlin</id>
-          </State>
-          <State>
-            <id>Maven</id>
-          </State>
-          <State>
-            <id>OSGi</id>
-          </State>
-          <State>
-            <id>Probable bugsGradle</id>
-          </State>
-        </expanded-state>
-      </profile-state>
-    </entry>
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -334,9 +143,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -347,407 +154,20 @@
             <path>
               <item name="spring-learn" type="b2602c69:ProjectViewProjectNode" />
               <item name="spring-learn" type="462c0819:PsiDirectoryNode" />
-              <item name="spring-source-learn" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-learn" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-learn" type="462c0819:PsiDirectoryNode" />
-              <item name="spring-source-learn" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-learn" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-learn" type="462c0819:PsiDirectoryNode" />
-              <item name="spring-source-learn" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-learn" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-learn" type="462c0819:PsiDirectoryNode" />
-              <item name="spring-source-learn" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-learn" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-learn" type="462c0819:PsiDirectoryNode" />
-              <item name="spring-source-learn" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="joey" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-learn" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-learn" type="462c0819:PsiDirectoryNode" />
-              <item name="spring-source-learn" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="joey" type="462c0819:PsiDirectoryNode" />
-              <item name="aop" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-learn" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-learn" type="462c0819:PsiDirectoryNode" />
-              <item name="spring-source-learn" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.17675781" />
-    <property name="project.structure.side.proportion" value="0.39219713" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/spring-mvc-learn/src/main/webapp/jsp/welcome.jsp" />
-    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;jar://C:/Users/liujiji/.m2/repository/org/springframework/spring-web/5.0.4.RELEASE/spring-web-5.0.4.RELEASE-sources.jar!/org/springframework/web/bind/annotation/ExceptionHandler.java" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\Project\Joeyliu\spring-learn\spring-mvc-learn\src\main\resources" />
-      <recent name="E:\Project\Joeyliu\spring-learn\spring-mvc-learn\src\main\java" />
-      <recent name="E:\Project\Joeyliu\spring-learn\spring-mvc-learn\src\main\webapp\jsp" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\Project\Joeyliu\spring-learn\spring-mvc-learn\src\main\resources" />
-      <recent name="E:\Project\Joeyliu\spring-learn\spring-mvc-learn\src\main\webapp\WEB-INF" />
-      <recent name="E:\Project\Joeyliu\spring-learn\spring-mvc-learn\src\main\webapp" />
-      <recent name="E:\Project\Joeyliu\spring-learn\spring-mvc-learn\src\main\webapp\WEB-INF\jsp" />
-    </key>
-  </component>
-  <component name="RestClientSettings">
-    <option name="REQUEST_HISTORY">
-      <list>
-        <RestClientRequest>
-          <option name="biscuits">
-            <list>
-              <Biscuit>
-                <option name="date" value="-1" />
-                <option name="domain" value="localhost" />
-                <option name="name" value="JSESSIONID" />
-                <option name="path" value="/smvc/" />
-                <option name="value" value="8BC25491E14B08DD89B9EE0E0DFBD5AE" />
-              </Biscuit>
-            </list>
-          </option>
-          <option name="httpMethod" value="GET" />
-          <option name="urlBase" value="http://localhost:8080" />
-          <option name="urlPath" value="/smvc/jsp/uploadFile.jsp" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="*/*" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parameters">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="age" />
-                <option name="value" value="asdfasdfasdfasdf" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="textToSend" value="" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="biscuits">
-            <list>
-              <Biscuit>
-                <option name="date" value="-1" />
-                <option name="domain" value="localhost" />
-                <option name="name" value="JSESSIONID" />
-                <option name="path" value="/smvc/" />
-                <option name="value" value="8BC25491E14B08DD89B9EE0E0DFBD5AE" />
-              </Biscuit>
-            </list>
-          </option>
-          <option name="httpMethod" value="GET" />
-          <option name="urlBase" value="http://localhost:8080" />
-          <option name="urlPath" value="/smvc/paramTest/idvalue" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="*/*" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parameters">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="age" />
-                <option name="value" value="asdfasdfasdfasdf" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="textToSend" value="" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="biscuits">
-            <list>
-              <Biscuit>
-                <option name="date" value="-1" />
-                <option name="domain" value="localhost" />
-                <option name="name" value="JSESSIONID" />
-                <option name="path" value="/smvc/" />
-                <option name="value" value="8BC25491E14B08DD89B9EE0E0DFBD5AE" />
-              </Biscuit>
-            </list>
-          </option>
-          <option name="httpMethod" value="GET" />
-          <option name="urlBase" value="http://localhost:8080" />
-          <option name="urlPath" value="/smvc/paramTest" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="*/*" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parameters">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="age" />
-                <option name="value" value="asdfasdfasdfasdf" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="textToSend" value="" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="biscuits">
-            <list>
-              <Biscuit>
-                <option name="date" value="-1" />
-                <option name="domain" value="localhost" />
-                <option name="name" value="JSESSIONID" />
-                <option name="path" value="/smvc/" />
-                <option name="value" value="8BC25491E14B08DD89B9EE0E0DFBD5AE" />
-              </Biscuit>
-            </list>
-          </option>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="http://localhost:8080" />
-          <option name="urlPath" value="/smvc/request/ContentType" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="*/*" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parameters">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="age" />
-                <option name="value" value="asdfasdfasdfasdf" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="textToSend" value="" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="biscuits">
-            <list>
-              <Biscuit>
-                <option name="date" value="-1" />
-                <option name="domain" value="localhost" />
-                <option name="name" value="JSESSIONID" />
-                <option name="path" value="/smvc/" />
-                <option name="value" value="8BC25491E14B08DD89B9EE0E0DFBD5AE" />
-              </Biscuit>
-            </list>
-          </option>
-          <option name="httpMethod" value="GET" />
-          <option name="urlBase" value="http://localhost:8080" />
-          <option name="urlPath" value="/smvc/request/ContentType" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="*/*" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parameters">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="age" />
-                <option name="value" value="asdfasdfasdfasdf" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="textToSend" value="" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="biscuits">
-            <list>
-              <Biscuit>
-                <option name="date" value="-1" />
-                <option name="domain" value="localhost" />
-                <option name="name" value="JSESSIONID" />
-                <option name="path" value="/smvc/" />
-                <option name="value" value="8BC25491E14B08DD89B9EE0E0DFBD5AE" />
-              </Biscuit>
-            </list>
-          </option>
-          <option name="httpMethod" value="GET" />
-          <option name="urlBase" value="http://localhost:8080" />
-          <option name="urlPath" value="/smvc/response/ContentType2" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="*/*" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parameters">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="age" />
-                <option name="value" value="asdfasdfasdfasdf" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="textToSend" value="" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="biscuits">
-            <list>
-              <Biscuit>
-                <option name="date" value="-1" />
-                <option name="domain" value="localhost" />
-                <option name="name" value="JSESSIONID" />
-                <option name="path" value="/smvc/" />
-                <option name="value" value="8BC25491E14B08DD89B9EE0E0DFBD5AE" />
-              </Biscuit>
-            </list>
-          </option>
-          <option name="httpMethod" value="GET" />
-          <option name="urlBase" value="http://localhost:8080" />
-          <option name="urlPath" value="/smvc/paramTest" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="*/*" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="textToSend" value="" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="biscuits">
-            <list>
-              <Biscuit>
-                <option name="date" value="-1" />
-                <option name="domain" value="localhost" />
-                <option name="name" value="JSESSIONID" />
-                <option name="path" value="/smvc/" />
-                <option name="value" value="8BC25491E14B08DD89B9EE0E0DFBD5AE" />
-              </Biscuit>
-            </list>
-          </option>
-          <option name="httpMethod" value="GET" />
-          <option name="urlBase" value="http://localhost:8080" />
-          <option name="urlPath" value="/smvc/test" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="*/*" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="textToSend" value="" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="GET" />
-          <option name="urlBase" value="http://localhost:8080" />
-          <option name="urlPath" value="/smvc" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="*/*" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="textToSend" value="" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-      </list>
-    </option>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -761,7 +181,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Tomcat Server.Tomcat">
+  <component name="RunManager">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -782,31 +202,6 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="" />
       <envs />
-    </configuration>
-    <configuration name="TestExpression.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="cn.joey.expression.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="spring-source-learn" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="cn.joey.expression" />
-      <option name="MAIN_CLASS_NAME" value="cn.joey.expression.TestExpression" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
@@ -862,94 +257,12 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration name="Tomcat" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.0.28" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="OPEN_IN_BROWSER" value="false" />
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/" />
-      <deployment>
-        <artifact name="spring-mvc-learn:war exploded">
-          <settings>
-            <option name="CONTEXT_PATH" value="/smvc" />
-          </settings>
-        </artifact>
-      </deployment>
-      <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="Unnamed_spring-learn_2" />
-      </server-settings>
-      <predefined_log_file id="Tomcat" enabled="true" />
-      <predefined_log_file id="Tomcat Catalina" enabled="true" />
-      <predefined_log_file id="Tomcat Manager" enabled="false" />
-      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
-      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="55309" />
-      </RunnerSettings>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <method>
-        <option name="BuildArtifacts" enabled="true">
-          <artifact name="spring-mvc-learn:war exploded" />
-        </option>
-      </method>
-    </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
       <option name="PROGRAM_PARAMETERS" />
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
-    <list size="2">
-      <item index="0" class="java.lang.String" itemvalue="Tomcat Server.Tomcat" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.TestExpression.test" />
-    </list>
-    <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.TestExpression.test" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -959,179 +272,51 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="666c6c49-4dbf-45b6-a3d9-c93dfa02a636" name="Default" comment="" />
-      <created>1528168390299</created>
+      <changelist id="41c07dcd-3989-418a-aea2-5a25fecdd483" name="Default" comment="" />
+      <created>1528424668989</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1528168390299</updated>
-      <workItem from="1528168391738" duration="56921000" />
-      <workItem from="1528359654832" duration="896000" />
-      <workItem from="1528361870887" duration="6022000" />
+      <updated>1528424668989</updated>
+      <workItem from="1528424670272" duration="85000" />
     </task>
-    <task id="LOCAL-00001" summary="delete some files">
-      <created>1528180075282</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1528180075282</updated>
-    </task>
-    <task id="LOCAL-00002" summary="2018-6-5日下班提交">
-      <created>1528195045279</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1528195045279</updated>
-    </task>
-    <task id="LOCAL-00003" summary="2018-6-6日下班提交">
-      <created>1528290157441</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1528290157441</updated>
-    </task>
-    <task id="LOCAL-00004" summary="2018-6-6日下班提交">
-      <created>1528354200583</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1528354200583</updated>
-    </task>
-    <task id="LOCAL-00005" summary="2018-6-6日下班提交">
-      <created>1528354218150</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1528354218150</updated>
-    </task>
-    <task id="LOCAL-00006" summary="2018-6-7日下班提交">
-      <created>1528357608871</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1528357608871</updated>
-    </task>
-    <task id="LOCAL-00007" summary="重新构建工程">
-      <created>1528358780001</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1528358780001</updated>
-    </task>
-    <task id="LOCAL-00008" summary="重新构建工程">
-      <created>1528361945638</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1528361945638</updated>
-    </task>
-    <task id="LOCAL-00009" summary="Merge branch 'master' of https://github.com/JoeyLiujj/spring-learn&#10;&#10;# Conflicts:&#10;#&#9;spring-source-learn/src/main/resources/applicationContext.xml&#10;#&#9;spring-source-learn/src/main/resources/logAspect.xml&#10;#&#9;spring-source-learn/src/main/resources/testAspectJExpression.xml&#10;#&#9;spring-source-learn/src/test/java/cn/joey/aop/CustomGenericTest.java">
-      <created>1528362478769</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1528362478769</updated>
-    </task>
-    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
-  <component name="TestHistory">
-    <history-entry file="CustomGenericTest_testSpelFunction - 2018.06.06 at 10h 14m 58s.xml">
-      <configuration name="CustomGenericTest.testSpelFunction" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestExpression_test - 2018.06.06 at 10h 14m 26s.xml">
-      <configuration name="TestExpression.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestExpression_test - 2018.06.07 at 15h 58m 16s.xml">
-      <configuration name="TestExpression.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestExpression_test - 2018.06.07 at 15h 58m 36s.xml">
-      <configuration name="TestExpression.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestExpression_test - 2018.06.07 at 15h 58m 59s.xml">
-      <configuration name="TestExpression.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestExpression_test - 2018.06.07 at 17h 21m 12s.xml">
-      <configuration name="TestExpression.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestExpression_testParaviableRef - 2018.06.06 at 10h 14m 05s.xml">
-      <configuration name="TestExpression.testParaviableRef" configurationId="JUnit" />
-    </history-entry>
-  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63839000" />
+    <option name="totallyTimeSpent" value="85000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32857144" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294893" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19180088" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.49423394" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3809524" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32857144" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34444445" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32857144" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29062957" sideWeight="0.4904762" order="6" side_tool="false" content_ui="combo" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21669106" sideWeight="0.5095238" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32857144" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.50576603" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37619048" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329429" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
-    <layout-to-restore>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294893" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19180088" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.49423394" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3809524" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32857144" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37619048" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34444445" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32857144" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329429" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21669106" sideWeight="0.4904762" order="6" side_tool="false" content_ui="combo" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21669106" sideWeight="0.5095238" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294893" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.50576603" order="4" side_tool="true" content_ui="tabs" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -1139,199 +324,12 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="delete some files" />
-    <MESSAGE value="2018-6-5日下班提交" />
-    <MESSAGE value="2018-6-6日下班提交" />
-    <MESSAGE value="2018-6-7日下班提交" />
-    <MESSAGE value="重新构建工程" />
-    <MESSAGE value="Merge branch 'master' of https://github.com/JoeyLiujj/spring-learn&#10;&#10;# Conflicts:&#10;#&#9;spring-source-learn/src/main/resources/applicationContext.xml&#10;#&#9;spring-source-learn/src/main/resources/logAspect.xml&#10;#&#9;spring-source-learn/src/main/resources/testAspectJExpression.xml&#10;#&#9;spring-source-learn/src/test/java/cn/joey/aop/CustomGenericTest.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'master' of https://github.com/JoeyLiujj/spring-learn&#10;&#10;# Conflicts:&#10;#&#9;spring-source-learn/src/main/resources/applicationContext.xml&#10;#&#9;spring-source-learn/src/main/resources/logAspect.xml&#10;#&#9;spring-source-learn/src/main/resources/testAspectJExpression.xml&#10;#&#9;spring-source-learn/src/test/java/cn/joey/aop/CustomGenericTest.java" />
-  </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.0.4.RELEASE/spring-webmvc-5.0.4.RELEASE-sources.jar!/org/springframework/web/servlet/DispatcherServlet.java</url>
-          <line>889</line>
-          <properties />
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.0.4.RELEASE/spring-webmvc-5.0.4.RELEASE-sources.jar!/org/springframework/web/servlet/DispatcherServlet.java</url>
-          <line>949</line>
-          <properties />
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.0.4.RELEASE/spring-webmvc-5.0.4.RELEASE-sources.jar!/org/springframework/web/servlet/DispatcherServlet.java</url>
-          <line>1036</line>
-          <properties />
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="17" />
-    </breakpoint-manager>
+    <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/spring-source-learn/src/test/java/cn/joey/common/PrepareMybagTest.java" />
-    <entry file="file://$PROJECT_DIR$/spring-source-learn/src/test/java/cn/joey/common/Strategy.java" />
-    <entry file="file://$PROJECT_DIR$/spring-source-learn/src/test/java/cn/joey/common/SuitTest.java" />
-    <entry file="file://$PROJECT_DIR$/spring-source-learn/src/test/java/cn/joey/common/Task.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-source-learn/src/test/java/cn/joey/common/ThreadCount.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-source-learn/src/test/java/cn/joey/common/ThreadWaitAndNotify.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-428">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-source-learn/src/test/java/cn/joey/expression/TestExpression.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="50" column="37" lean-forward="false" selection-start-line="50" selection-start-column="37" selection-end-line="50" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-source-learn/src/test/java/cn/joey/mongo/TestMongoConnection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1961">
-          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-source-learn/src/test/java/cn/joey/common/ExternalizableTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-source-learn/src/test/java/cn/joey/common/CountDownLatchTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-source-learn/src/main/java/cn/joey/aop/xmlconfig/Log.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-source-learn/src/main/java/cn/joey/aop/xmlconfig/LogAspect.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-source-learn/src/main/java/cn/joey/aop/annotationconfig/AnnotationAspectJ.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-source-learn/src/main/java/cn/joey/aop/annotationconfig/AspectJExpression.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-source-learn/src/main/java/cn/joey/aop/annotationconfig/PuchaseService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-source-learn/src/main/java/cn/joey/aop/annotationconfig/CustomAnnotation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="5" column="18" lean-forward="false" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-source-learn/src/main/java/cn/joey/aop/annotationconfig/FileLog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="7" column="18" lean-forward="false" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-source-learn/src/main/java/cn/joey/aop/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-source-learn/src/main/java/cn/joey/aop/xmlconfig/UserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-source-learn/src/test/java/cn/joey/aop/CustomGenericTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
-          <caret line="69" column="33" lean-forward="false" selection-start-line="69" selection-start-column="33" selection-end-line="69" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GOFDesignPattern-learn/src/main/java/cn/joey/bridge/Sourceable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GOFDesignPattern-learn/src/main/java/cn/joey/bridge/SourceSub1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GOFDesignPattern-learn/src/main/java/cn/joey/bridge/SourceSub2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-source-learn/src/main/resources/annotationAspectJ.xml">
+    <entry file="file://$PROJECT_DIR$/.idea/compiler.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1339,320 +337,5 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spring-source-learn/src/main/resources/logAspect.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-source-learn/src/main/resources/testAspectJExpression.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-source-learn/src/main/resources/testAspectJIntroduction.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GOFDesignPattern-learn/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="158" column="33" lean-forward="false" selection-start-line="158" selection-start-column="33" selection-end-line="158" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GOFDesignPattern-learn/src/main/java/cn/joey/adapter/Adapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GOFDesignPattern-learn/src/main/java/cn/joey/bridge/Bridge.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="22" lean-forward="false" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GOFDesignPattern-learn/src/main/java/cn/joey/bridge/MyBridge.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-mvc-learn/src/main/webapp/jsp/error.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-mvc-learn/src/main/webapp/jsp/test.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-mvc-learn/src/main/webapp/jsp/uploadFile.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-mvc-learn/src/main/webapp/jsp/uploadResult.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-mvc-learn/src/main/webapp/jsp/userInfo.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-mvc-learn/src/main/webapp/jsp/welcome.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="14" column="20" lean-forward="true" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-mvc-learn/src/main/java/cn/joey/mvc/RequestParamExampleController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-mvc-learn/src/main/java/cn/joey/mvc/validator/Items.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="9" lean-forward="false" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/5.0.4.RELEASE/spring-core-5.0.4.RELEASE-sources.jar!/org/springframework/core/BridgeMethodResolver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="116" column="33" lean-forward="false" selection-start-line="116" selection-start-column="16" selection-end-line="116" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.4.RELEASE/spring-web-5.0.4.RELEASE-sources.jar!/org/springframework/web/method/HandlerMethod.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="129" column="57" lean-forward="true" selection-start-line="129" selection-start-column="57" selection-end-line="129" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-mvc-learn/src/main/java/cn/joey/mvc/I18nController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.4.RELEASE/spring-web-5.0.4.RELEASE-sources.jar!/org/springframework/web/util/UrlPathHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="445">
-          <caret line="256" column="51" lean-forward="false" selection-start-line="256" selection-start-column="51" selection-end-line="256" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.0.4.RELEASE/spring-webmvc-5.0.4.RELEASE-sources.jar!/org/springframework/web/servlet/HandlerMapping.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="66" column="110" lean-forward="false" selection-start-line="66" selection-start-column="86" selection-end-line="66" selection-end-column="110" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.0.4.RELEASE/spring-webmvc-5.0.4.RELEASE-sources.jar!/org/springframework/web/servlet/handler/AbstractHandlerMethodMapping.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-148">
-          <caret line="396" column="62" lean-forward="false" selection-start-line="396" selection-start-column="62" selection-end-line="396" selection-end-column="62" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.0.4.RELEASE/spring-webmvc-5.0.4.RELEASE-sources.jar!/org/springframework/web/servlet/mvc/method/annotation/RequestMappingHandlerMapping.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3339">
-          <caret line="210" column="37" lean-forward="false" selection-start-line="210" selection-start-column="23" selection-end-line="210" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-mvc-learn/src/main/java/cn/joey/mvc/FileUploadController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-mvc-learn/src/main/java/cn/joey/mvc/ContentTypeDemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-source-learn/src/main/resources/applicationContext1.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-source-learn/src/main/resources/applicationContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-204">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArquillianSettingsConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <last-edited>spring-mvc-learn:war exploded</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.39219713" />
-                <option value="0.5" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <last-edited>Web (spring-mvc-learn)|Web</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.39219713" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.39014372" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.39014372" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>Web|spring-mvc-learn</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.39219713" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>Maven: org.springframework:spring-webmvc:5.0.4.RELEASE</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.39219713" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ScopeChooserConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.38603696" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
   </component>
 </project>
