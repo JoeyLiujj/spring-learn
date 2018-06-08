@@ -2,6 +2,7 @@ package cn.joey.mvc;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -17,11 +18,34 @@ import java.util.List;
 @Controller
 public class FileUploadController {
 
+    @RequestMapping("/checkPath")
+    public String checkPath(HttpServletRequest request, Model model) throws Exception{
+        if(10==10){
+            throw new CustomException("我来抛个异常玩");
+        }
+        model.addAttribute("contextPath",request.getContextPath());
+        model.addAttribute("servletPath",request.getServletPath());
+        model.addAttribute("method",request.getMethod());
+        model.addAttribute("pathTranslated",request.getPathTranslated());
+        model.addAttribute("serverName",request.getServerName());
+        model.addAttribute("requestURI",request.getRequestURI());
+        model.addAttribute("requestURL",request.getRequestURL());
+        model.addAttribute("contentType",request.getContentType());
+        model.addAttribute("pathInfo",request.getPathInfo());
+        model.addAttribute("localAddr",request.getLocalAddr());
+        model.addAttribute("localName",request.getLocalName());
+        model.addAttribute("localPort",request.getLocalPort());
+        model.addAttribute("scheme",request.getScheme());
+        model.addAttribute("remoteAddr",request.getRemoteAddr());
+        model.addAttribute("remoteHost",request.getRemoteHost());
+        model.addAttribute("remotePort",request.getRemotePort());
+        return "requestPath";
+    }
+
+
     @RequestMapping(value = "/upload", method = RequestMethod.POST)
     public String uploadFile(HttpServletRequest request, Model model, @RequestParam("file") MultipartFile[] files) throws Exception {
-        System.out.println("打印路径：request.getContextPath==" + request.getContextPath());
-        System.out.println("打印路径：request.getServletPath==" + request.getServletPath());
-        System.out.println("打印路径：request.getServletContext==" + request.getServletContext());
+
         String uploadRootPath = request.getServletContext().getRealPath("/") + "upload";
         System.out.println("uploadRootPath=" + uploadRootPath);
         File uploadRootDir = new File(uploadRootPath);
