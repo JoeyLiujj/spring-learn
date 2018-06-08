@@ -1,4 +1,4 @@
-package cn.joey;
+package cn.joey.mvc;
 
 import java.io.IOException;
 import java.io.InputStream;
