@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
   <artifact type="exploded-war" name="spring-mvc-learn:war exploded">
-    <output-path>$PROJECT_DIR$/spring-mvc-learn/out/artifacts/spring_mvc_learn_war_exploded</output-path>
+    <output-path>$PROJECT_DIR$/spring-mvc-learn/webapps/out/</output-path>
     <root id="root">
       <element id="javaee-facet-resources" facet="spring-mvc-learn/web/Web" />
       <element id="directory" name="WEB-INF">

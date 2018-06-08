@@ -1,4 +1,4 @@
-package cn.joey.interceptor;
+package cn.joey.mvc.interceptor;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
