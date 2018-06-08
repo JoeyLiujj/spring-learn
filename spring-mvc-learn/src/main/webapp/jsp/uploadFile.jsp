@@ -5,7 +5,7 @@
     <title>Title</title>
 </head>
 <body>
-    <form action="/smvc/upload" method="post" enctype="multipart/form-data">
+    <form action="../upload" method="post" enctype="multipart/form-data">
         选择文件：<input type="file" name="file" />&nbsp;&nbsp;
         <input type="submit" value="上传文件"/>
     </form>
