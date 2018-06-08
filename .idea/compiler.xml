@@ -14,8 +14,8 @@
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
       <module name="GOFDesignPattern-learn" target="1.6" />
-      <module name="mybatis-learn" target="1.6" />
-      <module name="spring-learn" target="1.6" />
+      <module name="mybatis-learn" target="1.5" />
+      <module name="spring-learn" target="1.5" />
       <module name="spring-mvc-learn" target="1.6" />
       <module name="spring-source-learn" target="1.6" />
     </bytecodeTargetLevel>
