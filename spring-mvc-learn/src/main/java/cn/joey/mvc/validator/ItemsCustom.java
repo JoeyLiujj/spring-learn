@@ -1,4 +1,4 @@
-package cn.joey.mvc;
+package cn.joey.mvc.validator;
 
 public class ItemsCustom {
     private String name;
