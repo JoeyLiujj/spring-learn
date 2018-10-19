@@ -1,0 +1,10 @@
+package cn.joey.bridge;
+
+public class SourceSub2 implements Sourceable{
+
+	@Override
+	public void method() {
+		System.out.println("this SourceSub2 method");
+	}
+
+}

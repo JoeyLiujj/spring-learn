@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd">
+
+    <bean name="/loginMonitor" class="cn.joey.mvc.interceptor.LoginMonitorInterceptor"/>
+    <bean name="/test" class="cn.joey.mvc.interceptor.TestController"/>
+    <bean id="handlerInterceptor1" class="cn.joey.mvc.interceptor.HandlerInterceptor1"></bean>
+    <bean id="handlerInterceptor2" class="cn.joey.mvc.interceptor.HandlerInterceptor2"></bean>
+    <bean id="handlerInterceptor3" class="cn.joey.mvc.interceptor.HandlerInterceptor3"></bean>
+    <bean id="handlerInterceptor4" class="cn.joey.mvc.interceptor.HandlerInterceptor4"></bean>
+    <!-- Handler Mapping 表示将请求的URL和Bean名称映射，如URL为“上下文/hello”, 则spring配置文件必须有一个名称为hello的Bean。 -->
+    <bean class="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping">
+        <property name="interceptors">
+            <list>
+                <ref bean="/loginMonitor"/>
+                <ref bean="handlerInterceptor3"/>
+                <ref bean="handlerInterceptor4"/>
+            </list>
+        </property>
+    </bean>
+    <!-- Handler Adapter 表示所有实现了org.springframework.web.servlet.mvc.Controller接口的Bean
+        可以作为Spring Web MVC中 的处理器。如果需要其他类型的处理器可以通过实现HandlerAdapter实现 -->
+    <bean class="org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter"/>
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <!-- 表示JSP模板页面必须包含Jstl标签库，classpath中必须包含相关的jar包 -->
+        <property name="viewClass"
+                  value="org.springframework.web.servlet.view.JstlView"></property>
+        <!-- 前缀 -->
+        <!-- 表示查找视图的前缀和后缀，比如传进来的逻辑视图为hello, 则该jsp视图页面应该存放在“jsp/hello.jsp” -->
+        <property name="prefix" value="/jsp/"></property>
+        <!-- 后缀 -->
+        <property name="suffix" value=".jsp"></property>
+    </bean>
+</beans> 

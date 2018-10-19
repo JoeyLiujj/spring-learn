@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:jms="http://www.springframework.org/schema/jms"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:c="http://www.springframework.org/schema/c"
+       xsi:schemaLocation="http://www.springframework.org/schema/jms http://www.springframework.org/schema/jms/spring-jms.xsd
+       http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="connectionFactory" class="org.apache.activemq.spring.ActiveMQConnectionFactory"
+          p:brokerURL="tcp://localhost:61616" p:trustAllPackages="true"></bean>
+    <!-- c:_表示构造器参数-->
+    <bean id="queue" class="org.apache.activemq.command.ActiveMQQueue" c:_0="biz1.queue"/>
+    <bean id="biz1.topic" class="org.apache.activemq.command.ActiveMQTopic" c:_0="biz1.topic"/>
+
+    <!--我们自己定义的消息处理器，可以将其注入到jmsTemplate中，其实有默认的处理器，
+        如果我们自己注入的话，方便控制-->
+    <bean id="jmsMessageConverter" class="org.springframework.jms.support.converter.SimpleMessageConverter" />
+
+    <bean id="jmsTemplate" class="org.springframework.jms.core.JmsTemplate" c:_0-ref="connectionFactory"
+     p:defaultDestination-ref="queue" p:messageConverter-ref="jmsMessageConverter"/>
+
+    <bean id="myMessageService" class="cn.joey.jms.jmsTemplate.MyMessageServiceImpl">
+        <property name="jmsTemplate" ref="jmsTemplate"/>
+    </bean>
+    <!--定义消息监听器-->
+    <!--我们自定义的监听器类型，其实此种类型是使用MessageListenerAdapter进行消息类型转换的，
+        默认使用handleMessage方法，如果指定的话，我们可以使用标签defaultListenerMethod来指定，目标方法
+        最后将其配置到DefaultMessageListenerContainer中
+        实现消息监听的三种方式
+        ①MessageListener
+        ②SessionAwareMessageListener
+        ③MessageListenerAdapter 可以进行自动回复的功能，如果处理消息的方法有返回值时，在原来的发送
+         消息的时候，setJMSReplyTo(responseDestination),指定返回的目的地-->
+    <bean id="messageHandler" class="cn.joey.jms.jmsTemplate.MyMessageHandler"/>
+    <bean id="messageListener" class="cn.joey.jms.jmsTemplate.MyMessageListener"/>
+
+    <!--<jms:listener-container concurrency="5">
+        &lt;!&ndash;<jms:listener destination="queue" ref="messageHandler"/>&ndash;&gt;
+        <jms:listener destination="queue" ref="messageListener"/>
+    </jms:listener-container>-->
+
+    <!--使用bean的形式定义消息监听器容器，将连接工厂、目的地和监听器注入，消费端监听发布端发送的消息-->
+    <!--在activemqAnnotation.xml中的jms实际上内容的<jms:listener>标签最终会解析成为一个DefaultMessageListenerContainer对象-->
+    <bean class="org.springframework.jms.listener.DefaultMessageListenerContainer">
+        <property name="connectionFactory" ref="connectionFactory"/>
+        <property name="destination" ref="queue"/>
+        <property name="messageListener" ref="messageListener"/>
+    </bean>
+
+</beans>
