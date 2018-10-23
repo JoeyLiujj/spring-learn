@@ -8,6 +8,9 @@ import cn.joey.command.Command;
 import cn.joey.command.Invoker;
 import cn.joey.command.MyCommand;
 import cn.joey.command.Receiver;
+import cn.joey.component.Component;
+import cn.joey.component.Composite;
+import cn.joey.component.Leaf;
 import cn.joey.decorator.Decorator;
 import cn.joey.decorator.Source;
 import cn.joey.interpreter.Context;
@@ -42,6 +45,7 @@ public class CustomGenericTest {
     /**
      * 把事务和具体的实例化分开，使它们可以独立变化。例如JDBC桥DriverManager
      * JDBC提供统一接口，每个数据库提供各自的实现，用一个叫做数据库驱动的程序来桥接就行了
+     * 把抽象和实现相互分离，使它们能够各自独立的变化
      * @author Liujj
      */
     @Test
@@ -294,5 +298,34 @@ public class CustomGenericTest {
         tenant.constact("听说你那里有三室一厅的房主出租。。。。");
         houseOwner.constact("是的！请问你需要租吗？");
 
+    }
+
+    /**
+     * 组合多种对象形成树形结构以表示具有“整体-部分”关系的层次结构，组合模式对单个对象(即叶子节点)
+     * 和组合对象(即容器对象)的使用具有一致性，组合模式又可以称为“整体-部分”模式 ，它是一种对象结构模式。
+     * 在Composite中operation方法有类似递归的操作，层层调用，直到为叶子节点。
+     */
+    @Test
+    public void testComponentPattern() {
+        Component root= new Composite("root");
+        root.add(new Leaf("Leaf a in root"));
+        root.add(new Leaf("Leaf a in root"));
+
+        Component branchX = new Composite("Branch X in root");
+        Component branchY = new Composite("Branch Y in root");
+
+        root.add(branchX);
+        root.add(branchY);
+
+        branchX.add(new Leaf("Leaf A in Branch X"));
+
+        Component branchZ = new Composite("Branch Z in Branch X");
+
+        branchX.add(branchZ);
+
+        branchY.add(new Leaf("Leaf in Branch Y"));
+        branchY.add(new Leaf("Leaf in Branch Y"));
+
+        root.display(1);
     }
 }
