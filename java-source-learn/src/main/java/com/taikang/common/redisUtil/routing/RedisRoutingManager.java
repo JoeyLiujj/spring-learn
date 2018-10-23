@@ -6,7 +6,7 @@ import java.util.Map;
 
 import org.apache.commons.configuration.ConfigurationException;
 import org.apache.commons.configuration.XMLConfiguration;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 
 import redis.clients.jedis.JedisPool;
 import redis.clients.jedis.JedisPoolConfig;
@@ -14,7 +14,7 @@ import redis.clients.jedis.JedisPoolConfig;
  * redis路由管理
  * 读取路由配置文件 初始化配置中的路由节点信息
  * <P>File name : RedisRoutingManager.java </P>
- * <P>Author : zouzhihua </P> 
+ * <P>Author : zouzhihua </P>
  * <P>Date : 2013-1-29 </P>
  */
 
@@ -27,12 +27,12 @@ public class RedisRoutingManager {
 	 * redis连接池集合
 	 */
 	private HashMap<String,JedisPool> redisPoolMap = new HashMap<String,JedisPool>();
-	
-	
+
+
 	private static class LazyHolder{
 		private static final RedisRoutingManager INSTANCE = new RedisRoutingManager();
 	}
-	
+
 	private RedisRoutingManager(){
 		try {
 			initDbRouting();
@@ -40,16 +40,16 @@ public class RedisRoutingManager {
 			e.printStackTrace();
 		}
 	}
-	
+
 	public static RedisRoutingManager getInstance(){
 		return LazyHolder.INSTANCE;
 	}
-	
+
 	/**
 	 * 初始化配置文件信息
-	 * @throws ConfigurationException 
-	 * @throws org.apache.commons.configuration.ConfigurationException 
-	 * 
+	 * @throws ConfigurationException
+	 * @throws org.apache.commons.configuration.ConfigurationException
+	 *
 	 */
 	private void initDbRouting() throws ConfigurationException{
 		HashMap<String,JedisPool> redisConnectionMap = new HashMap<String,JedisPool>();
@@ -63,9 +63,9 @@ public class RedisRoutingManager {
 			String host = routingConfig.getString("servernode.node("+clusterIndex+").host");
 			int port = routingConfig.getInt("servernode.node("+clusterIndex+").port");
 			JedisPoolConfig config = new JedisPoolConfig();
-			config.setMaxActive(maxActive);
+//			config.setMaxActive(maxActive);
 			config.setMaxIdle(maxIdle);
-			config.setMaxWait(maxWait);
+//			config.setMaxWait(maxWait);
 			config.setTestOnBorrow(false);
 			JedisPool pool = new JedisPool(config, host,port);
 			redisConnectionMap.put(nodeId, pool);
@@ -85,9 +85,9 @@ public class RedisRoutingManager {
 				for(int i = 0 ; i < nodes.length ; i++){
 					String node = nodes[i];
 					if(redisPoolMap.get(node) == null){
-						
+
 					}else{
-						cluster.addReadRedisNode(node);	
+						cluster.addReadRedisNode(node);
 					}
 				}
 			}
@@ -96,9 +96,9 @@ public class RedisRoutingManager {
 				for(int i = 0 ; i < nodes.length ; i++){
 					String node = nodes[i];
 					if(redisPoolMap.get(node) == null){
-						
+
 					}else{
-						cluster.addWriteRedisNode(node);	
+						cluster.addWriteRedisNode(node);
 					}
 				}
 			}
@@ -114,7 +114,7 @@ public class RedisRoutingManager {
 	/**
 	 * 返回节点对应的连接池
 	 * RedisRoutingManager.getJedisPool()<BR>
-	  * <P>Author : zouzhihua </P>  
+	  * <P>Author : zouzhihua </P>
 	 * <P>Date : 2013-1-31 </P>
 	 * @param node
 	 * @return
@@ -126,7 +126,7 @@ public class RedisRoutingManager {
 	/**
 	 * 返回路由节点
 	 * RedisRoutingManager.getRedisCluster()<BR>
-	  * <P>Author : zouzhihua </P>  
+	  * <P>Author : zouzhihua </P>
 	 * <P>Date : 2013-1-31 </P>
 	 * @param clusterId
 	 * @return

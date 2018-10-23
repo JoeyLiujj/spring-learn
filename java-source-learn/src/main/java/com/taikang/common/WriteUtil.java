@@ -10,7 +10,7 @@ public class WriteUtil {
 	/**
 	 * 获取电子保单写入磁盘的服务器
 	 * 
-	 * @param policyNo
+	 * @param
 	 * @return
 	 */
 	public static String getWriteIp() {

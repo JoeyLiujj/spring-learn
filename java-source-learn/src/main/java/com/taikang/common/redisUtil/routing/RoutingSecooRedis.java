@@ -20,7 +20,7 @@ import redis.clients.jedis.Tuple;
  * 路由实现redis集群
  * 提供各种redis操作接口
  * <P>File name : RoutingLafasoRedis.java </P>
- * <P>Author : zouzhihua </P> 
+ * <P>Author : zouzhihua </P>
  * <P>Date : 2013-1-29 </P>
  */
 public class RoutingSecooRedis implements ISecooRedis{
@@ -32,15 +32,14 @@ public class RoutingSecooRedis implements ISecooRedis{
 			throw new RedisException("clusterId["+clusterId+"] is not");
 		}
 	}
-	
+
 	/**
 	 * 给指定key的字符串值追加 value,返回新字符串值的长度。
-	  * <P>Author : zouzhihua </P>      
+	  * <P>Author : zouzhihua </P>
 	 * <P>Date : 2013-1-17 </P>
 	 * @param key
 	 * @param value
 	 * @return
-	 * @see com.taikang.common.redisUtil.ISecooRedis.service.core.redis.ILafasoRedis#append(String, String)
 	 */
 	public Long append(String key, String value) {
 		Long l = null;
@@ -71,7 +70,6 @@ public class RoutingSecooRedis implements ISecooRedis{
 	 * <P>Date : 2013-1-31 </P>
 	 * @param key
 	 * @return
-	 * @see com.taikang.common.util.redis.secoo.common.redis.ISecooRedis#decr(String)
 	 */
 	public Long decr(String key) {
 		Long l = null;
@@ -103,7 +101,6 @@ public class RoutingSecooRedis implements ISecooRedis{
 	 * @param key
 	 * @param value
 	 * @return
-	 * @see com.taikang.common.util.redis.secoo.common.redis.ISecooRedis#decrBy(String, long)
 	 */
 	public Long decrBy(String key, long value) {
 		Long l = null;
@@ -134,7 +131,6 @@ public class RoutingSecooRedis implements ISecooRedis{
 	 * <P>Date : 2013-1-31 </P>
 	 * @param key
 	 * @return
-	 * @see com.taikang.common.util.redis.secoo.common.redis.ISecooRedis#exists(String)
 	 */
 	public Boolean exists(String key) {
 		Boolean l = false;
@@ -164,7 +160,6 @@ public class RoutingSecooRedis implements ISecooRedis{
 	 * @param key
 	 * @param value
 	 * @return
-	 * @see com.taikang.common.util.redis.secoo.common.redis.ISecooRedis#expire(String, int)
 	 */
 	public Long expire(String key, int value) {
 		Long l = null;
@@ -199,7 +194,6 @@ public class RoutingSecooRedis implements ISecooRedis{
 	 * <P>Date : 2013-1-31 </P>
 	 * @param key
 	 * @return
-	 * @see com.taikang.common.util.redis.secoo.common.redis.ISecooRedis#get(String)
 	 */
 	public String get(String key) {
 		String l = null;
@@ -229,7 +223,6 @@ public class RoutingSecooRedis implements ISecooRedis{
 	 * @param key
 	 * @param value
 	 * @return
-	 * @see com.taikang.common.util.redis.secoo.common.redis.ISecooRedis#getSet(String, String)
 	 */
 	public String getSet(String key, String value) {
 		String l = null;
@@ -267,7 +260,6 @@ public class RoutingSecooRedis implements ISecooRedis{
 	 * @param start
 	 * @param end
 	 * @return
-	 * @see com.taikang.common.util.redis.secoo.common.redis.ISecooRedis#getrange(String, long, long)
 	 */
 	public String getrange(String key, long start, long end) {
 		String l = null;
@@ -297,7 +289,6 @@ public class RoutingSecooRedis implements ISecooRedis{
 	 * @param key
 	 * @param arg1
 	 * @return
-	 * @see com.taikang.common.util.redis.secoo.common.redis.ISecooRedis#hdel(String, String[])
 	 */
 	public Long hdel(String key, String... arg1) {
 		Long l = null;
@@ -329,7 +320,6 @@ public class RoutingSecooRedis implements ISecooRedis{
 	 * @param key
 	 * @param field
 	 * @return
-	 * @see com.taikang.common.util.redis.secoo.common.redis.ISecooRedis#hexists(String, String)
 	 */
 	public Boolean hexists(String key, String field) {
 		Boolean l = false;
@@ -359,7 +349,6 @@ public class RoutingSecooRedis implements ISecooRedis{
 	 * @param key
 	 * @param filed
 	 * @return
-	 * @see com.taikang.common.util.redis.secoo.common.redis.ISecooRedis#hget(String, String)
 	 */
 	public String hget(String key, String filed) {
 		String l = null;
@@ -389,7 +378,6 @@ public class RoutingSecooRedis implements ISecooRedis{
 	 * <P>Date : 2013-1-31 </P>
 	 * @param key
 	 * @return
-	 * @see com.taikang.common.util.redis.secoo.common.redis.ISecooRedis#hgetAll(String)
 	 */
 	public Map<String, String> hgetAll(String key) {
 		Map<String, String> l = null;
@@ -412,7 +400,7 @@ public class RoutingSecooRedis implements ISecooRedis{
 		return l;
 	}
 
-	
+
 	/**
 	 * 为哈希表 key 中的域 field 的值加上增量 increment 。
 	 * 增量也可以为负数，相当于对给定域进行减法操作。
@@ -426,7 +414,6 @@ public class RoutingSecooRedis implements ISecooRedis{
 	 * @param field
 	 * @param increment
 	 * @return 执行 HINCRBY 命令之后，哈希表 key 中域 field 的值。
-	 * @see com.taikang.common.util.redis.secoo.common.redis.ISecooRedis#hincrBy(String, String, long)
 	 */
 	public Long hincrBy(String key, String field, long increment) {
 		Long l = null;
@@ -455,14 +442,13 @@ public class RoutingSecooRedis implements ISecooRedis{
 		return l;
 	}
 
-	
+
 	/**
 	 * 返回哈希表 key 中的所有域。
 	 * <P>Author : zouzhihua </P>.
 	 * <P>Date : 2013-1-31 </P>
 	 * @param key
 	 * @return 一个包含哈希表中所有域的表。当 key 不存在时，返回一个空表。
-	 * @see com.taikang.common.util.redis.secoo.common.redis.ISecooRedis#hkeys(String)
 	 */
 	public Set<String> hkeys(String key) {
 		Set<String> l = null;
@@ -485,14 +471,13 @@ public class RoutingSecooRedis implements ISecooRedis{
 		return l;
 	}
 
-	
+
 	/**
 	 * 返回哈希表 key 中field的数量。
 	 * <P>Author : zouzhihua </P>.
 	 * <P>Date : 2013-1-31 </P>
 	 * @param key
 	 * @return 哈希表中域的数量。当 key 不存在时，返回 0 。
-	 * @see com.taikang.common.util.redis.secoo.common.redis.ISecooRedis#hlen(String)
 	 */
 	public Long hlen(String key) {
 		Long l = null;
@@ -515,7 +500,7 @@ public class RoutingSecooRedis implements ISecooRedis{
 		return l;
 	}
 
-	
+
 	/**
 	 * 返回哈希表 key 中，一个或多个给定域的值。
 	 * 如果给定的域不存在于哈希表，那么返回一个 nil 值。
@@ -525,7 +510,6 @@ public class RoutingSecooRedis implements ISecooRedis{
 	 * @param key
 	 * @param field
 	 * @return 一个包含多个给定域的关联值的表，表值的排列顺序和给定域参数的请求顺序一样。
-	 * @see com.taikang.common.util.redis.secoo.common.redis.ISecooRedis#hmget(String, String[])
 	 */
 	public List<String> hmget(String key, String... field) {
 		List<String> l = null;
@@ -547,7 +531,7 @@ public class RoutingSecooRedis implements ISecooRedis{
 		}
 		return l;
 	}
-	
+
 	/**
 	 * 同时将多个 field-value (域-值)对设置到哈希表 key 中。
 	 * 此命令会覆盖哈希表中已存在的域。
@@ -557,7 +541,6 @@ public class RoutingSecooRedis implements ISecooRedis{
 	 * @param key
 	 * @param arg1
 	 * @return 如果命令执行成功，返回 OK 。当 key 不是哈希表(hash)类型时，返回一个错误。
-	 * @see com.taikang.common.util.redis.secoo.common.redis.ISecooRedis#hmset(String, Map)
 	 */
 	public String hmset(String key, Map<String, String> arg1) {
 		String l = null;
@@ -593,7 +576,6 @@ public class RoutingSecooRedis implements ISecooRedis{
 	 * @param value
 	 * @return 如果 field 是哈希表中的一个新建域，并且值设置成功，返回 1 。
 	 * 		        如果哈希表中域 field 已经存在且旧值已被新值覆盖，返回 0 。
-	 * @see com.taikang.common.util.redis.secoo.common.redis.ISecooRedis#hset(String, String, String)
 	 */
 	public Long hset(String key, String field, String value) {
 		Long l = null;
@@ -618,7 +600,7 @@ public class RoutingSecooRedis implements ISecooRedis{
 		return l;
 	}
 
-	
+
 	/**
 	 * 将哈希表 key 中的域 field 的值设置为 value ，当且仅当域 field 不存在。
 	 * 若域 field 已经存在，该操作无效。
@@ -630,7 +612,6 @@ public class RoutingSecooRedis implements ISecooRedis{
 	 * @param value
 	 * @return 设置成功，返回 1 。
 			        如果给定域已经存在且没有操作被执行，返回 0 。
-	 * @see com.taikang.common.util.redis.secoo.common.redis.ISecooRedis#hsetnx(String, String, String)
 	 */
 	public Long hsetnx(String arg0, String field, String value) {
 		Long l = null;
@@ -655,7 +636,7 @@ public class RoutingSecooRedis implements ISecooRedis{
 		return l;
 	}
 
-	
+
 	/**
 	 * 返回哈希表 key 中所有域的值。
 	 * <P>Author : zouzhihua </P>.
@@ -663,7 +644,6 @@ public class RoutingSecooRedis implements ISecooRedis{
 	 * @param arg0
 	 * @return 一个包含哈希表中所有值的表。
 	  		        当 key 不存在时，返回一个空表。
-	 * @see com.taikang.common.util.redis.secoo.common.redis.ISecooRedis#hvals(String)
 	 */
 	public List<String> hvals(String arg0) {
 		List<String> l = null;
@@ -686,7 +666,7 @@ public class RoutingSecooRedis implements ISecooRedis{
 		return l;
 	}
 
-	
+
 	/**
 	 * 将 key 中储存的数字值增一。
 	 * 如果 key 不存在，那么 key 的值会先被初始化为 0 ，然后再执行 INCR 操作。
@@ -696,7 +676,6 @@ public class RoutingSecooRedis implements ISecooRedis{
 	 * <P>Date : 2013-1-31 </P>
 	 * @param key
 	 * @return 执行 INCR 命令之后 key 的值。
-	 * @see com.taikang.common.util.redis.secoo.common.redis.ISecooRedis#incr(String)
 	 */
 	public Long incr(String key) {
 		Long l = null;
@@ -721,7 +700,7 @@ public class RoutingSecooRedis implements ISecooRedis{
 		return l;
 	}
 
-	
+
 	/**
 	 * 将 key 所储存的值加上增量 increment 。
 	 * 如果 key 不存在，那么 key 的值会先被初始化为 0 ，然后再执行 INCRBY 命令。
@@ -733,7 +712,6 @@ public class RoutingSecooRedis implements ISecooRedis{
 	 * @param key
 	 * @param increment
 	 * @return 加上 increment 之后， key 的值。
-	 * @see com.taikang.common.util.redis.secoo.common.redis.ISecooRedis#incrBy(String, long)
 	 */
 	public Long incrBy(String key, long increment) {
 		Long l = null;
@@ -758,7 +736,7 @@ public class RoutingSecooRedis implements ISecooRedis{
 		return l;
 	}
 
-	
+
 	/**
 	 * 返回列表 key 中，下标为 index 的元素。
 	 * 下标(index)参数 start 和 stop 都以 0 为底，也就是说，以 0 表示列表的第一个元素，以 1 表示列表的第二个元素，以此类推。
@@ -770,7 +748,6 @@ public class RoutingSecooRedis implements ISecooRedis{
 	 * @param index
 	 * @return 列表中下标为 index 的元素。
 			        如果 index 参数的值不在列表的区间范围内(out of range)，返回 nil 。
-	 * @see com.taikang.common.util.redis.secoo.common.redis.ISecooRedis#lindex(String, long)
 	 */
 	public String lindex(String key, long index) {
 		String l = null;
@@ -793,7 +770,7 @@ public class RoutingSecooRedis implements ISecooRedis{
 		return l;
 	}
 
-	
+
 	/**
 	 * 将值 value 插入到列表 key 当中，位于值 pivot 之前或之后。
 	 * 当 pivot 不存在于列表 key 时，不执行任何操作。
@@ -808,7 +785,6 @@ public class RoutingSecooRedis implements ISecooRedis{
 	 * @return 如果命令执行成功，返回插入操作完成之后，列表的长度。
 			        如果没有找到 pivot ，返回 -1 。
 			        如果 key 不存在或为空列表，返回 0 。
-	 * @see com.taikang.common.util.redis.secoo.common.redis.ISecooRedis#linsert(String, LIST_POSITION, String, String)
 	 */
 	public Long linsert(String key, LIST_POSITION position, String pivot,
 			String value) {
@@ -834,7 +810,7 @@ public class RoutingSecooRedis implements ISecooRedis{
 		return l;
 	}
 
-	
+
 	/**
 	 * 返回列表 key 的长度。
 	 * 如果 key 不存在，则 key 被解释为一个空列表，返回 0 .
@@ -843,7 +819,6 @@ public class RoutingSecooRedis implements ISecooRedis{
 	 * <P>Date : 2013-1-31 </P>
 	 * @param key
 	 * @return 列表 key 的长度。
-	 * @see com.taikang.common.util.redis.secoo.common.redis.ISecooRedis#llen(String)
 	 */
 	public Long llen(String key) {
 		Long l = null;
@@ -866,7 +841,7 @@ public class RoutingSecooRedis implements ISecooRedis{
 		return l;
 	}
 
-	
+
 	/**
 	 * 移除并返回列表 key 的头元素。
 	 * <P>Author : zouzhihua </P>.
@@ -874,7 +849,6 @@ public class RoutingSecooRedis implements ISecooRedis{
 	 * @param key
 	 * @return 列表的头元素。
 			        当 key 不存在时，返回 nil 。
-	 * @see com.taikang.common.util.redis.secoo.common.redis.ISecooRedis#lpop(String)
 	 */
 	public String lpop(String key) {
 		String l = null;
@@ -899,7 +873,7 @@ public class RoutingSecooRedis implements ISecooRedis{
 		return l;
 	}
 
-	
+
 	/**
 	 * 将一个或多个值 value 插入到列表 key 的表头
 	 * 如果有多个 value 值，那么各个 value 值按从左到右的顺序依次插入到表头： 比如说，对空列表 mylist 执行命令 LPUSH mylist a b c ，列表的值将是 c b a ，这等同于原子性地执行 LPUSH mylist a 、 LPUSH mylist b 和 LPUSH mylist c 三个命令。
@@ -910,7 +884,6 @@ public class RoutingSecooRedis implements ISecooRedis{
 	 * @param key
 	 * @param values
 	 * @return 执行 LPUSH 命令后，列表的长度。
-	 * @see com.taikang.common.util.redis.secoo.common.redis.ISecooRedis#lpush(String, String[])
 	 */
 	public Long lpush(String key, String... values) {
 		Long l = null;
@@ -935,7 +908,7 @@ public class RoutingSecooRedis implements ISecooRedis{
 		return l;
 	}
 
-	
+
 	/**
 	 * 将值 value 插入到列表 key 的表头，当且仅当 key 存在并且是一个列表。
 	 * 和 LPUSH 命令相反，当 key 不存在时， LPUSHX 命令什么也不做。
@@ -944,7 +917,6 @@ public class RoutingSecooRedis implements ISecooRedis{
 	 * @param key
 	 * @param value
 	 * @return LPUSHX 命令执行之后，表的长度
-	 * @see com.taikang.common.util.redis.secoo.common.redis.ISecooRedis#lpushx(String, String)
 	 */
 	public Long lpushx(String key, String value) {
 		Long l = null;
@@ -979,7 +951,6 @@ public class RoutingSecooRedis implements ISecooRedis{
 	 * @param start
 	 * @param end
 	 * @return
-	 * @see com.taikang.common.util.redis.secoo.common.redis.ISecooRedis#lrange(String, long, long)
 	 */
 	public List<String> lrange(String key, long start, long end) {
 		List<String> l = null;
@@ -1002,7 +973,7 @@ public class RoutingSecooRedis implements ISecooRedis{
 		return l;
 	}
 
-	
+
 	/**
 	 * 根据参数 count 的值，移除列表中与参数 value 相等的元素。
 	 * count 的值可以是以下几种：
@@ -1016,7 +987,6 @@ public class RoutingSecooRedis implements ISecooRedis{
 	 * @param value
 	 * @return 被移除元素的数量。
 			        因为不存在的 key 被视作空表(empty list)，所以当 key 不存在时， LREM 命令总是返回 0 。
-	 * @see com.taikang.common.util.redis.secoo.common.redis.ISecooRedis#lrem(String, long, String)
 	 */
 	public Long lrem(String key, long count, String value) {
 		Long l = null;
@@ -1026,7 +996,7 @@ public class RoutingSecooRedis implements ISecooRedis{
 			try {
 				jedis = pool.getResource();
 				l = jedis.lrem(key, count, value);
-				
+
 			} catch (Exception e) {
 				e.printStackTrace();
 			}finally{
@@ -1042,7 +1012,7 @@ public class RoutingSecooRedis implements ISecooRedis{
 		return l;
 	}
 
-	
+
 	/**
 	 * 将列表 key 下标为 index 的元素的值设置为 value 。
 	 * 当 index 参数超出范围，或对一个空列表( key 不存在)进行 LSET 时，返回一个错误。
@@ -1052,7 +1022,6 @@ public class RoutingSecooRedis implements ISecooRedis{
 	 * @param index
 	 * @param value
 	 * @return 操作成功返回 ok ，否则返回错误信息。
-	 * @see com.taikang.common.util.redis.secoo.common.redis.ISecooRedis#lset(String, long, String)
 	 */
 	public String lset(String key, long index, String value) {
 		String l = null;
@@ -1062,7 +1031,7 @@ public class RoutingSecooRedis implements ISecooRedis{
 			try {
 				jedis = pool.getResource();
 				l = jedis.lset(key, index, value);
-				
+
 			} catch (Exception e) {
 				e.printStackTrace();
 			}finally{
@@ -1078,7 +1047,7 @@ public class RoutingSecooRedis implements ISecooRedis{
 		return l;
 	}
 
-	
+
 	/**
 	 * 对一个列表进行修剪(trim)，就是说，让列表只保留指定区间内的元素，不在指定区间之内的元素都将被删除。
 	 * 举个例子，执行命令 LTRIM list 0 2 ，表示只保留列表 list 的前三个元素，其余元素全部删除。
@@ -1091,7 +1060,6 @@ public class RoutingSecooRedis implements ISecooRedis{
 	 * @param start
 	 * @param end
 	 * @return 命令执行成功时，返回 ok 。
-	 * @see com.taikang.common.util.redis.secoo.common.redis.ISecooRedis#ltrim(String, long, long)
 	 */
 	public String ltrim(String key, long start, long end) {
 		String l = null;
@@ -1101,7 +1069,7 @@ public class RoutingSecooRedis implements ISecooRedis{
 			try {
 				jedis = pool.getResource();
 				l = jedis.ltrim(key, start, end);
-				
+
 			} catch (Exception e) {
 				e.printStackTrace();
 			}finally{
@@ -1117,7 +1085,7 @@ public class RoutingSecooRedis implements ISecooRedis{
 		return l;
 	}
 
-	
+
 	/**
 	 * 移除并返回列表 key 的尾元素。
 	 * <P>Author : zouzhihua </P>.
@@ -1125,7 +1093,6 @@ public class RoutingSecooRedis implements ISecooRedis{
 	 * @param key
 	 * @return 列表的尾元素。
 			        当 key 不存在时，返回 nil 。
-	 * @see com.taikang.common.util.redis.secoo.common.redis.ISecooRedis#rpop(String)
 	 */
 	public String rpop(String key) {
 		String l = null;
@@ -1150,7 +1117,7 @@ public class RoutingSecooRedis implements ISecooRedis{
 		return l;
 	}
 
-	
+
 	/**
 	 * 将一个或多个值 value 插入到列表 key 的表尾(最右边)。
 	 * 如果有多个 value 值，那么各个 value 值按从左到右的顺序依次插入到表尾：比如对一个空列表 mylist 执行 RPUSH mylist a b c ，得出的结果列表为 a b c ，等同于执行命令 RPUSH mylist a 、 RPUSH mylist b 、 RPUSH mylist c 。
@@ -1161,7 +1128,6 @@ public class RoutingSecooRedis implements ISecooRedis{
 	 * @param key
 	 * @param value
 	 * @return
-	 * @see com.taikang.common.util.redis.secoo.common.redis.ISecooRedis#rpush(String, String[])
 	 */
 	public Long rpush(String key, String... value) {
 		Long l = null;
@@ -1186,7 +1152,7 @@ public class RoutingSecooRedis implements ISecooRedis{
 		return l;
 	}
 
-	
+
 	/**
 	 * 将值 value 插入到列表 key 的表尾，当且仅当 key 存在并且是一个列表。
 	 * 和 RPUSH 命令相反，当 key 不存在时， RPUSHX 命令什么也不做。
@@ -1195,7 +1161,6 @@ public class RoutingSecooRedis implements ISecooRedis{
 	 * @param key
 	 * @param value
 	 * @return RPUSHX 命令执行之后，表的长度。
-	 * @see com.taikang.common.util.redis.secoo.common.redis.ISecooRedis#rpushx(String, String)
 	 */
 	public Long rpushx(String key, String value) {
 		Long l = null;
@@ -1205,7 +1170,7 @@ public class RoutingSecooRedis implements ISecooRedis{
 			try {
 				jedis = pool.getResource();
 				l = jedis.rpushx(key, value);
-				
+
 			} catch (Exception e) {
 				e.printStackTrace();
 			}finally{
@@ -1221,7 +1186,7 @@ public class RoutingSecooRedis implements ISecooRedis{
 		return l;
 	}
 
-	
+
 	/**
 	 * 将一个或多个 member 元素加入到集合 key 当中，已经存在于集合的 member 元素将被忽略。
 	 * 假如 key 不存在，则创建一个只包含 member 元素作成员的集合。
@@ -1231,7 +1196,6 @@ public class RoutingSecooRedis implements ISecooRedis{
 	 * @param key
 	 * @param member
 	 * @return 被添加到集合中的新元素的数量，不包括被忽略的元素。
-	 * @see com.taikang.common.util.redis.secoo.common.redis.ISecooRedis#sadd(String, String[])
 	 */
 	public Long sadd(String key, String... member) {
 		Long l = null;
@@ -1256,14 +1220,13 @@ public class RoutingSecooRedis implements ISecooRedis{
 		return l;
 	}
 
-	
+
 	/**
 	 * 返回集合 key 的基数(集合中元素的数量)。
 	 * <P>Author : zouzhihua </P>.
 	 * <P>Date : 2013-2-1 </P>
 	 * @param key
 	 * @return
-	 * @see com.taikang.common.util.redis.secoo.common.redis.ISecooRedis#scard(String)
 	 */
 	public Long scard(String key) {
 		Long l = null;
@@ -1285,7 +1248,7 @@ public class RoutingSecooRedis implements ISecooRedis{
 		}
 		return l;
 	}
-	
+
 	/**
 	 * 将字符串值 value 关联到 key 。
 	 * 如果 key 已经持有其他值， SET 就覆写旧值，无视类型。
@@ -1294,7 +1257,6 @@ public class RoutingSecooRedis implements ISecooRedis{
 	 * @param key
 	 * @param value
 	 * @return 总是返回 OK ，因为 SET 不可能失败。
-	 * @see com.taikang.common.util.redis.secoo.common.redis.ISecooRedis#set(String, String)
 	 */
 	public String set(String key, String value) {
 		String l = null;
@@ -1319,7 +1281,7 @@ public class RoutingSecooRedis implements ISecooRedis{
 		return l;
 	}
 
-	
+
 	/**
 	 * 对 key 所储存的字符串值，设置或清除指定偏移量上的位(bit)。
 	 * 位的设置或清除取决于 value 参数，可以是 0 也可以是 1 。
@@ -1332,7 +1294,6 @@ public class RoutingSecooRedis implements ISecooRedis{
 	 * @param offset
 	 * @param value
 	 * @return 指定偏移量原来储存的位
-	 * @see com.taikang.common.util.redis.secoo.common.redis.ISecooRedis#setbit(String, long, boolean)
 	 */
 	public Boolean setbit(String key, long offset, boolean value) {
 		Boolean l = null;
@@ -1357,7 +1318,7 @@ public class RoutingSecooRedis implements ISecooRedis{
 		return l;
 	}
 
-	
+
 	/**
 	 * 将值 value 关联到 key ，并将 key 的生存时间设为 seconds (以秒为单位)。
 	 * 如果 key 已经存在， SETEX 命令将覆写旧值。
@@ -1368,7 +1329,6 @@ public class RoutingSecooRedis implements ISecooRedis{
 	 * @param value
 	 * @return 设置成功时返回 OK 。
 	 		        当 seconds 参数不合法时，返回一个错误。
-	 * @see com.taikang.common.util.redis.secoo.common.redis.ISecooRedis#setex(String, int, String)
 	 */
 	public String setex(String key, int seconds, String value) {
 		String l = null;
@@ -1402,7 +1362,6 @@ public class RoutingSecooRedis implements ISecooRedis{
 	 * @param value
 	 * @return 设置成功，返回 1 。
 			        设置失败，返回 0 。
-	 * @see com.taikang.common.util.redis.secoo.common.redis.ISecooRedis#setnx(String, String)
 	 */
 	public Long setnx(String key, String value) {
 		Long l = null;
@@ -1427,7 +1386,7 @@ public class RoutingSecooRedis implements ISecooRedis{
 		return l;
 	}
 
-	
+
 	/**
 	 * 用 value 参数覆写(overwrite)给定 key 所储存的字符串值，从偏移量 offset 开始。
 	 * 不存在的 key 当作空白字符串处理。
@@ -1437,7 +1396,6 @@ public class RoutingSecooRedis implements ISecooRedis{
 	 * @param offset
 	 * @param value
 	 * @return 被 SETRANGE 修改之后，字符串的长度。
-	 * @see com.taikang.common.util.redis.secoo.common.redis.ISecooRedis#setrange(String, long, String)
 	 */
 	public Long setrange(String key, long offset, String value) {
 		Long l = null;
@@ -1470,7 +1428,6 @@ public class RoutingSecooRedis implements ISecooRedis{
 	 * @param member
 	 * @return 如果 member 元素是集合的成员，返回 1 。
 			        如果 member 元素不是集合的成员，或 key 不存在，返回 0 。
-	 * @see com.taikang.common.util.redis.secoo.common.redis.ISecooRedis#sismember(String, String)
 	 */
 	public Boolean sismember(String key, String member) {
 		Boolean l = null;
@@ -1493,7 +1450,7 @@ public class RoutingSecooRedis implements ISecooRedis{
 		return l;
 	}
 
-	
+
 	/**
 	 * 返回集合 key 中的所有成员。
 	 * 不存在的 key 被视为空集合。
@@ -1501,7 +1458,6 @@ public class RoutingSecooRedis implements ISecooRedis{
 	 * <P>Date : 2013-2-1 </P>
 	 * @param key
 	 * @return 集合中的所有成员。
-	 * @see com.taikang.common.util.redis.secoo.common.redis.ISecooRedis#smembers(String)
 	 */
 	public Set<String> smembers(String key) {
 		Set<String> l = null;
@@ -1510,7 +1466,7 @@ public class RoutingSecooRedis implements ISecooRedis{
 		try {
 			jedis = pool.getResource();
 			l = jedis.smembers(key);
-			
+
 		} catch (Exception e) {
 			e.printStackTrace();
 		}finally{
@@ -1532,7 +1488,6 @@ public class RoutingSecooRedis implements ISecooRedis{
 	 * <P>Date : 2013-2-1 </P>
 	 * @param key
 	 * @return
-	 * @see com.taikang.common.util.redis.secoo.common.redis.ISecooRedis#sort(String)
 	 */
 	public List<String> sort(String key) {
 		List<String> l = null;
@@ -1555,7 +1510,7 @@ public class RoutingSecooRedis implements ISecooRedis{
 		return l;
 	}
 
-	
+
 	/**
 	 * 返回或保存给定列表、集合、有序集合 key 中经过排序的元素。
 	 * 排序默认以数字作为对象，值被解释为双精度浮点数，然后进行比较。
@@ -1564,7 +1519,6 @@ public class RoutingSecooRedis implements ISecooRedis{
 	 * @param key
 	 * @param param
 	 * @return
-	 * @see com.taikang.common.util.redis.secoo.common.redis.ISecooRedis#sort(String, SortingParams)
 	 */
 	public List<String> sort(String key, SortingParams param) {
 		List<String> l = null;
@@ -1589,7 +1543,7 @@ public class RoutingSecooRedis implements ISecooRedis{
 		return l;
 	}
 
-	
+
 	/***************************************************************************
 	 * 多机无法实现此操作，会操成操作不一至。
 	 */
@@ -1603,7 +1557,6 @@ public class RoutingSecooRedis implements ISecooRedis{
 	 * <P>Date : 2013-2-1 </P>
 	 * @param key
 	 * @return
-	 * @see com.taikang.common.util.redis.secoo.common.redis.ISecooRedis#srandmember(String)
 	 */
 	public String srandmember(String key) {
 		String l = null;
@@ -1626,7 +1579,7 @@ public class RoutingSecooRedis implements ISecooRedis{
 		return l;
 	}
 
-	
+
 	/**
 	 * 移除集合 key 中的一个或多个 member 元素，不存在的 member 元素会被忽略。
 	 * 当 key 不是集合类型，返回一个错误。
@@ -1635,7 +1588,6 @@ public class RoutingSecooRedis implements ISecooRedis{
 	 * @param key
 	 * @param member
 	 * @return 被成功移除的元素的数量，不包括被忽略的元素。
-	 * @see com.taikang.common.util.redis.secoo.common.redis.ISecooRedis#srem(String, String[])
 	 */
 	public Long srem(String key, String... member) {
 		Long l = null;
@@ -1660,7 +1612,7 @@ public class RoutingSecooRedis implements ISecooRedis{
 		return l;
 	}
 
-	
+
 	/**
 	 * 以秒为单位，返回给定 key 的剩余生存时间(TTL, time to live)。
 	 * <P>Author : zouzhihua </P>.
@@ -1669,7 +1621,6 @@ public class RoutingSecooRedis implements ISecooRedis{
 	 * @return 当 key 不存在时，返回 -2 。
 				当 key 存在但没有设置剩余生存时间时，返回 -1 。
 				否则，以秒为单位，返回 key 的剩余生存时间。
-	 * @see com.taikang.common.util.redis.secoo.common.redis.ISecooRedis#ttl(String)
 	 */
 	public Long ttl(String key) {
 		Long l = null;
@@ -1692,7 +1643,7 @@ public class RoutingSecooRedis implements ISecooRedis{
 		return l;
 	}
 
-	
+
 	/**
 	 * 返回 key 所储存的值的类型。
 	 * <P>Author : zouzhihua </P>.
@@ -1705,7 +1656,7 @@ public class RoutingSecooRedis implements ISecooRedis{
 				set (集合)
 				zset (有序集)
 				hash (哈希表)
-	 * @see com.taikang.common.util.redis.secoo.common.redis.ISecooRedis#type(String)
+	 * @see
 	 */
 	public String type(String key) {
 		String l = null;
@@ -1728,7 +1679,7 @@ public class RoutingSecooRedis implements ISecooRedis{
 		return l;
 	}
 
-	
+
 	/**
 	 * 将一个或多个 member 元素及其 score 值加入到有序集 key 当中。
 	 * <P>Author : zouzhihua </P>.
@@ -1736,7 +1687,7 @@ public class RoutingSecooRedis implements ISecooRedis{
 	 * @param key
 	 * @param arg1
 	 * @return 被成功添加的新成员的数量，不包括那些被更新的、已经存在的成员。
-	 * @see com.taikang.common.util.redis.secoo.common.redis.ISecooRedis#zadd(String, Map)
+	 * @see
 	 */
 	public Long zadd(String key, Map<Double, String> arg1) {
 		Long l = null;
@@ -1745,7 +1696,7 @@ public class RoutingSecooRedis implements ISecooRedis{
 			Jedis jedis = null;
 			try {
 				jedis = pool.getResource();
-				l = jedis.zadd(key, arg1);
+//				l = jedis.zadd(key, arg1);
 			} catch (Exception e) {
 				e.printStackTrace();
 			}finally{
@@ -1761,7 +1712,7 @@ public class RoutingSecooRedis implements ISecooRedis{
 		return l;
 	}
 
-	
+
 	/**
 	 * 将一个或多个 member 元素及其 score 值加入到有序集 key 当中。
 	 * 如果某个 member 已经是有序集的成员，那么更新这个 member 的 score 值，并通过重新插入这个 member 元素，来保证该 member 在正确的位置上。
@@ -1774,7 +1725,6 @@ public class RoutingSecooRedis implements ISecooRedis{
 	 * @param score
 	 * @param member
 	 * @return 被成功添加的新成员的数量，不包括那些被更新的、已经存在的成员。
-	 * @see com.taikang.common.util.redis.secoo.common.redis.ISecooRedis#zadd(String, double, String)
 	 */
 	public Long zadd(String key, double score, String member) {
 		Long l = null;
@@ -1806,7 +1756,6 @@ public class RoutingSecooRedis implements ISecooRedis{
 	 * @param key
 	 * @return 当 key 存在且是有序集类型时，返回有序集的基数。
 				当 key 不存在时，返回 0 。
-	 * @see com.taikang.common.util.redis.secoo.common.redis.ISecooRedis#zcard(String)
 	 */
 	public Long zcard(String key) {
 		Long l = null;
@@ -1829,7 +1778,7 @@ public class RoutingSecooRedis implements ISecooRedis{
 		return l;
 	}
 
-	
+
 	/**
 	 * 返回有序集 key 中， score 值在 min 和 max 之间(默认包括 score 值等于 min 或 max )的成员的数量。
 	 * <P>Author : zouzhihua </P>.
@@ -1838,7 +1787,6 @@ public class RoutingSecooRedis implements ISecooRedis{
 	 * @param min
 	 * @param max
 	 * @return score 值在 min 和 max 之间的成员的数量。
-	 * @see com.taikang.common.util.redis.secoo.common.redis.ISecooRedis#zcount(String, double, double)
 	 */
 	public Long zcount(String key, double min, double max) {
 		Long l = null;
@@ -1864,7 +1812,7 @@ public class RoutingSecooRedis implements ISecooRedis{
 	/***************************************************************************
 	 * 返回集合中score在给定区间的数量
 	 */
-	
+
 	public Long zcount(String arg0, String arg1, String arg2) {
 		Long l = null;
 		JedisPool pool = cluster.getReadRedisPool(arg0);
@@ -1886,7 +1834,7 @@ public class RoutingSecooRedis implements ISecooRedis{
 		return l;
 	}
 
-	
+
 	/**
 	 * 为有序集 key 的成员 member 的 score 值加上增量 increment 。
 	 * 可以通过传递一个负数值 increment ，让 score 减去相应的值，比如 ZINCRBY key -5 member ，就是让 member 的 score 值减去 5 。
@@ -1899,7 +1847,6 @@ public class RoutingSecooRedis implements ISecooRedis{
 	 * @param increment
 	 * @param member
 	 * @return member 成员的新 score 值，以字符串形式表示。
-	 * @see com.taikang.common.util.redis.secoo.common.redis.ISecooRedis#zincrby(String, double, String)
 	 */
 	public Double zincrby(String key, double increment, String member) {
 		Double l = null;
@@ -1932,7 +1879,6 @@ public class RoutingSecooRedis implements ISecooRedis{
 	 * @param start
 	 * @param stop
 	 * @return 指定区间内，带有 score 值(可选)的有序集成员的列表。
-	 * @see com.taikang.common.util.redis.secoo.common.redis.ISecooRedis#zrange(String, long, long)
 	 */
 	public Set<String> zrange(String key, long start, long stop) {
 		Set<String> l = null;
@@ -1955,7 +1901,7 @@ public class RoutingSecooRedis implements ISecooRedis{
 		return l;
 	}
 
-	
+
 	/**
 	 * 返回有序集 key 中，所有 score 值介于 min 和 max 之间(包括等于 min 或 max )的成员。有序集成员按 score 值递增(从小到大)次序排列。
 	 * <P>Author : zouzhihua </P>.
@@ -1964,7 +1910,6 @@ public class RoutingSecooRedis implements ISecooRedis{
 	 * @param min
 	 * @param max
 	 * @return 指定区间内，带有 score 值(可选)的有序集成员的列表。
-	 * @see com.taikang.common.util.redis.secoo.common.redis.ISecooRedis#zrangeByScore(String, double, double)
 	 */
 	public Set<String> zrangeByScore(String key, double min, double max) {
 		Set<String> l = null;
@@ -1987,7 +1932,7 @@ public class RoutingSecooRedis implements ISecooRedis{
 		return l;
 	}
 
-	
+
 	public Set<String> zrangeByScore(String arg0, String arg1, String arg2) {
 		Set<String> l = null;
 		List<JedisPool> pools = cluster.getWriteRedisPool(arg0);
@@ -2011,7 +1956,7 @@ public class RoutingSecooRedis implements ISecooRedis{
 		return l;
 	}
 
-	
+
 	public Set<String> zrangeByScore(String arg0, double arg1, double arg2,
 			int arg3, int arg4) {
 		Set<String> l = null;
@@ -2036,7 +1981,7 @@ public class RoutingSecooRedis implements ISecooRedis{
 		return l;
 	}
 
-	
+
 	public Set<String> zrangeByScore(String arg0, String arg1, String arg2,
 			int arg3, int arg4) {
 		Set<String> l = null;
@@ -2061,7 +2006,7 @@ public class RoutingSecooRedis implements ISecooRedis{
 		return l;
 	}
 
-	
+
 	public Set<Tuple> zrangeByScoreWithScores(String arg0, double arg1,
 			double arg2) {
 		Set<Tuple> l = null;
@@ -2086,7 +2031,7 @@ public class RoutingSecooRedis implements ISecooRedis{
 		return l;
 	}
 
-	
+
 	public Set<Tuple> zrangeByScoreWithScores(String arg0, String arg1,
 			String arg2) {
 		Set<Tuple> l = null;
@@ -2111,7 +2056,7 @@ public class RoutingSecooRedis implements ISecooRedis{
 		return l;
 	}
 
-	
+
 	public Set<Tuple> zrangeByScoreWithScores(String arg0, double arg1,
 			double arg2, int arg3, int arg4) {
 		Set<Tuple> l = null;
@@ -2136,7 +2081,7 @@ public class RoutingSecooRedis implements ISecooRedis{
 		return l;
 	}
 
-	
+
 	public Set<Tuple> zrangeByScoreWithScores(String arg0, String arg1,
 			String arg2, int arg3, int arg4) {
 		Set<Tuple> l = null;
@@ -2161,7 +2106,7 @@ public class RoutingSecooRedis implements ISecooRedis{
 		return l;
 	}
 
-	
+
 	public Set<Tuple> zrangeWithScores(String arg0, long arg1, long arg2) {
 		Set<Tuple> l = null;
 		List<JedisPool> pools = cluster.getWriteRedisPool(arg0);
@@ -2185,7 +2130,7 @@ public class RoutingSecooRedis implements ISecooRedis{
 		return l;
 	}
 
-	
+
 	/***************************************************************************
 	 * 返回有序集 key 中成员 member 的排名
 	 */
@@ -2210,7 +2155,7 @@ public class RoutingSecooRedis implements ISecooRedis{
 		return l;
 	}
 
-	
+
 	public Long zrem(String arg0, String... arg1) {
 		Long l = null;
 		List<JedisPool> pools = cluster.getWriteRedisPool(arg0);
@@ -2234,7 +2179,7 @@ public class RoutingSecooRedis implements ISecooRedis{
 		return l;
 	}
 
-	
+
 	/***************************************************************************
 	 * 移除有序集 key 中，指定排名(rank)区间内的所有成员
 	 */
@@ -2261,7 +2206,7 @@ public class RoutingSecooRedis implements ISecooRedis{
 		return l;
 	}
 
-	
+
 	/***************************************************************************
 	 * 移除有序集 key 中，所有 score 值介于 min 和 max 之间(包括等于 min 或 max )的成员。
 	 */
@@ -2288,7 +2233,7 @@ public class RoutingSecooRedis implements ISecooRedis{
 		return l;
 	}
 
-	
+
 	/***************************************************************************
 	 * 移除有序集 key 中，所有 score 值介于 min 和 max 之间(包括等于 min 或 max )的成员。
 	 */
@@ -2315,7 +2260,7 @@ public class RoutingSecooRedis implements ISecooRedis{
 		return l;
 	}
 
-	
+
 	/***************************************************************************
 	 * 返回有序集 key 中，指定区间内的成员。
 	 */
@@ -2339,8 +2284,8 @@ public class RoutingSecooRedis implements ISecooRedis{
 		}
 		return l;
 	}
-	
-	
+
+
 	public Set<Tuple> zrevrangeWithScores(String key, long start, long end) {
 		Set<Tuple> l = null;
 		JedisPool pool = cluster.getReadRedisPool(key);
@@ -2362,7 +2307,7 @@ public class RoutingSecooRedis implements ISecooRedis{
 		return l;
 	}
 
-	
+
 	/***************************************************************************
 	 * 返回有序集 key 中， score 值介于 max 和 min 之间(默认包括等于 max 或 min )的所有的成员。 有序集成员按
 	 * score 值递减(从大到小)的次序排列。
@@ -2388,7 +2333,7 @@ public class RoutingSecooRedis implements ISecooRedis{
 		return l;
 	}
 
-	
+
 	/***************************************************************************
 	 * 返回有序集 key 中， score 值介于 max 和 min 之间(默认包括等于 max 或 min )的所有的成员。 有序集成员按
 	 * score 值递减(从大到小)的次序排列
@@ -2414,8 +2359,8 @@ public class RoutingSecooRedis implements ISecooRedis{
 		return l;
 	}
 
-	
-	
+
+
 	/***************************************************************************
 	 * 返回有序集 key 中， score 值介于 max 和 min 之间(默认包括等于 max 或 min )的所有的成员。 有序集成员按
 	 * score 值递减(从大到小)的次序排列
@@ -2442,7 +2387,7 @@ public class RoutingSecooRedis implements ISecooRedis{
 		return l;
 	}
 
-	
+
 	/***************************************************************************
 	 * 返回有序集 key 中， score 值介于 max 和 min 之间(默认包括等于 max 或 min )的所有的成员。 有序集成员按
 	 * score 值递减(从大到小)的次序排列
@@ -2469,7 +2414,7 @@ public class RoutingSecooRedis implements ISecooRedis{
 		return l;
 	}
 
-	
+
 	/***************************************************************************
 	 * 返回有序集 key 中成员 member 的排名。其中有序集成员按 score 值递减(从大到小)排序。 排名以 0 为底，也就是说， score
 	 * 值最大的成员排名为 0 。
@@ -2495,7 +2440,7 @@ public class RoutingSecooRedis implements ISecooRedis{
 		return l;
 	}
 
-	
+
 	/***************************************************************************
 	 * 返回有序集 key 中，成员 member 的 score 值。 如果 member 元素不是有序集 key 的成员，或 key 不存在，返回
 	 * nil
@@ -2520,7 +2465,7 @@ public class RoutingSecooRedis implements ISecooRedis{
 		}
 		return l;
 	}
-	
+
 
 
 	public Long del(String arg0) {
@@ -2545,8 +2490,8 @@ public class RoutingSecooRedis implements ISecooRedis{
 		}
 		return l;
 	}
-	
-	
+
+
 	public boolean setPipelineEx(String arg0,Map<?,?> storeMap,int seconds) {
 		boolean flag = false;
 		List<JedisPool> pools = cluster.getWriteRedisPool(arg0);
@@ -2555,7 +2500,7 @@ public class RoutingSecooRedis implements ISecooRedis{
 			try {
 				jedis = pool.getResource();
 				Pipeline pipeline = jedis.pipelined();
-				
+
 				for (Entry<?, ?> entry: storeMap.entrySet()) {
 				   Object key = entry.getKey();
 				   Object value = entry.getValue();
@@ -2578,8 +2523,8 @@ public class RoutingSecooRedis implements ISecooRedis{
 		}
 		return flag;
 	}
-	
-	
+
+
 	public List<Object>  getPipelineKeysByList(String arg0,List<String> keys){
 		List<Object> retKeys = new ArrayList<Object>();
 		List<JedisPool> pools = cluster.getWriteRedisPool(arg0);
@@ -2606,8 +2551,8 @@ public class RoutingSecooRedis implements ISecooRedis{
 		}
 		return retKeys;
 	}
-	
-	
+
+
 	/**
 	 * @param args
 	 */
@@ -2617,7 +2562,7 @@ public class RoutingSecooRedis implements ISecooRedis{
 	}
 
 	public List<String> mget(String[] keys) {
-		List<String> values = null; 
+		List<String> values = null;
 		JedisPool pool = cluster.getReadRedisPool(keys[0]);
 		Jedis jedis = null;
 		try {
@@ -2639,7 +2584,7 @@ public class RoutingSecooRedis implements ISecooRedis{
 	/**
 	 * 模糊查询key值
 	 * RoutingSecooRedis.keys()<BR>
-	 * <P>Author :  jiangnan </P>  
+	 * <P>Author :  jiangnan </P>
 	 * <P>Date : 2013-12-31 </P>
 	 * @param key
 	 * @return

@@ -11,9 +11,6 @@ import java.util.regex.Pattern;
 import javax.servlet.http.HttpServletRequest;
 
 public class HtmlMailUtil {
-	
-	
-	
 	/**
 	 * 读取文本文件到字符串
 	 * @param path

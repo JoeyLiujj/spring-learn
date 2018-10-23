@@ -21,7 +21,7 @@ import com.taikang.common.propertyUtil.TaiKangPropertyPlaceholderConfigurer;
 /**
  * redis切片集群管理
  * <P>File name : ShardJedisManager.java </P>
- * <P>Author : zouzhihua </P> 
+ * <P>Author : zouzhihua </P>
  * <P>Date : 2013-4-13 </P>
  */
 public class ShardJedisManager {
@@ -31,35 +31,35 @@ public class ShardJedisManager {
 		private static final ShardJedisManager INSTANCE = new ShardJedisManager();
 	}
 	private Map<String,ShardedJedisPool> shardedJedisPoolMap = new HashMap<String, ShardedJedisPool>();
-	
+
 	private ShardJedisManager(){
 		try {
 			initShardJedis();
 		} catch (ConfigurationException e) {
 			e.printStackTrace();
 		}
-	} 
-	
+	}
+
 	public static ShardJedisManager getInstance(){
 		return LazyHolder.INSTANCE;
 	}
 	/**
 	 * 初始化切片集群
 	 * ShardJedisManager.initShardJedis()<BR>
-	 * <P>Author : zouzhihua </P>  
+	 * <P>Author : zouzhihua </P>
 	 * <P>Date : 2013-4-13 </P>
 	 * @throws ConfigurationException
 	 */
 	private void initShardJedis() throws ConfigurationException{
 		HashMap<String,ShardedJedisPool> redisConnectionMap = new HashMap<String,ShardedJedisPool>();
-		
+
 		File directory = new File("");//设定为当前文件夹
 		XMLConfiguration routingConfig = null;
 		try{
 		    log.info(directory.getCanonicalPath());//获取标准的路径
 		    log.info(directory.getAbsolutePath());//获取绝对路径
 		}catch(IOException e){
-			
+
 		}
 		routingConfig = new XMLConfiguration(getConfigFilePath());
 		List<Object> serverNodesList = routingConfig.getList("servernode.node.id");
@@ -73,9 +73,9 @@ public class ShardJedisManager {
 			int maxWait = routingConfig.getInt("servernode.node("+clusterIndex+").maxWait",20);
 			String hosts = routingConfig.getString("servernode.node("+clusterIndex+").hosts");
 			JedisPoolConfig config = new JedisPoolConfig();
-			config.setMaxActive(maxActive);
-			config.setMaxIdle(maxIdle); 
-			config.setMaxWait(maxWait);
+//			config.setMaxActive(maxActive);
+			config.setMaxIdle(maxIdle);
+//			config.setMaxWait(maxWait);
 			config.setTestOnBorrow(false);
 			if (hosts == null) {
 				throw new ConfigurationException("RedisPool init():hosts config error!");
@@ -89,7 +89,7 @@ public class ShardJedisManager {
 					jsi = new JedisShardInfo(hostarrt[0].trim(), Integer.parseInt(hostarrt[1].trim()));
 					jedisShardInfos.add(jsi);
 				}
-				ShardedJedisPool pool = new ShardedJedisPool(config, jedisShardInfos); 
+				ShardedJedisPool pool = new ShardedJedisPool(config, jedisShardInfos);
 				redisConnectionMap.put(nodeId, pool);
 			}
 		}
@@ -98,7 +98,7 @@ public class ShardJedisManager {
 	/**
 	 * 获取某个节点的切片集群
 	 * ShardJedisManager.getShardedJedisPool()<BR>
-	 * <P>Author : zouzhihua </P>  
+	 * <P>Author : zouzhihua </P>
 	 * <P>Date : 2013-4-14 </P>
 	 * @param nodeId
 	 * @return 切片集群池
@@ -120,7 +120,7 @@ public class ShardJedisManager {
 			}else{
 				tempPath = path+"/"+CONFIG_FILE_NAME;
 			}
-			
+
 			File file = new File(tempPath);
 			if(file.exists()){
 				configPath = tempPath;
@@ -130,9 +130,9 @@ public class ShardJedisManager {
 		return configPath;
 	}
 	private boolean isWindows(){
-		String os = System.getProperty("os.name");  
-		if(os.toLowerCase().startsWith("win")){  
-		  return true;  
+		String os = System.getProperty("os.name");
+		if(os.toLowerCase().startsWith("win")){
+		  return true;
 		}
 		return false;
 	}

@@ -26,7 +26,7 @@ public class SessionManager {
 	 * 
 	 * @param request 客户端请求
 	 * @param attributeName 缓存属性的名称
-	 * @param obj 缓存属性，必须实现Serializable接口
+	 * @param 缓存属性，必须实现Serializable接口
 	 */
 	public static void setAttribute(HttpServletRequest request, String attributeName, Object attribute) {
 		setAttribute(request, attributeName, attribute, 1800);
@@ -37,7 +37,7 @@ public class SessionManager {
 	 * 
 	 * @param request 客户端请求
 	 * @param attributeName 缓存属性的名称
-	 * @param obj 缓存属性，必须实现Serializable接口
+	 * @param 缓存属性，必须实现Serializable接口
 	 */
 	public static void setAttribute(HttpServletRequest request, String attributeName, Object attribute, int s) {
 		String tkmssid = null;
@@ -122,7 +122,7 @@ public class SessionManager {
 	/**
 	 * 获取属性
 	 * 
-	 * @param request 客户端请求
+	 * @param 客户端请求
 	 * @param attributeName 缓存属性的名称
 	 * @return Object
 	 */

@@ -703,7 +703,6 @@ public class RedisManager
 
 	    /**
 	     * 锁在给定的等待时间内空闲，则获取锁成功 返回true， 否则返回false
-	     * @param lockName
 	     * @param timeout
 	     * @param unit
 	     * @return
@@ -829,8 +828,6 @@ public class RedisManager
 	    }
 	    /**
 		 * 设置set值
-		 * @param hName
-		 * @param key
 		 * @return
 		 */
 		public  Long sAddByStringKey(String sName,int expireSeconds,String... values){

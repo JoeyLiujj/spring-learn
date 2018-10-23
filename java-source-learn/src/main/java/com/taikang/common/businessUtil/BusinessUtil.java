@@ -5,8 +5,7 @@ import java.net.URLDecoder;
 import java.net.URLEncoder;
 import java.util.HashMap;
 import java.util.Map;
-
-import org.apache.log4j.Logger;
+import java.util.logging.Logger;
 
 import com.alibaba.fastjson.JSON;
 import com.taikang.common.safeUtil.Md5;
@@ -14,7 +13,7 @@ import com.taikang.utils.MemberFunc;
 
 public class BusinessUtil {
 
-	private static final Logger logger = Logger.getLogger(BusinessUtil.class);
+	private static final Logger logger = Logger.getLogger(BusinessUtil.class.getName());
 	
 	/**
 	 * 生成服务接口返回的标准json串 包含内容: 1、code:服务器状态码，200，正常

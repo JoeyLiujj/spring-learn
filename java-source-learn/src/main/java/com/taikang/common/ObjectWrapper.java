@@ -5,7 +5,7 @@ import java.io.Serializable;
 /**
  * 
  * @author wangwc11
- * @date 2016��12��1��
+ * @date 2016??12??1??
  */
 public class ObjectWrapper implements Serializable {
 	private static final long serialVersionUID = 1L;

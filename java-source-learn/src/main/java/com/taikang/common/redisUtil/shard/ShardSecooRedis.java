@@ -1648,7 +1648,7 @@ public class ShardSecooRedis implements ISecooRedis {
 		ShardedJedis jedis = null;
 		try {
 			jedis = shardedJedisPool.getResource();
-			l = jedis.zadd(key, arg1);
+//			l = jedis.zadd(key, arg1);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}finally{
