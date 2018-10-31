@@ -12,6 +12,12 @@ public class TestThreadLocal {
             return new User("Joey","1234");
         }
     };
+    private static ThreadLocal<String> tl2 = new ThreadLocal<String>(){
+        @Override
+        protected String initialValue() {
+            return "main主线程";
+        }
+    };
 
     public static void main(String[] args) throws InterruptedException {
         for (int i = 0; i < 3; i++) {
@@ -19,6 +25,7 @@ public class TestThreadLocal {
         }
         Thread.sleep(1000);
         System.out.println(Thread.currentThread().getName()+tl.get());
+        System.out.println(Thread.currentThread().getName()+tl2.get());
     }
 
     static class TestThread extends Thread{
@@ -29,7 +36,9 @@ public class TestThreadLocal {
                 user.setName(Thread.currentThread().getName());
                 user.setPassword(i+"");
                 tl.set(user);
+                tl2.set(Thread.currentThread().getName()+"---");
                 System.out.println(tl.get());
+                System.out.println(tl2.get());
             }
         }
     }

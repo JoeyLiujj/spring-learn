@@ -1,40 +1,29 @@
 package cn.joey.socket;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.PrintWriter;
+import java.io.*;
 import java.net.Socket;
 
 public class SocketClient {
     public static void main(String[] args) throws IOException {
-        Socket socket = new Socket("localhost",10000);
+        Socket socket = new Socket("localhost",10001);
 
-        BufferedReader in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
-        PrintWriter out = new PrintWriter(socket.getOutputStream());
+        BufferedWriter out = new BufferedWriter(new OutputStreamWriter(socket.getOutputStream()));
 
         BufferedReader reader= new BufferedReader(new InputStreamReader(System.in));
+        String s = reader.readLine();
+        System.out.println("客户端打印输入的值："+s);
+        out.write(s);
+        out.flush();
+        System.out.println("客户端发送结束！");
+        socket.shutdownOutput();
 
-        while(true){
-            String msg = reader.readLine();
-            out.println(msg);
-            out.flush();
 
-            System.out.println(in.readLine());
-            if (msg.equals("bye")) {
-                break;
-            }
-//            String s = in.readLine();
-//
-//            if (s.equals("Server received:bye")) {
-//                break;
-//            }else{
-//                System.out.println(s);
-//            }
+        InputStream inputStream = socket.getInputStream();
+        BufferedReader reader2 = new BufferedReader(new InputStreamReader(inputStream));
+        String s1 = reader2.readLine();
+        System.out.println("接收到服务端发送的消息："+s1);
 
-        }
-
-        socket.close();
+//        socket.close();
     }
 //    public static void main(String[] args) throws IOException {
 //        String host="127.0.0.1";

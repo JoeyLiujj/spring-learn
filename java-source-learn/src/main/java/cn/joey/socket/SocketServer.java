@@ -10,21 +10,19 @@ import java.net.Socket;
 
 public class SocketServer {
     public static void main(String[] args) throws IOException {
-        ServerSocket server = new ServerSocket(10000);
+        ServerSocket server = new ServerSocket(10001);
         Socket socket = server.accept();
         BufferedReader in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
-        PrintWriter out = new PrintWriter(socket.getOutputStream());
-        while (true) {
-            String msg = in.readLine();
-            System.out.println(msg);
-            out.print("Server received:" + msg);
-            out.flush();
-            if (msg.equals("bye")) {
-                break;
-            }
-        }
-        socket.close();
-        server.close();
+
+        String receive = in.readLine();
+        System.out.println("收到客户端的信息:"+receive);
+
+        BufferedWriter writer = new BufferedWriter(new PrintWriter(socket.getOutputStream()));
+
+        writer.write("往客户端写diamante");
+        writer.flush();
+        socket.shutdownOutput();
+
 /**
  * 本类为后续学习的基础
  */

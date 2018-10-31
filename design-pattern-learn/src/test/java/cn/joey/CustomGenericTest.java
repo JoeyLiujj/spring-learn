@@ -35,6 +35,12 @@ import java.io.IOException;
 
 public class CustomGenericTest {
 
+    /**
+     * 适配器模式，分为两种：对象适配器模式和类适配器模式
+     * 类适配器只能对单个的类进行适配，如某个类已经实现了接口，可以创建一个类，继承自该类，并实现需要的接口。
+     * 对象适配器参考，struts2、和Java的AWT中就大量使用了适配器模式。
+     * @author Joey
+     */
     @Test
     public void testAdapterPattern(){
         Targetable adapter = new Adapter();
@@ -46,7 +52,7 @@ public class CustomGenericTest {
      * 把事务和具体的实例化分开，使它们可以独立变化。例如JDBC桥DriverManager
      * JDBC提供统一接口，每个数据库提供各自的实现，用一个叫做数据库驱动的程序来桥接就行了
      * 把抽象和实现相互分离，使它们能够各自独立的变化
-     * @author Liujj
+     * @author Joey
      */
     @Test
     public void testBridgePattern(){
@@ -105,7 +111,7 @@ public class CustomGenericTest {
     /**
      * 解释器模式用来做各种各样的解释器，如正则表达式等的解释器等等
      *
-     * @author Liujj
+     * @author Joey
      */
     @Test
     public  void testInterpreterPattern(){
@@ -153,9 +159,7 @@ public class CustomGenericTest {
 
     /**
      * 只针对直接获取属性时 改变值，如果使用setXXX，则不影响克隆，对原来的对象没有影响
-     * @author Liujj
-     * @Date 2017年5月24日
-     * @time 下午5:50:39
+     * @author Joey
      */
     @Test
     public void testPrototypePattern(){
@@ -180,6 +184,11 @@ public class CustomGenericTest {
             e.printStackTrace();
         }
     }
+
+    /**
+     * 代理模式
+     * @author Joey
+     */
     @Test
     public void testProxyPattern(){
         cn.joey.proxy.Sourceable proxy = new Proxy();
@@ -207,7 +216,7 @@ public class CustomGenericTest {
      * 一个抽象类中，有一个主方法，再定义1...n个方法，可以是抽象的，也可以是实际的方法，
      * 定义一个类，继承该抽象类，重写抽象方法，通过调用抽象类，实现对子类的调用
      *
-     * @author Liujj
+     * @author Joey
      */
     @Test
     public void testTemplateMethodPattern(){
@@ -219,11 +228,9 @@ public class CustomGenericTest {
 
     /**
      * 访问者模式 使数据结构和作用于结构上的操作相解耦合
-     *  有许多对象构成、比较稳定的对象结构，这些对象的类都有一个accept方法用来接受访问者对象的访问。
-     *
-     *
+     *  有许多对象构成、比较稳定的对象结构，这些对象的类都
+     *  有一个accept方法用来接受访问者对象的访问。
      * @author Joey
-     *
      */
     @Test
     public void testVisitorPattern(){
@@ -240,12 +247,16 @@ public class CustomGenericTest {
         accountBook.show(cpa);
         accountBook.show(boss);
 
-
         ((Boss)boss).getTotalConsume();
         ((Boss)boss).getTotalIncome();
 
     }
 
+    /**
+     * 备忘录模式
+     * 类似保存游戏进度，在下一次启动时，可以从上次结束的时候重新开始
+     * @author Joey
+     */
     @Test
     public void testMemento() {
         Game game = new Game();
@@ -304,6 +315,7 @@ public class CustomGenericTest {
      * 组合多种对象形成树形结构以表示具有“整体-部分”关系的层次结构，组合模式对单个对象(即叶子节点)
      * 和组合对象(即容器对象)的使用具有一致性，组合模式又可以称为“整体-部分”模式 ，它是一种对象结构模式。
      * 在Composite中operation方法有类似递归的操作，层层调用，直到为叶子节点。
+     * @author Joey
      */
     @Test
     public void testComponentPattern() {
