@@ -10,6 +10,10 @@ import cn.joey.util.SortAlgorithm;
 import org.junit.Test;
 import sun.misc.Unsafe;
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.SequenceInputStream;
 import java.lang.reflect.Field;
 import java.lang.reflect.Proxy;
 import java.util.LinkedList;
@@ -62,6 +66,31 @@ public class CommonGenericTest {
         long nameOffset = unsafe.objectFieldOffset(User.class.getDeclaredField("name"));
         unsafe.putObject(user,nameOffset,"helloworld");
         System.out.println(user.getName());
+    }
+
+
+    @Test
+    public void test(){
+        String str = "D:\\USMSSO\\uninst.exe";
+        try {
+            FileInputStream fis = new FileInputStream(str);
+            byte[] datas = new byte[1024];
+//            while(fis.read(datas)!=-1){
+////                String s = new String(datas,"UTF-8");
+////                System.out.println(s);
+//                for(int i=0;i<datas.length;i++){
+//                    System.out.print(datas[i]);
+//                }
+//                System.out.println();
+//            }
+            SequenceInputStream sis = new SequenceInputStream(fis,fis);
+            System.out.println(sis.read());
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
     }
 
 }
