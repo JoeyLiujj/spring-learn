@@ -87,13 +87,13 @@ public class RedisManager
 //		try
 //        {
 //			//开发环境 10.137.46.7:6379
-////			String redis_ip = DbFunc.getAppConfig("service", "redis", "redis_ip");
-////			int redis_port = Integer.parseInt(DbFunc.getAppConfig("service", "redis", "redis_port"));
+////			String redis_ip = DbFunc.getAppConfig("services", "redis", "redis_ip");
+////			int redis_port = Integer.parseInt(DbFunc.getAppConfig("services", "redis", "redis_port"));
 ////			pool = new JedisPool(new JedisPoolConfig(),redis_ip,redis_port);
 //			
 //			//读取配置表，IP与端口要一一对应，顺序一致，使用“,”分割
-////			String[] ips = DbFunc.getAppConfig("service", "redis", "redis_ip").split(",");
-////			String[] ports = DbFunc.getAppConfig("service", "redis", "redis_port").split(",");
+////			String[] ips = DbFunc.getAppConfig("services", "redis", "redis_ip").split(",");
+////			String[] ports = DbFunc.getAppConfig("services", "redis", "redis_port").split(",");
 //			String[] ips = {"10.137.46.7"};
 //			String[] ports = {"6379"};
 //			

@@ -6,6 +6,7 @@ public class Semap implements Runnable {
     Semaphore semaphore = new Semaphore(1);
     @Override
     public void run() {
+        int a==0;
         try {
             System.out.println(Thread.currentThread().getName() + "---请求资源");
             semaphore.acquire();

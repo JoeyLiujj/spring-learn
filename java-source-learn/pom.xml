@@ -85,6 +85,13 @@
             <systemPath>${basedir}/lib/toolkit.jar</systemPath>
         </dependency>
         <dependency>
+            <groupId>org.apache</groupId>
+            <artifactId>bootstrap</artifactId>
+            <version>1.0</version>
+            <scope>system</scope>
+            <systemPath>${basedir}/lib/bootstrap.jar</systemPath>
+        </dependency>
+        <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-lang3</artifactId>
             <version>RELEASE</version>
