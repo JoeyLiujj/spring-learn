@@ -8,49 +8,8 @@
   <component name="ChangeListManager">
     <list id="19cfe12e-bf36-4de5-b09c-505bf42feefe" name="Defaulte" comment="Defaulte" />
     <list default="true" id="41c07dcd-3989-418a-aea2-5a25fecdd483" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/java-source-learn/src/main/java/cn/joey/thread/TestVolatile.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/mybatis-learn/target/classes/cn/joey/Test.class" afterPath="$PROJECT_DIR$/mybatis-learn/target/classes/cn/joey/Test.class" />
-      <change beforePath="$PROJECT_DIR$/mybatis-learn/target/classes/cn/joey/User.class" afterPath="$PROJECT_DIR$/mybatis-learn/target/classes/cn/joey/User.class" />
-      <change beforePath="$PROJECT_DIR$/mybatis-learn/target/classes/conf.xml" afterPath="$PROJECT_DIR$/mybatis-learn/target/classes/conf.xml" />
-      <change beforePath="$PROJECT_DIR$/mybatis-learn/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/mybatis-learn/target/maven-archiver/pom.properties" />
-      <change beforePath="$PROJECT_DIR$/mybatis-learn/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/mybatis-learn/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
-      <change beforePath="$PROJECT_DIR$/mybatis-learn/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/mybatis-learn/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
-      <change beforePath="$PROJECT_DIR$/mybatis-learn/target/mybatis-learn-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/mybatis-learn/target/mybatis-learn-1.0-SNAPSHOT.jar" />
-      <change beforePath="$PROJECT_DIR$/spring-mvc-learn/target/classes/cn/joey/ContentTypeDemo.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-mvc-learn/target/classes/cn/joey/FileUploadController.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-mvc-learn/target/classes/cn/joey/I18nController.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-mvc-learn/target/classes/cn/joey/RequestParamExampleController.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-mvc-learn/target/classes/cn/joey/interceptor/HandlerInterceptor1.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-mvc-learn/target/classes/cn/joey/interceptor/HandlerInterceptor2.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-mvc-learn/target/classes/cn/joey/interceptor/HandlerInterceptor3.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-mvc-learn/target/classes/cn/joey/interceptor/HandlerInterceptor4.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-mvc-learn/target/classes/cn/joey/interceptor/LoginMonitorInterceptor.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-mvc-learn/target/classes/cn/joey/interceptor/TestController.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-mvc-learn/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/spring-mvc-learn/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
-      <change beforePath="$PROJECT_DIR$/spring-mvc-learn/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/spring-mvc-learn/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
-      <change beforePath="$PROJECT_DIR$/spring-mvc-learn/target/spring-mvc-learn-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/spring-mvc-learn/target/spring-mvc-learn-1.0-SNAPSHOT.jar" />
-      <change beforePath="$PROJECT_DIR$/spring-source-learn/target/classes/applicationContext.xml" afterPath="$PROJECT_DIR$/spring-source-learn/target/classes/applicationContext.xml" />
-      <change beforePath="$PROJECT_DIR$/spring-source-learn/target/classes/cn/joey/aop/AnnotationAspectJ.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-source-learn/target/classes/cn/joey/aop/AspectJExpression.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-source-learn/target/classes/cn/joey/aop/CustomAnnotation.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-source-learn/target/classes/cn/joey/aop/FileLog.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-source-learn/target/classes/cn/joey/aop/Log.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-source-learn/target/classes/cn/joey/aop/LogAspect.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-source-learn/target/classes/cn/joey/aop/PuchaseService.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-source-learn/target/classes/cn/joey/aop/UserService.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-source-learn/target/classes/cn/joey/aop/UserServiceImpl.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spring-source-learn/target/classes/logAspect.xml" afterPath="$PROJECT_DIR$/spring-source-learn/target/classes/logAspect.xml" />
-      <change beforePath="$PROJECT_DIR$/spring-source-learn/target/classes/testAspectJExpression.xml" afterPath="$PROJECT_DIR$/spring-source-learn/target/classes/testAspectJExpression.xml" />
-      <change beforePath="$PROJECT_DIR$/spring-source-learn/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/spring-source-learn/target/maven-archiver/pom.properties" />
-      <change beforePath="$PROJECT_DIR$/spring-source-learn/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/spring-source-learn/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
-      <change beforePath="$PROJECT_DIR$/spring-source-learn/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/spring-source-learn/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
-      <change beforePath="$PROJECT_DIR$/spring-source-learn/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterPath="$PROJECT_DIR$/spring-source-learn/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" />
-      <change beforePath="$PROJECT_DIR$/spring-source-learn/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="$PROJECT_DIR$/spring-source-learn/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" />
-      <change beforePath="$PROJECT_DIR$/spring-source-learn/target/spring-source-learn-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/spring-source-learn/target/spring-source-learn-1.0-SNAPSHOT.jar" />
-      <change beforePath="$PROJECT_DIR$/spring-source-learn/target/test-classes/cn/joey/aop/CustomGenericTest.class" afterPath="$PROJECT_DIR$/spring-source-learn/target/test-classes/cn/joey/aop/CustomGenericTest.class" />
-      <change beforePath="$PROJECT_DIR$/spring-source-learn/target/test-classes/cn/joey/expression/TestExpression$1.class" afterPath="$PROJECT_DIR$/spring-source-learn/target/test-classes/cn/joey/expression/TestExpression$1.class" />
-      <change beforePath="$PROJECT_DIR$/spring-source-learn/target/test-classes/cn/joey/expression/TestExpression.class" afterPath="$PROJECT_DIR$/spring-source-learn/target/test-classes/cn/joey/expression/TestExpression.class" />
-      <change beforePath="$PROJECT_DIR$/spring-source-learn/target/test-classes/cn/joey/mongo/TestMongoConnection.class" afterPath="$PROJECT_DIR$/spring-source-learn/target/test-classes/cn/joey/mongo/TestMongoConnection.class" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/spring-mvc-learn/target/" />
@@ -69,7 +28,28 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="TestVolatile.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/java-source-learn/src/main/java/cn/joey/thread/TestVolatile.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="11" column="29" lean-forward="false" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -146,6 +126,7 @@
         <option value="$PROJECT_DIR$/spring-mvc-learn/src/main/webapp/jsp/test.jsp" />
         <option value="$PROJECT_DIR$/spring-mvc-learn/src/main/webapp/jsp/error.jsp" />
         <option value="$PROJECT_DIR$/spring-mvc-learn/src/main/webapp/index.jsp" />
+        <option value="$PROJECT_DIR$/java-source-learn/src/main/java/cn/joey/thread/TestVolatile.java" />
       </list>
     </option>
   </component>
@@ -718,13 +699,32 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Tomcat Server.Tomcat">
+  <component name="RunManager" selected="Application.TestVolatile">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
       <option name="HEIGHT" value="300" />
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <module />
+    </configuration>
+    <configuration name="TestVolatile" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="cn.joey.thread.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="cn.joey.thread.TestVolatile" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="java-source-learn" />
+      <envs />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
@@ -739,31 +739,6 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="" />
       <envs />
-    </configuration>
-    <configuration name="CustomGenericTest.testAdapterPattern" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="cn.joey.mvc.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="GOFDesignPattern-learn" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="cn.joey" />
-      <option name="MAIN_CLASS_NAME" value="cn.joey.CustomGenericTest" />
-      <option name="METHOD_NAME" value="testAdapterPattern" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
     </configuration>
     <configuration name="CustomGenericTest.testAspectJExpression" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
@@ -1129,19 +1104,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Tomcat Server.Tomcat" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.CustomGenericTest.testAdapterPattern" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.CustomGenericTest.testBridgePattern" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.CustomGenericTest.testChainPattern" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.CustomGenericTest.testCommandPattern" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.CustomGenericTest.testAspectJExpression" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.CustomGenericTest.testBridgePattern" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.CustomGenericTest.testChainPattern" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.CustomGenericTest.testCommandPattern" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.CustomGenericTest.testAspectJExpression" />
+      <item index="5" class="java.lang.String" itemvalue="Application.TestVolatile" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.CustomGenericTest.testAspectJExpression" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.CustomGenericTest.testCommandPattern" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.CustomGenericTest.testChainPattern" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.CustomGenericTest.testBridgePattern" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.CustomGenericTest.testAdapterPattern" />
+        <item index="0" class="java.lang.String" itemvalue="Application.TestVolatile" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.CustomGenericTest.testAspectJExpression" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.CustomGenericTest.testCommandPattern" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.CustomGenericTest.testChainPattern" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.CustomGenericTest.testBridgePattern" />
       </list>
     </recent_temporary>
   </component>
@@ -1164,7 +1139,7 @@
       <updated>1528424668989</updated>
       <workItem from="1528424670272" duration="634000" />
       <workItem from="1528426157064" duration="22069000" />
-      <workItem from="1542282780392" duration="6982000" />
+      <workItem from="1542282780392" duration="7641000" />
     </task>
     <task id="LOCAL-00001" summary="2">
       <created>1528425257537</created>
@@ -1250,7 +1225,14 @@
       <option name="project" value="LOCAL" />
       <updated>1528461892912</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Merge branch 'master' of https://github.com/JoeyLiujj/spring-learn&#10;&#10;# Conflicts:&#10;#&#9;.gitignore&#10;#&#9;mybatis-learn/pom.xml&#10;#&#9;mybatis-learn/src/main/resources/conf.xml&#10;#&#9;pom.xml&#10;#&#9;spring-mvc-learn/pom.xml&#10;#&#9;spring-mvc-learn/src/main/java/cn/joey/mvc/ContentTypeDemo.java&#10;#&#9;spring-mvc-learn/src/main/java/cn/joey/mvc/FileUploadController.java&#10;#&#9;spring-mvc-learn/src/main/java/cn/joey/mvc/I18uController.java&#10;#&#9;spring-mvc-learn/src/main/java/cn/joey/mvc/RequestParamExampleController.java&#10;#&#9;spring-mvc-learn/src/main/java/cn/joey/mvc/UserController.java&#10;#&#9;spring-mvc-learn/src/main/java/cn/joey/mvc/interceptor/TestController.java&#10;#&#9;spring-mvc-learn/src/main/java/cn/joey/mvc/validator/Items.java&#10;#&#9;spring-mvc-learn/src/main/java/cn/joey/mvc/validator/ItemsCustom.java&#10;#&#9;spring-mvc-learn/src/main/java/cn/joey/mvc/validator/JsonController.java&#10;#&#9;spring-mvc-learn/src/main/resources/annotationConfig-servlet.xml&#10;#&#9;spring-mvc-learn/src/main/resources/messages_en_US.properties&#10;#&#9;spring-mvc-learn/src/main/resources/messages_zh_CN.properties&#10;#&#9;spring-mvc-learn/src/main/webapp/WEB-INF/web.xml&#10;#&#9;spring-mvc-learn/src/main/webapp/index.jsp&#10;#&#9;spring-mvc-learn/src/main/webapp/jsp/error.jsp&#10;#&#9;spring-mvc-learn/src/main/webapp/jsp/requestPath.jsp&#10;#&#9;spring-mvc-learn/src/main/webapp/jsp/test.jsp&#10;#&#9;spring-source-learn/src/main/resources/applicationContext.xml&#10;#&#9;spring-source-learn/src/test/java/cn/joey/aop/CustomGenericTest.java&#10;#&#9;spring-source-learn/src/test/java/cn/joey/common/ExternalizableTest.java&#10;#&#9;spring-source-learn/src/test/java/cn/joey/expression/TestExpression.java&#10;#&#9;spring-source-learn/src/test/java/cn/joey/mongo/TestMongoConnection.java">
+      <created>1542294250052</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1542294250052</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1271,7 +1253,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31079000" />
+    <option name="totallyTimeSpent" value="31738000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1284,6 +1266,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296355" sideWeight="0.65373355" order="14" side_tool="true" content_ui="tabs" />
@@ -1303,10 +1286,10 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32171157" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30110934" sideWeight="0.49707174" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30110934" sideWeight="0.49707174" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24377745" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24377745" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32857144" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1380,13 +1363,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.0.4.RELEASE/spring-context-5.0.4.RELEASE-sources.jar!/org/springframework/context/support/MessageSourceResourceBundle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="74" column="21" lean-forward="false" selection-start-line="74" selection-start-column="21" selection-end-line="74" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://D:/Java/jdk1.8.0_121/src.zip!/java/util/ResourceBundle.java" />
     <entry file="file://$PROJECT_DIR$/spring-mvc-learn/src/main/java/cn/joey/mvc/interceptor/HandlerInterceptor4.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1718,14 +1694,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-5671">
@@ -1739,7 +1707,7 @@
         <state relative-caret-position="124">
           <caret line="74" column="4" lean-forward="false" selection-start-line="74" selection-start-column="4" selection-end-line="74" selection-end-column="4" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="n#!!doc" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1788,6 +1756,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="15" column="9" lean-forward="false" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java-source-learn/src/main/java/cn/joey/thread/TestVolatile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="11" column="29" lean-forward="false" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
