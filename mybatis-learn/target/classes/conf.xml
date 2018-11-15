@@ -1,20 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" 
 "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
 <configuration>
+	<properties>
+		<property name="url" value="jdbc:mysql://cloud.sinosoft-open.com:3306/ics_cbs_calengine"/>
+	</properties>
 	<environments default="development">
 		<environment id="development">
 			<transactionManager type="JDBC" />
 			<dataSource type="POOLED">
-				<property name="driver" value="oracle.jdbc.OracleDriver" />
-				<property name="url" value="jdbc:oracle:thin:@192.168.1.249:1521:orcl" />
-				<property name="username" value="tongchou" />
-				<property name="password" value="tongchoupwd" />
+				<property name="driver" value="com.mysql.jdbc.Driver" />
+				<property name="url" value="${url}" />
+				<property name="username" value="ics_cbs_calengine" />
+				<property name="password" value="ics_cbs_calengine" />
 			</dataSource>
 		</environment>
 	</environments>
 	<mappers>
-		<mapper resource="userMapper.xml"></mapper>
+		<mapper resource="mapper.xml"></mapper>
 	</mappers>
 	<!--
 	<settings>

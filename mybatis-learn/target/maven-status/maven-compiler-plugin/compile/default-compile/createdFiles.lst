@@ -1,2 +1,6 @@
-cn\joey\User.class
+cn\joey\dao\RiskExpressionRefDAO.class
 cn\joey\Test.class
+cn\joey\annotation\MyBatisRepository.class
+cn\joey\mapper\RiskExpressionRefMapper.class
+cn\joey\User.class
+cn\joey\entity\RiskExpressionRef.class
