@@ -12,7 +12,7 @@ public class TestController implements Controller {
 	public ModelAndView handleRequest(HttpServletRequest request,
 			HttpServletResponse response) throws Exception {
 		System.out.println("Test Controller");
-		return new ModelAndView("test");
+		return new ModelAndView("profile.jsp");
 	}
 
 }

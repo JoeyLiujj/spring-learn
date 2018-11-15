@@ -39,7 +39,7 @@ public class UserController {
         mv.addObject("photoName", photoName);
         mv.addObject("photo", photo);
         mv.addObject("addUser", addUser);
-        mv.setViewName("i18u");
+        mv.setViewName("i18u.jsp");
         return mv;
     }
 }

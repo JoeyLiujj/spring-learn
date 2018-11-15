@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<!--不转义，就应该显示一个大标题-->
+将后台传入的文本转义：<div th:utext="${hello}">默认值</div>
+直接后台传入的文本：<div th:text="${hello}">默认值</div>
+<div th:text="${user.username}">默认值:赵四</div>
+<div th:text="${user.password}">默认值:1q2w3e4r</div>
+<div th:src="@{/hello.html}">不明白此处是何意</div>
+    <hr/>
+    <!--使用th:each 标签  遍历user  变量名是u
+    th:each 写在哪个标签里面，每次遍历的时候这个标签都会生成一个
+    下面这个就会生成2个h4标签    科比 湖人
+    -->
+<h4 th:text="${u}" th:each="u:${user.username}"></h4>
+</body>
+</html>

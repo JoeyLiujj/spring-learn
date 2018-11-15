@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=gbk"/>
+    <title>Title</title>
+</head>
+<body>
+<h1>成功</h1>
+<hr/>
+<div th:text="${hello}"></div>
+<!--不转义，就应该显示一个大标题-->
+<div th:text="${name}"></div>
+<hr/>
+<!--使用th:each 标签  遍历user  变量名是u
+th:each 写在哪个标签里面，每次遍历的时候这个标签都会生成一个
+下面这个就会生成2个h4标签    科比 湖人
+-->
+</body>
+</html>

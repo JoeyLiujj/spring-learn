@@ -1,17 +1,22 @@
 package cn.joey.mvc.validator;
 
-import cn.joey.mvc.validator.ItemsCustom;
-import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.RequestParam;
 
-@RestController
+@Controller
 public class JsonController {
 
-    @RequestMapping("/requestJson")
-    public @ResponseBody
-    ItemsCustom requestJson(@RequestBody  ItemsCustom itemsCustom){
-        return itemsCustom;
+    @RequestMapping("/dataBind")
+    public String requestJson(ItemsCustom itemsCustom, Model model,@RequestParam(defaultValue = "#{systemProperties['java.vm.version']}") String version){
+        model.addAttribute("name", itemsCustom.getName());
+        model.addAttribute("price", itemsCustom.getPrice());
+        model.addAttribute("list",itemsCustom.getList());
+        model.addAttribute("date",itemsCustom.getDate());
+        model.addAttribute("item",itemsCustom.getItem());
+        model.addAttribute("map",itemsCustom.getMap());
+        model.addAttribute("version",version);
+        return "binding.jsp";
     }
 }

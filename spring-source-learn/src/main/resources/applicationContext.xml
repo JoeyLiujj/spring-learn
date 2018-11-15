@@ -14,7 +14,7 @@
     -->
     <aop:config>
         <!--切入点，需要告诉方法在什么去执行
-            expression="execution(* com.spring.service.impl.*.*(..))"
+            expression="execution(* com.spring.services.impl.*.*(..))"
             第一个* 表示所有的返回值，然后就是包名
             第二个*表示所有的类对象
             第三个*表示类对象所有的方法

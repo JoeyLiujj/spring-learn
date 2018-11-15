@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="myDataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
+        <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
+        <property name="url" value="jdbc:mysql://cloud.sinosoft-open.com:3306/ics_cbs_calengine"/>
+        <property name="username" value="ics_cbs_calengine"/>
+        <property name="password" value="ics_cbs_calengine"/>
+    </bean>
+    <!--生成SqlSessionFactory对象-->
+    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <property name="dataSource" ref="myDataSource"/>
+        <property name="mapperLocations" value="classpath:cn/joey/entity/RiskExpressionRefMapper.xml"/>
+    </bean>
+    <!-- 按指定包和注解标记扫描Mapper -->
+    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        <property name="basePackage" value="cn.joey"/>
+        <property name="annotationClass" value="cn.joey.annotation.MyBatisRepository"/>
+    </bean>
+
+</beans>

@@ -15,7 +15,7 @@ public class RequestParamExampleController {
     @RequestMapping(method= RequestMethod.GET)
     public String sayHello(ModelMap model){
         model.addAttribute("greeting","Hello World from Spring 4 MVC");
-        return "welcome";
+        return "welcome.jsp";
     }
     @RequestMapping(value = "/user")
     public String userInfo(Model model, @RequestParam(value = "name",defaultValue = "Guest") String name){
@@ -25,7 +25,7 @@ public class RequestParamExampleController {
         }else{
             model.addAttribute("email","Not set");
         }
-        return "userInfo";
+        return "userInfo.jsp";
     }
 
 }

@@ -6,7 +6,8 @@ import cn.joey.aop.introduction.Intelligent;
 import cn.joey.aop.introduction.Seller;
 import cn.joey.aop.introduction.Waiter;
 import cn.joey.aop.xmlconfig.UserService;
-import cn.joey.util.SortAlgorithm;
+import com.fasterxml.jackson.databind.ObjectReader;
+import org.junit.Before;
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -17,27 +18,16 @@ import org.springframework.expression.spel.support.StandardEvaluationContext;
 import org.springframework.util.ClassUtils;
 import org.springframework.util.ResourceUtils;
 
-import java.io.IOException;
-import java.io.InputStream;
+import java.io.*;
 import java.net.URL;
 import java.net.URLConnection;
-import java.util.Enumeration;
-import java.util.Properties;
+import java.util.*;
 
 public class CustomGenericTest {
 
     @Test
     public void testSpEL() {
         System.out.println("can used");
-    }
-
-    @Test
-    public void testSortAlgorithm() {
-        int arr[] = {3, 534, 2, 3, 43, 54, 2123, 43};
-        SortAlgorithm.bubbleSort(arr);
-        for (int i = 0; i < arr.length; i++) {
-            System.out.println(arr[i] + "->");
-        }
     }
 
     @Test
@@ -99,11 +89,13 @@ public class CustomGenericTest {
 
     @Test
     public void testSpelFunction() {
-//        String expression = "1 == 1  and ((0 == 0 and 2 != 1 and 2 != 8 and 2 != 'a') or ('1' == '1' and '1' == '1')) and 0 == 0 and 30 >= 0  and 30 <= 40";
-        String expression = "(1+2) ";
+        String expression = "#conttype == '1' and ((#stateflag == '0' and #uwflag != '1' and #uwflag != '8' and #uwflag != 'a') or (#appflag == '1' and #stateflag == '1'))";
         ExpressionParser parser = new SpelExpressionParser();
         StandardEvaluationContext context = new StandardEvaluationContext();
-//        context.setVariable("a","1");
+        context.setVariable("contType", "1");
+        context.setVariable("stateFlag", "0");
+        context.setVariable("uwFlag", "1");
+        context.setVariable("appFlag", "100");
         Expression exp = parser.parseExpression(expression);
         Object value = exp.getValue(context);
         System.out.println(value);
@@ -138,4 +130,33 @@ public class CustomGenericTest {
         Seller seller = (Seller) waiter;
         seller.sell("水军", "Java3y");
     }
+
+    @Before
+    public void before() {
+        System.out.println("测试之前执行");
+    }
+
+
+    @Test
+    public void test(){
+        String fileName = "C:\\Users\\liujiji\\Desktop\\11111.txt";
+        FileReader raf;
+        ObjectReader reader;
+        try {
+            BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream(fileName)));
+            String info;
+            while ((info=br.readLine())!=null) {
+//                System.out.println("select * from ljspayperson where shardingid in("+info+");");
+                System.out.println("select * from ljspay where shardingid in("+info+");");
+//                System.out.println("delete from ljspay where shardingid in("+info+");");
+//                System.out.println("delete from ljspayperson where shardingid in("+info+");");
+            }
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+
 }

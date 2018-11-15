@@ -6,7 +6,14 @@
         http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd
         http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.3.xsd">
 	<context:component-scan base-package="cn.joey"/>
-	<!--<mvc:annotation-driven/>-->
+	<mvc:annotation-driven conversion-service="conversionService"/>
+	<bean id="conversionService" class="org.springframework.format.support.FormattingConversionServiceFactoryBean">
+		<property name="converters">
+			<list>
+				<bean class="cn.joey.mvc.converter.CustomDateConverter"/>
+			</list>
+		</property>
+	</bean>
 	<!-- 当在web.xml中DispatcherServlet使用<url-pattern></url-pattern> 映射时，能映射静态资源（当Spring 
 		web MVC框架没有处理请求对应的控制器时，转交给默认的servlet来响应静态文件， 否则报404找不到资源错误） -->
 	<!--<mvc:default-servlet-handler/>-->

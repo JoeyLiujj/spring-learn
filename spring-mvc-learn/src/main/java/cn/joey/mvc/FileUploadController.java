@@ -39,7 +39,7 @@ public class FileUploadController {
         model.addAttribute("remoteAddr",request.getRemoteAddr());
         model.addAttribute("remoteHost",request.getRemoteHost());
         model.addAttribute("remotePort",request.getRemotePort());
-        return "requestPath";
+        return "requestPath.jsp";
     }
 
 
@@ -74,6 +74,7 @@ public class FileUploadController {
             }
         }
         model.addAttribute("uploadFiles", uploadFiles);
-        return "uploadResult";
+
+        return "uploadResult.jsp";
     }
 }

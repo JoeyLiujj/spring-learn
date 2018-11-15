@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 动态Sql-->
+<mapper namespace = "cn.joey.mapper.RiskExpressionRefMapper">
+    <select id="findAll" resultType="cn.joey.entity.RiskExpressionRef">
+        select * from riskexpressionref
+        <!--where riskcode ='123701'/* where字句也可以变成标签的形式<where></where>*/-->
+        <where>
+            <if test="calcode != null">
+                calcode like #{calcode}
+            </if>
+            <choose>
+                <when test="calcode !=null">
+                    and calcode like #{calcode} /*会自动将前面的and关键字去掉*/
+                </when>
+                <when test="state!=null">
+                  and state = 1
+                </when>
+                <otherwise>
+                    and acctype = 'H'
+                </otherwise>
+            </choose>
+        </where>
+    </select>
+    <!--foreach的使用，可以用来遍历一个List或set，以及一个Map集合(其中item是value，index是key)-->
+    <select id="selectAll" resultType="cn.joey.entity.RiskExpressionRef">
+        select * from riskexpressionref
+        where calcode in
+        <foreach collection="list" item="item" index="index" open="(" close=")" separator=",">
+            #{item}
+        </foreach>
+    </select>
+
+    <!--根据不同的数据库厂商构建特定的语句-->
+    <insert id="insert">
+        <selectKey keyProperty="id" resultType="int" order="BEFORE">
+            <if test="_databaseId == 'oracle'">
+                select seq_users.nextval from dual
+            </if>
+            <if test="_databaseId == 'db2'">
+                select nextval for seq_users from sysibm.sysdummy1
+            </if>
+        </selectKey>
+        insert into users values (#{id}, #{name})
+    </insert>
+
+</mapper>

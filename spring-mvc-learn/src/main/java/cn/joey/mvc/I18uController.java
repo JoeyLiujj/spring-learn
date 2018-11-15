@@ -8,7 +8,8 @@ import org.springframework.web.servlet.ModelAndView;
 public class I18uController {
     @RequestMapping(value = "/hello")
     public ModelAndView welcome(){
-        ModelAndView modelAndView = new ModelAndView("welcome");
+
+        ModelAndView modelAndView = new ModelAndView("welcome.jsp");
         modelAndView.addObject("greeting","Welcome Here");
         return modelAndView;
     }

@@ -17,7 +17,7 @@ import com.mongodb.client.model.Filters;
 public class TestMongoConnection {
 	public static void main(String[] args) {
 		MongoCollection<Document> collection = getMongoCollection("localhost",
-				27017, "mycol", "test");
+				27017, "mycol", "profile");
 		System.out.println(collection);
 
 		insertMongoData(collection);

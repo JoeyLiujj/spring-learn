@@ -1,0 +1,36 @@
+package cn.joey.scheduled;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.scheduling.annotation.Async;
+import org.springframework.scheduling.annotation.Scheduled;
+import org.springframework.stereotype.Component;
+
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+
+//@component
+public class SpringTaskDemo {
+    private static final Logger log = LoggerFactory.getLogger(SpringTaskDemo.class);
+
+    private static final SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+
+    @Async //代表该任务可以进行异步工作，由原本的串行改为并行
+    @Scheduled(cron = "0/1 * * * * *")
+    public void scheduled1() throws InterruptedException {
+        Thread.sleep(3000);
+        log.info("scheduled1 每1秒执行一次 {}", dateFormat.format(Calendar.getInstance().getTime()));
+    }
+
+    @Scheduled(fixedRate = 1000)
+    public void scheduled2() throws InterruptedException {
+        Thread.sleep(3000);
+        log.info("scheduled2 每1秒执行一次 {}", dateFormat.format(Calendar.getInstance().getTime()));
+    }
+
+    @Scheduled(fixedDelay = 3000)
+    public void scheduled3() throws InterruptedException {
+        Thread.sleep(5000);
+        log.info("scheduled3 上次执行完毕后隔3秒继续执行：{}", dateFormat.format(Calendar.getInstance().getTime()));
+    }
+}
