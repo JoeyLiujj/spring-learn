@@ -2,6 +2,7 @@ package cn.joey.proxy;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
+import java.lang.reflect.Proxy;
 
 public class CustomInvocationHandler implements InvocationHandler {
     private Object target;
@@ -17,5 +18,10 @@ public class CustomInvocationHandler implements InvocationHandler {
         Object retVal = method.invoke(target, args);
         System.out.println("After invocation");
         return retVal;
+    }
+
+    public HelloWorld newInstance(){
+        HelloWorld hw=(HelloWorld) Proxy.newProxyInstance(ClassLoader.getSystemClassLoader(), new Class[]{HelloWorld.class}, this);
+        return hw;
     }
 }
