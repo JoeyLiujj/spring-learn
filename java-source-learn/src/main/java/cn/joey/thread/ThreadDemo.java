@@ -2,23 +2,48 @@ package cn.joey.thread;
 
 import cn.joey.socket.User;
 
-public class ThreadDemo extends Thread{
-	private int i = 0;
-	User user ;
-	@Override
-	public void run() {
-		user  = new User(this.getName(),this.getName()+this.getId());
-		System.out.println(this +":" + ++i);
-		user.setName(this.getName()+this.getState());
-		System.out.println(user.getName()+"  "+user.getPassword());
-	}
+import java.util.concurrent.CountDownLatch;
 
-	public static void main(String[] args){
-		for(int i=0;i<5;i++){
-			ThreadDemo t = new ThreadDemo();
-			t.start();
+public class ThreadDemo{
 
-		}
+	public static void main(String[] args) throws InterruptedException {
+		final CountDownLatch countDownLatch = new CountDownLatch(3);
+		new Thread(new Runnable() {
+			@Override
+			public void run() {
+				try {
+					Thread.sleep(10000);
+				} catch (InterruptedException e) {
+					e.printStackTrace();
+				}
+				countDownLatch.countDown();
+			}
+		}).start();
+		new Thread(new Runnable() {
+			@Override
+			public void run() {
+				try {
+					Thread.sleep(1000);
+				} catch (InterruptedException e) {
+					e.printStackTrace();
+				}
+				countDownLatch.countDown();
+			}
+		}).start();
+		new Thread(new Runnable() {
+			@Override
+			public void run() {
+				try {
+					Thread.sleep(1000);
+				} catch (InterruptedException e) {
+					e.printStackTrace();
+				}
+				countDownLatch.countDown();
+			}
+		}).start();
 
+		countDownLatch.await();
+
+		System.out.println("执行完毕");
 	}
 }
