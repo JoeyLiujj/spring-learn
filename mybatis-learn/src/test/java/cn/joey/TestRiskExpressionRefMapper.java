@@ -63,8 +63,10 @@ public class TestRiskExpressionRefMapper {
          * findAll是select标签的id属性值，通过select标签的id属性值可以找到要执行的SQL
          */
         // 执行查询返回一个唯一的user对象的sql
-        RiskExpressionRef obj = sqlSession.selectOne("cn.joey.mapper.RiskExpressionRefMapper.findAll","U001");
-        System.out.println(obj.getCalCode()+"------"+obj.getRiskCode());
+        List<RiskExpressionRef> list = sqlSession.selectList("cn.joey.mapper.RiskExpressionRefMapper.findAll","RAA00020");
+        for(RiskExpressionRef obj:list){
+            System.out.println(obj.getCalCode()+"------"+obj.getRiskCode());
+        }
     }
 
     @Test

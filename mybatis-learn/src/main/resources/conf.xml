@@ -4,7 +4,7 @@
 
 <configuration>
 	<properties>
-		<property name="url" value="jdbc:mysql://cloud.sinosoft-open.com:3306/ics_cbs_calengine"/>
+		<property name="url" value="jdbc:mysql://10.130.130.12:3306/ics_cbs_calengine"/>
 	</properties>
 	<environments default="development">
 		<environment id="development">
@@ -12,8 +12,8 @@
 			<dataSource type="POOLED">
 				<property name="driver" value="com.mysql.jdbc.Driver" />
 				<property name="url" value="${url}" />
-				<property name="username" value="ics_cbs_calengine" />
-				<property name="password" value="ics_cbs_calengine" />
+				<property name="username" value="root@db_dev_cloud0_967" />
+				<property name="password" value="picch1234" />
 			</dataSource>
 		</environment>
 	</environments>

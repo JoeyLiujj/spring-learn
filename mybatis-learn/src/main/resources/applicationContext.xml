@@ -4,9 +4,9 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
     <bean id="myDataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
         <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
-        <property name="url" value="jdbc:mysql://cloud.sinosoft-open.com:3306/ics_cbs_calengine"/>
-        <property name="username" value="ics_cbs_calengine"/>
-        <property name="password" value="ics_cbs_calengine"/>
+        <property name="url" value="jdbc:mysql://10.130.130.12:3306/ics_cbs_calengine"/>
+        <property name="username" value="root@db_dev_cloud0_967"/>
+        <property name="password" value="picch1234"/>
     </bean>
     <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
         <property name="dataSource" ref="myDataSource"/>
