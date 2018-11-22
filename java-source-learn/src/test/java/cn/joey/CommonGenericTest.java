@@ -7,13 +7,11 @@ import cn.joey.socket.User;
 import cn.joey.thread.Consumer;
 import cn.joey.thread.Producer;
 import cn.joey.util.SortAlgorithm;
+import org.apache.ibatis.io.Resources;
 import org.junit.Test;
 import sun.misc.Unsafe;
 
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.io.SequenceInputStream;
+import java.io.*;
 import java.lang.reflect.Field;
 import java.lang.reflect.Proxy;
 import java.util.LinkedList;
@@ -71,25 +69,22 @@ public class CommonGenericTest {
 
 
     @Test
-    public void test(){
-        String str = "D:\\USMSSO\\uninst.exe";
+    public void test() throws IOException {
+        InputStream resourceAsStream = null;
+        BufferedInputStream bis=null;
         try {
-            FileInputStream fis = new FileInputStream(str);
-            byte[] datas = new byte[1024];
-//            while(fis.read(datas)!=-1){
-////                String s = new String(datas,"UTF-8");
-////                System.out.println(s);
-//                for(int i=0;i<datas.length;i++){
-//                    System.out.print(datas[i]);
-//                }
-//                System.out.println();
-//            }
-            SequenceInputStream sis = new SequenceInputStream(fis,fis);
-            System.out.println(sis.read());
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
+            resourceAsStream = Resources.getResourceAsStream("");
+            bis = new BufferedInputStream(resourceAsStream);
+            byte[] byt = new byte[1024];
+            while(bis.read(byt)!=-1){
+                System.out.println(new String(byt));
+            }
         } catch (IOException e) {
             e.printStackTrace();
+        }finally{
+            if (bis != null) {
+                bis.close();
+            }
         }
 
     }

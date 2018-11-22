@@ -18,7 +18,9 @@
 		</environment>
 	</environments>
 	<mappers>
-		<mapper resource="mapper.xml"></mapper>
+		<!--可以同时使用这两种方式，package代表此包下的所有mapper-->
+		<package name="cn.joey.mapper"/>
+		<!--<mapper resource="mapper.xml"></mapper>-->
 	</mappers>
 	<!--
 	<settings>
