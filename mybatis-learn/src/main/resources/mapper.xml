@@ -3,7 +3,13 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace = "cn.joey.mapper.RiskExpressionRefMapper">
-    <select id="findAll" resultType="cn.joey.entity.RiskExpressionRef" useCache="false">
+    <select id="findAll" resultMap="getRef" useCache="false">
         select * from riskexpressionref where calcode=#{id}
     </select>
+    <resultMap id="getRef" type="cn.joey.entity.RiskExpressionRef" >
+        <result column="riskcode" property="riskCode" typeHandler="cn.joey.typeHandler.MyTypeHandler"/>
+        <result column="acctype" property="accType"/>
+        <result column="calcode" property="calCode" typeHandler="cn.joey.typeHandler.MyTypeHandler"/>
+        <result column="state" property="state"/>
+    </resultMap>
 </mapper>

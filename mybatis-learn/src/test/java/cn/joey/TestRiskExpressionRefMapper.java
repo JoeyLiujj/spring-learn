@@ -13,6 +13,7 @@ import org.springframework.util.ClassUtils;
 
 import java.io.*;
 import java.lang.reflect.Field;
+import java.util.ArrayList;
 import java.util.List;
 
 public class TestRiskExpressionRefMapper {
@@ -83,4 +84,17 @@ public class TestRiskExpressionRefMapper {
             }
         }
     }
+
+    @Test
+    public void testListSequence(){
+        List list = new ArrayList();
+
+        list.add(2);
+        list.add(3);
+        list.add(1);
+        for(int i=0;i<list.size();i++){
+            System.out.println(list.get(i));
+        }
+    }
+
 }
