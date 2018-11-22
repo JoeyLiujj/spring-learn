@@ -23,5 +23,9 @@
             <artifactId>netty-all</artifactId>
             <version>4.0.21.Final</version>
         </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
     </dependencies>
 </project>
