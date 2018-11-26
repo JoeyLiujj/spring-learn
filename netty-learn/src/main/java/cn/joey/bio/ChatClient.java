@@ -17,13 +17,17 @@ public class ChatClient {
 
             InputStream in = System.in;
             BufferedReader br1 = new BufferedReader(new InputStreamReader(in));
-            while(!"bye".equals(br1.readLine())){
+            while(true){
                 socket = new Socket(DEFAULT_SERVER_IP,DEFAULT_SERVER_PORT);
                 OutputStream outputStream = socket.getOutputStream();
                 String sendMessage = br1.readLine();
-
-                BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(outputStream));
                 System.out.println("客户端：发送一条消息");
+                BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(outputStream));
+                if("bye".equals(sendMessage)){
+                    bw.write(sendMessage);
+                    bw.flush();
+                    break;
+                }
                 bw.write(sendMessage);
                 bw.flush();
                 socket.shutdownOutput();
@@ -37,10 +41,9 @@ public class ChatClient {
                 while((line=br.readLine())!=null){
                     result +=line;
                 }
-                System.out.println("接收到其他客户端发送的信息");
                 System.out.println(result);
             }
-            System.out.println("我下线了，byebye");
+
         } catch (IOException e) {
             e.printStackTrace();
         }finally {
