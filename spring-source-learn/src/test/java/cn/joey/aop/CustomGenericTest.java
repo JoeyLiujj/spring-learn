@@ -9,8 +9,11 @@ import cn.joey.aop.xmlconfig.UserService;
 import com.fasterxml.jackson.databind.ObjectReader;
 import org.junit.Before;
 import org.junit.Test;
+import org.springframework.beans.factory.support.DefaultListableBeanFactory;
+import org.springframework.beans.factory.xml.XmlBeanDefinitionReader;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.core.io.ClassPathResource;
 import org.springframework.expression.Expression;
 import org.springframework.expression.ExpressionParser;
 import org.springframework.expression.spel.standard.SpelExpressionParser;
@@ -139,23 +142,13 @@ public class CustomGenericTest {
 
     @Test
     public void test(){
-        String fileName = "C:\\Users\\liujiji\\Desktop\\11111.txt";
-        FileReader raf;
-        ObjectReader reader;
-        try {
-            BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream(fileName)));
-            String info;
-            while ((info=br.readLine())!=null) {
-//                System.out.println("select * from ljspayperson where shardingid in("+info+");");
-                System.out.println("select * from ljspay where shardingid in("+info+");");
-//                System.out.println("delete from ljspay where shardingid in("+info+");");
-//                System.out.println("delete from ljspayperson where shardingid in("+info+");");
-            }
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+//        ApplicationContext ac = new ClassPathXmlApplicationContext("applicationContext.xml");
+        ClassPathResource resource = new ClassPathResource("applicationContext.xml");
+        DefaultListableBeanFactory factory = new DefaultListableBeanFactory();
+
+        XmlBeanDefinitionReader reader = new XmlBeanDefinitionReader(factory);
+
+        reader.loadBeanDefinitions(resource);
     }
 
 
