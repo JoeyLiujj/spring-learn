@@ -6,5 +6,9 @@ import cn.joey.entity.RiskExpressionRef;
 import java.util.List;
 
 public interface RiskExpressionRefMapper {
-    public List<RiskExpressionRef> findAll();
+    List<RiskExpressionRef> findAll(String id);
+
+    default String test(){
+        return null;
+    }
 }

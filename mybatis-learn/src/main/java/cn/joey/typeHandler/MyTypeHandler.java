@@ -22,13 +22,13 @@ public class MyTypeHandler implements TypeHandler<String> {
 
     @Override
     public String getResult(ResultSet rs, String columnName) throws SQLException {
-        String str = rs.getString(columnName)+"zhangsan";
+        String str = rs.getString(columnName);
         return str;
     }
 
     @Override
     public String getResult(ResultSet rs, int columnIndex) throws SQLException {
-        String str = rs.getString(columnIndex)+"zhangsan";
+        String str = rs.getString(columnIndex);
         return str;
     }
 
