@@ -6,4 +6,6 @@ package com.joey.mybatis;
  */
 public interface GPExecutor {
 
+    <T> T query(String statement, String parameters);
+
 }

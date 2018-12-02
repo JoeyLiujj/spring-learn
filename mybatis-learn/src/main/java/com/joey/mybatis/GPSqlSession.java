@@ -12,4 +12,18 @@ public class GPSqlSession  {
         this.configuration = configuration;
         this.executor = executor;
     }
+
+    /**
+     *
+     * @param clazz
+     * @param <T>
+     * @return
+     */
+    public <T> T getMapper(Class<T> clazz){
+        return configuration.getMapper(clazz,this);
+    }
+
+    public <T> T selectOne(String statement,String parameters){
+        return executor.<T>query(statement,parameters);
+    }
 }
