@@ -17,8 +17,6 @@ public class GPMapperProxy implements InvocationHandler {
             String sql = GPConfiguration.TestMaperXml.methodSql.get(method.getName());
             return sqlSession.selectOne(sql,String.valueOf(args[0]));
         }
-
-
         return method.invoke(this,args);
     }
 }
