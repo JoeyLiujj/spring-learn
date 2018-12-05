@@ -4,6 +4,7 @@ import com.joey.mybatis.ver2.GP2Configuration;
 import com.joey.mybatis.ver2.handler.GP2ResultSetHandler;
 import com.joey.mybatis.ver2.handler.GP2StatementHandler;
 
+import java.io.Serializable;
 import java.sql.*;
 import java.util.List;
 
@@ -11,7 +12,7 @@ import java.util.List;
  * @auther liujiji
  * @date 2018/12/3 14:05
  */
-public class GP2PrepareStatementHandler implements GP2StatementHandler {
+public class GP2PrepareStatementHandler implements GP2StatementHandler , Serializable{
 
     private static GP2ResultSetHandler resultSetHandler;
 

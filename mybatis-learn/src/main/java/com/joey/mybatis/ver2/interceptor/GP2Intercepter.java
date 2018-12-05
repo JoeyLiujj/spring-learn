@@ -1,14 +1,12 @@
-package com.joey.mybatis.ver2.intercepter;
+package com.joey.mybatis.ver2.interceptor;
 
-import com.joey.mybatis.ver2.executor.impl.GP2SimpleExecutor;
 import com.joey.mybatis.ver2.handler.GP2StatementHandler;
-import org.apache.ibatis.executor.Executor;
-import org.apache.ibatis.mapping.MappedStatement;
 import org.apache.ibatis.plugin.*;
-import org.apache.ibatis.session.ResultHandler;
-import org.apache.ibatis.session.RowBounds;
 
-import java.lang.reflect.InvocationTargetException;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectOutputStream;
 import java.lang.reflect.Method;
 import java.util.Properties;
 
@@ -31,7 +29,7 @@ public class GP2Intercepter implements Interceptor {
 
     @Override
     public Object plugin(Object target) {
-        return Plugin.wrap(target,this);
+        return Plugin.wrap(target, this);
     }
 
     @Override

@@ -6,7 +6,8 @@ import com.joey.mybatis.ver2.executor.GP2Executor;
 import com.joey.mybatis.ver2.executor.impl.GP2SimpleExecutor;
 import com.joey.mybatis.ver2.handler.GP2StatementHandler;
 import com.joey.mybatis.ver2.handler.impl.GP2PrepareStatementHandler;
-import com.joey.mybatis.ver2.intercepter.GP2Intercepter;
+import com.joey.mybatis.ver2.interceptor.GP2Intercepter;
+import com.joey.mybatis.ver2.interceptor.GP2SecondInterceptor;
 import com.joey.mybatis.ver2.mapper.GP2TestMapper;
 import com.joey.mybatis.ver2.session.GP2SqlSession;
 import org.apache.ibatis.plugin.InterceptorChain;
@@ -25,21 +26,23 @@ public class GP2Configuration {
     protected static final InterceptorChain interceptorChain = new InterceptorChain();
     public static String namespace = "com.joey.mybatis.ver2.mapper.GP2TestMapper";
 
+    static {
+        try {
+            MapperRegister.register();
+            interceptorChain.addInterceptor(new GP2Intercepter());
+            interceptorChain.addInterceptor(new GP2SecondInterceptor());
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+    }
+
+
     public <T> T getMapper(GP2SqlSession sqlSession, Class type) {
         return (T) Proxy.newProxyInstance(this.getClass().getClassLoader(),new Class[]{GP2TestMapper.class},new GP2MethodProxy(sqlSession,type));
     }
 
     public GP2Executor newExecutor(){
         return new GP2SimpleExecutor(this);
-    }
-
-    static {
-        try {
-            MapperRegister.register();
-            interceptorChain.addInterceptor(new GP2Intercepter());
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
-        }
     }
 
     public Object newStatementHandler() {
