@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.3.xsd">
+    <!--第一种实现方式-->
+    <bean id="myinterceptor" class="cn.joey.aop.testProxyFactoryBean.MyInterceptor"/>
+    <bean id="log" class="cn.joey.aop.xmlconfig.Log"/>
+    <bean id="proxybean" class = "org.springframework.aop.framework.ProxyFactoryBean">
+        <!--<property name="targetName" value="userService"/>-->
+        <property name="interfaces" value="cn.joey.aop.xmlconfig.UserService"/>
+        <property name="interceptorNames" value="log"/>
+    </bean>
+</beans>

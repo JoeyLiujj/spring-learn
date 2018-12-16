@@ -1,5 +1,7 @@
 package cn.joey;
 
+import cn.joey.annotation.MyBatisRepository;
+import cn.joey.dao.RiskExpressionRefDAO;
 import cn.joey.entity.RiskExpressionRef;
 import cn.joey.mapper.RiskExpressionRefMapper;
 import com.joey.mybatis.ver2.handler.GP2StatementHandler;
@@ -13,6 +15,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 import sun.misc.ProxyGenerator;
 
 import java.io.*;
+import java.lang.annotation.Annotation;
 import java.lang.reflect.Modifier;
 import java.lang.reflect.Proxy;
 import java.sql.*;

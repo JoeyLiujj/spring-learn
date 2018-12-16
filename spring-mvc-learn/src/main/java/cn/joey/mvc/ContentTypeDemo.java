@@ -6,6 +6,7 @@ import java.io.InputStream;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -66,10 +67,12 @@ public class ContentTypeDemo {
 //	@PathVariable 注解将会绑定 URL 占位符到入参
 	@RequestMapping(value = "/paramTest/{id}")
 	//可将指定参数名称的值传递给name
-	public void testParam(HttpServletResponse response,@RequestParam("age") String name,@PathVariable String id) throws IOException{
+	public void testParam(HttpServletResponse response, @RequestParam("age") String name, @PathVariable String id,String extend) throws IOException{
 //		int i=1/0;
+
+
 		response.setContentType("text/html;charset=utf-8");
-		response.getWriter().write("是否会打印url路径的ID："+id);
+		response.getWriter().write("是否会打印url路径的ID："+id+"-----"+extend);
 		response.getWriter().write(name);
 	}
 

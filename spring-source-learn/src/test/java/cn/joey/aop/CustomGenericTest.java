@@ -152,4 +152,8 @@ public class CustomGenericTest {
     }
 
 
+    @Test
+    public void testHashCode(){
+        System.out.println(DefaultListableBeanFactory.class.hashCode());
+    }
 }
