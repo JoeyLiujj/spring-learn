@@ -1,12 +1,9 @@
 package cn.joey.aop;
 
 import cn.joey.aop.annotationconfig.PuchaseService;
-import cn.joey.aop.introduction.Auto;
-import cn.joey.aop.introduction.Intelligent;
-import cn.joey.aop.introduction.Seller;
-import cn.joey.aop.introduction.Waiter;
+import cn.joey.aop.introduction.*;
 import cn.joey.aop.xmlconfig.UserService;
-import com.fasterxml.jackson.databind.ObjectReader;
+import org.aspectj.lang.annotation.Aspect;
 import org.junit.Before;
 import org.junit.Test;
 import org.springframework.beans.factory.support.DefaultListableBeanFactory;
@@ -14,14 +11,19 @@ import org.springframework.beans.factory.xml.XmlBeanDefinitionReader;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.core.io.ClassPathResource;
+import org.springframework.core.type.AnnotationMetadata;
+import org.springframework.core.type.ClassMetadata;
+import org.springframework.core.type.classreading.MetadataReader;
 import org.springframework.expression.Expression;
 import org.springframework.expression.ExpressionParser;
 import org.springframework.expression.spel.standard.SpelExpressionParser;
 import org.springframework.expression.spel.support.StandardEvaluationContext;
 import org.springframework.util.ClassUtils;
 import org.springframework.util.ResourceUtils;
+import org.springframework.core.type.classreading.SimpleMetadataReaderFactory;
 
 import java.io.*;
+import java.lang.annotation.Annotation;
 import java.net.URL;
 import java.net.URLConnection;
 import java.util.*;
@@ -37,25 +39,16 @@ public class CustomGenericTest {
     public void testMethodAdvice() throws IOException {
         ApplicationContext ac = new ClassPathXmlApplicationContext("applicationContext.xml");
         UserService userService = (UserService) ac.getBean("userService");
-        userService.update(1);
         userService.add();
     }
 
     @Test
     public void testAspectJExpression() throws IOException {
-        ApplicationContext context = new ClassPathXmlApplicationContext("testAspectJExpression.xml");
+        ApplicationContext context = new ClassPathXmlApplicationContext("annotationAspectJ.xml");
         UserService userService = (UserService) context.getBean("userService");
-        userService.update(1);
         userService.add();
     }
 
-    @Test
-    public void testForLoopReturn() {
-        for (int i = 0; i < 40; i++) {
-            if (i == 10) return;
-            System.out.println(i);
-        }
-    }
 
     @Test
     public void testLoadSpringHandlers() {
@@ -106,7 +99,7 @@ public class CustomGenericTest {
 
     @Test
     public void testIntroduction() {
-        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("introductionAdvisor.xml");
         Auto car = (Auto) context.getBean("myCar");
         System.out.println(car.getClass());
         car.driving();
@@ -134,12 +127,6 @@ public class CustomGenericTest {
         seller.sell("水军", "Java3y");
     }
 
-    @Before
-    public void before() {
-        System.out.println("测试之前执行");
-    }
-
-
     @Test
     public void test(){
 //        ApplicationContext ac = new ClassPathXmlApplicationContext("applicationContext.xml");
@@ -155,5 +142,21 @@ public class CustomGenericTest {
     @Test
     public void testHashCode(){
         System.out.println(DefaultListableBeanFactory.class.hashCode());
+    }
+
+    @Test
+    public void testAnnotation(){
+        SimpleMetadataReaderFactory factory = new SimpleMetadataReaderFactory();
+        try {
+            MetadataReader metadataReader = factory.getMetadataReader("cn.joey.aop.annotationconfig.PuchaseService");
+            System.out.println(metadataReader);
+            AnnotationMetadata annotationMetadata = metadataReader.getAnnotationMetadata();
+
+            ClassMetadata classMetadata = metadataReader.getClassMetadata();
+
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }

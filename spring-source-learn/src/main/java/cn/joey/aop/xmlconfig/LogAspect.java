@@ -26,4 +26,7 @@ public class LogAspect {
         System.out.println("获取到目标对象抛出的异常：" + e.getCause());
     }
 
+    public void after(){
+        System.out.println("在方法执行之后执行");
+    }
 }

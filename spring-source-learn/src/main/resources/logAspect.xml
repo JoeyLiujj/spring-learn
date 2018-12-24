@@ -8,7 +8,7 @@
         http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.1.xsd
         http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.2.xsd">
 
-    <aop:aspectj-autoproxy proxy-target-class="true"/>
+    <aop:aspectj-autoproxy proxy-target-class="true" expose-proxy="true"/>
     <context:annotation-config/>
     <!--<context:component-scan base-package="com"/>-->
     <bea:bean id="logAspect" class="cn.joey.aop.xmlconfig.LogAspect"/>
@@ -20,9 +20,10 @@
        <!-- <aop:advisor advice-ref="logAspect" pointcut="execution(* cn.joey.aop.aspectj.PuchaseService(..))" order="2" />
         <aop:advisor advice-ref="logAspect" pointcut-ref="example" order="3"/>-->
         <aop:aspect id="aspect1" ref="logAspect">
-            <aop:pointcut  id="purchase"  expression="(execution(* cn.*.*.*.*(..)))" />
+            <aop:pointcut  id="purchase"  expression="(execution(* cn.joey.aop.annotationconfig.*Service.*(..)))" />
             <aop:after-throwing  method="addExceptionLog" pointcut-ref="purchase" throwing="e"/>
-            <aop:after-returning method="addSuccessLog" pointcut-ref="purchase" returning="name"/>
+            <!--<aop:after-returning method="addSuccessLog" pointcut-ref="purchase" returning="name"/>-->
+            <aop:after method="after" pointcut-ref="purchase"/>
         </aop:aspect>
         <!--<aop:declare-parent/> 以透明的方式为被通知的对象引入额外的接口，和使用introduction的方式一致-->
     </aop:config>

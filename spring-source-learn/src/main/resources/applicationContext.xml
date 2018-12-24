@@ -2,12 +2,14 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:context="http://www.springframework.org/schema/context"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.3.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd
         http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.3.xsd">
+
     <!--第一种实现方式-->
     <bean id="userService" class="cn.joey.aop.xmlconfig.UserServiceImpl"/>
     <bean id="log" class="cn.joey.aop.xmlconfig.Log"/>
-
 
     <!--之前执行时一直出现问题，获取代理类时总是报错，原因是①没有导入aspectj jar包，②execution表达式输入错误
         config标签会用ConfigBeanDefinitionParser类去解析
@@ -19,7 +21,7 @@
             第二个*表示所有的类对象
             第三个*表示类对象所有的方法
             第四个*表示所有方法下面的带参数的方法或者是不带参数的方法-->
-        <aop:pointcut id="pointcut" expression="execution(* cn.joey.aop.*.*(..))"/>
+        <aop:pointcut id="pointcut" expression="execution(* cn.joey.aop.*.*.*(..))"/>
         <!--  在所有的方法中都切入前置通知-->
         <aop:advisor advice-ref="log" pointcut-ref="pointcut"/>
     </aop:config>
