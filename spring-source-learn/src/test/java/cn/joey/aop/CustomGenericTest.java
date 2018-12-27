@@ -3,6 +3,9 @@ package cn.joey.aop;
 import cn.joey.aop.annotationconfig.PuchaseService;
 import cn.joey.aop.introduction.*;
 import cn.joey.aop.xmlconfig.UserService;
+import cn.joey.condition.ConditionConfig;
+import cn.joey.jdbc.User;
+import lombok.extern.slf4j.Slf4j;
 import org.aspectj.lang.annotation.Aspect;
 import org.junit.Before;
 import org.junit.Test;
@@ -13,6 +16,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.type.AnnotationMetadata;
 import org.springframework.core.type.ClassMetadata;
+import org.springframework.core.type.StandardAnnotationMetadata;
 import org.springframework.core.type.classreading.MetadataReader;
 import org.springframework.expression.Expression;
 import org.springframework.expression.ExpressionParser;
@@ -28,6 +32,7 @@ import java.net.URL;
 import java.net.URLConnection;
 import java.util.*;
 
+@Slf4j
 public class CustomGenericTest {
 
     @Test
@@ -149,12 +154,20 @@ public class CustomGenericTest {
         SimpleMetadataReaderFactory factory = new SimpleMetadataReaderFactory();
         try {
             MetadataReader metadataReader = factory.getMetadataReader("cn.joey.aop.annotationconfig.PuchaseService");
-            System.out.println(metadataReader);
-            AnnotationMetadata annotationMetadata = metadataReader.getAnnotationMetadata();
-
-            ClassMetadata classMetadata = metadataReader.getClassMetadata();
-
-
+            log.info(metadataReader.toString());
+            StandardAnnotationMetadata sam = new StandardAnnotationMetadata(ConditionConfig.class);
+            Set<String> annotationTypes = sam.getAnnotationTypes();
+            for(String annotation:annotationTypes){
+                log.info(annotation);
+                Set<String> metaAnnotationTypes = sam.getMetaAnnotationTypes(annotation);
+                if(metaAnnotationTypes!=null){
+                    for(String metaAnnotationType:metaAnnotationTypes){
+                        log.info(metaAnnotationType);
+                    }
+                }
+                Map<String,Object> annotationAttributes = sam.getAnnotationAttributes(annotation);
+                log.info(annotationAttributes.toString());
+            }
         } catch (IOException e) {
             e.printStackTrace();
         }

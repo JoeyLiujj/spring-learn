@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
-//@component
+//@Component
 public class SpringTaskDemo {
     private static final Logger log = LoggerFactory.getLogger(SpringTaskDemo.class);
 

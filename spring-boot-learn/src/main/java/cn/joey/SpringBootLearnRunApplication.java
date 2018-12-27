@@ -1,14 +1,19 @@
 package cn.joey;
 
+import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.freemarker.FreeMarkerAutoConfiguration;
 import org.springframework.boot.autoconfigure.mongo.MongoAutoConfiguration;
+import org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration;
+import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
 import org.springframework.scheduling.TaskScheduler;
 import org.springframework.scheduling.annotation.EnableAsync;
 import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler;
+
+import java.util.Arrays;
 
 
 /**
@@ -26,7 +31,7 @@ import org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler;
  * ⑫ @EnableScheduling //注解表示开启@Scheduling注解的解析
  * ⑬⑭⑮⑯⑰⑱⑲⑳
  */
-@SpringBootApplication(exclude = {FreeMarkerAutoConfiguration.class, MongoAutoConfiguration.class})
+@SpringBootApplication(exclude = {FreeMarkerAutoConfiguration.class, MongoAutoConfiguration.class,HibernateJpaAutoConfiguration.class})
 public class SpringBootLearnRunApplication {
     public static void main(String[] args) {
         SpringApplication.run(SpringBootLearnRunApplication.class, args);
@@ -38,10 +43,21 @@ public class SpringBootLearnRunApplication {
      * （多个任务的情况下，如果第一个任务没执行完毕，后续的任务将会进入等待状态）
      * @return 线程池
      */
-    @Bean
-    public TaskScheduler taskScheduler(){
-        ThreadPoolTaskScheduler taskScheduler = new ThreadPoolTaskScheduler();
-        taskScheduler.setPoolSize(10);
-        return taskScheduler;
-    }
+//    @Bean
+//    public TaskScheduler taskScheduler(){
+//        ThreadPoolTaskScheduler taskScheduler = new ThreadPoolTaskScheduler();
+//        taskScheduler.setPoolSize(10);
+//        return taskScheduler;
+//    }
+//    @Bean
+//    public CommandLineRunner commandLineRunner(ApplicationContext context){
+//        return args ->{
+//            System.out.println("Let's inspect the beans provided by Spring Boot!");
+//            String[] beanNames = context.getBeanDefinitionNames();
+//            Arrays.sort(beanNames);
+//            for(String beanName:beanNames) {
+//                System.out.println(beanName);
+//            }
+//        };
+//    }
 }
