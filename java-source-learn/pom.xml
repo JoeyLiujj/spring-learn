@@ -55,34 +55,40 @@
             <artifactId>commons-lang3</artifactId>
             <version>3.7</version>
         </dependency>
+
+        <!--<dependency>-->
+            <!--<groupId>com.taikang</groupId>-->
+            <!--<artifactId>taikang-3</artifactId>-->
+            <!--<version>1.0</version>-->
+            <!--<scope>system</scope>-->
+            <!--<systemPath>${basedir}/lib/toolkit.jar</systemPath>-->
+        <!--</dependency>-->
+
+        <!-- 可以使用该命令去将jar打包到maven仓库中
+            mvn install:install-file
+            -Dfile=C:\Users\liujiji\Desktop\tkcipher2015.jar
+            -DgroupId=com.taikang
+            -DartifactId=tkcipher2015 -Dversion=1.0 -Dpackaging=jar
+        -->
+
         <dependency>
             <groupId>com.taikang</groupId>
-            <artifactId>taikang-1</artifactId>
-            <version>1.1</version>
-            <scope>system</scope>
-            <systemPath>${basedir}/lib/tkcipher2015.jar</systemPath>
+            <artifactId>tktoolkit</artifactId>
+            <version>1.0</version>
         </dependency>
+
         <dependency>
             <groupId>com.taikang</groupId>
-            <artifactId>taikang-2</artifactId>
+            <artifactId>tkcipher2015</artifactId>
             <version>1.0</version>
-            <scope>system</scope>
-            <systemPath>${basedir}/lib/tkRedis_simple.jar</systemPath>
         </dependency>
+
         <dependency>
             <groupId>com.taikang</groupId>
-            <artifactId>taikang-3</artifactId>
+            <artifactId>tkRedis_simple</artifactId>
             <version>1.0</version>
-            <scope>system</scope>
-            <systemPath>${basedir}/lib/toolkit.jar</systemPath>
         </dependency>
-        <dependency>
-            <groupId>org.apache</groupId>
-            <artifactId>bootstrap</artifactId>
-            <version>1.0</version>
-            <scope>system</scope>
-            <systemPath>${basedir}/lib/bootstrap.jar</systemPath>
-        </dependency>
+
         <dependency>
             <groupId>commons-configuration</groupId>
             <artifactId>commons-configuration</artifactId>
