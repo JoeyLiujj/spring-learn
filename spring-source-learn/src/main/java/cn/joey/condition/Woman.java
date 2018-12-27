@@ -1,13 +1,16 @@
 package cn.joey.condition;
 
+import lombok.extern.slf4j.Slf4j;
+
 /**
  * @auther liujiji
  * @date 2018/12/20 17:08
  */
+@Slf4j
 public class Woman implements Person {
 
     @Override
     public void birth() {
-        System.out.println("我要生孩子了...");
+        log.info("我要生孩子了...");
     }
 }

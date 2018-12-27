@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- debug=false 表示不打印logback的内部状态信息，scan=true表示扫描变更信息 -->
+<configuration debug="false" scan="true">
+    <!-- 彩色日志 -->
+    <!-- 彩色日志依赖的渲染类 -->
+    <!--<conversionRule conversionWord="clr" converterClass="ch.qos.logback.core.pattern.IdentityCompositeConverter"/>-->
+    <!--<conversionRule conversionWord="wex"-->
+                    <!--converterClass="org.springframework.boot.logging.logback.WhitespaceThrowableProxyConverter"/>-->
+    <!--<conversionRule conversionWord="wEx"-->
+                    <!--converterClass="org.springframework.boot.logging.logback.ExtendedWhitespaceThrowableProxyConverter"/>-->
+    <!-- 彩色日志格式 -->
+    <property name="CONSOLE_LOG_PATTERN"
+              value="%yellow(%date{yyyy-MM-dd HH:mm:ss}) [%blue(%-5p)] [%magenta(%10.15thread)] %cyan(%-50.50c{49}): %msg %n"/>
+    <!--<statusListener class="ch.qos.logback.core.status.OnConsoleStatusListener" />-->
+    <property name="logging.level" value="INFO,DEBUG"/>
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <Pattern>${CONSOLE_LOG_PATTERN}</Pattern>
+        </encoder>
+    </appender>
+
+    <root level="${logging.level}">
+        <appender-ref ref="STDOUT"/>
+   </root>
+
+</configuration>
