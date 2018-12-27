@@ -10,7 +10,7 @@ import javax.jms.JMSException;
 import javax.jms.Message;
 import javax.jms.Session;
 
-@Component
+//@Component
 public class MyAnnotationMessageServiceImpl implements MyAnnotationMessageService {
     @Autowired
     private JmsTemplate jmsAnnotationTemplate;

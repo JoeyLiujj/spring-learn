@@ -3,11 +3,8 @@ package com.joey.mybatis.ver2;
 import com.joey.mybatis.ver2.executor.GP2Executor;
 import com.joey.mybatis.ver2.mapper.GP2TestMapper;
 import com.joey.mybatis.ver2.session.GP2SqlSession;
-import sun.security.util.Resources;
 
 import java.util.List;
-import java.util.Locale;
-import java.util.ResourceBundle;
 
 /**
  * @auther liujiji

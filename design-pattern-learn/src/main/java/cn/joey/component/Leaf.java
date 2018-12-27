@@ -1,5 +1,7 @@
 package cn.joey.component;
 
+import java.nio.charset.Charset;
+
 /**
  * @auther liujiji
  * @date 2018/10/22 10:51
@@ -23,6 +25,7 @@ public class Leaf extends Component {
 
     @Override
     public void display(int level) {
-        System.out.println(new String(new byte[]{'-'},level)+name);
+        System.out.println(
+                new String(new byte[]{'-'}, Charset.defaultCharset())+name);
     }
 }

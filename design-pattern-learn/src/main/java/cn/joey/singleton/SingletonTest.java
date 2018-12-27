@@ -9,7 +9,8 @@ import java.util.concurrent.CountDownLatch;
  * @date 2018/11/27 9:15
  */
 public class SingletonTest {
-    private static Map<String,Object> map = new HashMap<String, Object>();
+    private static Map<String,Object> map = new HashMap<String, Object>();//注册形式的单例
+
     public static void main(String[] args) {
         int count = 200;
 

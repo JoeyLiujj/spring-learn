@@ -9,8 +9,7 @@ package cn.joey.singleton;
  */
 public class SingletonDemo {
 
-    public SingletonDemo(){
-
+    private SingletonDemo(){
     }
 
     public static final SingletonDemo getInstance(){

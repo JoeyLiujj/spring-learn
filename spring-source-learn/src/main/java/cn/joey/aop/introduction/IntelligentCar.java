@@ -30,7 +30,8 @@ public class IntelligentCar extends DelegatingIntroductionInterceptor implements
     }
 
     //实际上执行时会在CglibAopProxy类中将DynamicAdvisedInterceptor放入到回调方法中，当执行此拦截器时，会调用
-    //CglibMethodInvocation-->ReflectiveMethodInvocation的proceed方法，此方法又会调用各个advice的invoke方法，并将自己作为参数传入
+    //CglibMethodInvocation-->ReflectiveMethodInvocation的proceed方法，
+    // 此方法又会调用各个advice的invoke方法，并将自己作为参数传入
     //即在该方法的MethodInvocation==CglibMethodInvocation,
     @Override
     public Object invoke(MethodInvocation mi) throws Throwable {
