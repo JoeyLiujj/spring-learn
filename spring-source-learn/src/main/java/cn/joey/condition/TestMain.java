@@ -14,12 +14,6 @@ public class TestMain {
                 new AnnotationConfigApplicationContext(ConditionConfig.class);
         Person person = configApplicationContext.getBean(Person.class);
         log.info(person.toString());
-        new Thread(new Runnable() {
-            @Override
-            public void run() {
-                log.info("在另外一个线程中打印日志信息");
-            }
-        }).start();
         person.birth();
     }
 }

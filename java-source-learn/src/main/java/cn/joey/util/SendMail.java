@@ -1,5 +1,6 @@
 package cn.joey.util;
 
+import lombok.extern.slf4j.Slf4j;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
@@ -19,9 +20,9 @@ import java.util.ResourceBundle;
 /**
  * @author liujiji
  */
+@Slf4j
 public class SendMail {
 
-    private static Logger log = LoggerFactory.getLogger(SendMail.class);
     private static final ResourceBundle rb=ResourceBundle.getBundle("application");
     private static String host = rb.getString("sendMail.host");
     private static String sender = rb.getString("sendMail.send");
