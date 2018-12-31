@@ -21,7 +21,7 @@ public class HelloController {
         map.put("hello","<h1>你好</h1>");
         User user = new User();
         user.setUsername("张三");
-        user.setPassword("1234Jou");
+        user.setPassword("来，就来了");
         map.put("user",user);
         return "success";
     }

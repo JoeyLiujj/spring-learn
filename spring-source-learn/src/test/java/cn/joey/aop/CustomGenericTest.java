@@ -9,9 +9,11 @@ import lombok.extern.slf4j.Slf4j;
 import org.aspectj.lang.annotation.Aspect;
 import org.junit.Before;
 import org.junit.Test;
+import org.junit.runner.RunWith;
 import org.springframework.beans.factory.support.DefaultListableBeanFactory;
 import org.springframework.beans.factory.xml.XmlBeanDefinitionReader;
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.type.AnnotationMetadata;
@@ -172,4 +174,14 @@ public class CustomGenericTest {
             e.printStackTrace();
         }
     }
+
+
+    @Test
+    public void testAnnotationContext(){
+        AnnotationConfigApplicationContext context= new AnnotationConfigApplicationContext("cn.joey");
+        PuchaseService puchaseService = (PuchaseService)context.getBean("puchaseService");
+        puchaseService.purchaseProduct("",0,"");
+        log.info(puchaseService.toString());
+    }
+
 }
