@@ -1,5 +1,6 @@
 package cn.joey;
 
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -8,6 +9,7 @@ import org.springframework.boot.autoconfigure.mongo.MongoAutoConfiguration;
 import org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
+import org.springframework.core.annotation.Order;
 import org.springframework.scheduling.TaskScheduler;
 import org.springframework.scheduling.annotation.EnableAsync;
 import org.springframework.scheduling.annotation.EnableScheduling;
@@ -32,6 +34,7 @@ import java.util.Arrays;
  * ⑬⑭⑮⑯⑰⑱⑲⑳
  */
 @SpringBootApplication(exclude = {FreeMarkerAutoConfiguration.class, MongoAutoConfiguration.class,HibernateJpaAutoConfiguration.class})
+@Slf4j
 public class SpringBootLearnRunApplication {
     public static void main(String[] args) {
         SpringApplication.run(SpringBootLearnRunApplication.class, args);
@@ -44,20 +47,22 @@ public class SpringBootLearnRunApplication {
      * @return 线程池
      */
 //    @Bean
-//    public TaskScheduler taskScheduler(){
-//        ThreadPoolTaskScheduler taskScheduler = new ThreadPoolTaskScheduler();
-//        taskScheduler.setPoolSize(10);
-//        return taskScheduler;
-//    }
+    public TaskScheduler taskScheduler(){
+        ThreadPoolTaskScheduler taskScheduler = new ThreadPoolTaskScheduler();
+        taskScheduler.setPoolSize(10);
+        return taskScheduler;
+    }
 //    @Bean
-//    public CommandLineRunner commandLineRunner(ApplicationContext context){
-//        return args ->{
-//            System.out.println("Let's inspect the beans provided by Spring Boot!");
-//            String[] beanNames = context.getBeanDefinitionNames();
-//            Arrays.sort(beanNames);
-//            for(String beanName:beanNames) {
-//                System.out.println(beanName);
-//            }
-//        };
-//    }
+//    @Order(value = 1)
+    public CommandLineRunner commandLineRunner1(ApplicationContext context){
+        return args ->{
+            log.info("Let's inspect the beans provided by Spring Boot!");
+            String[] beanNames = context.getBeanDefinitionNames();
+            Arrays.sort(beanNames);
+            for(String beanName:beanNames) {
+                log.info(beanName);
+            }
+        };
+    }
+
 }

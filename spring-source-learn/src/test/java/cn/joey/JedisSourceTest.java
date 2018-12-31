@@ -1,6 +1,5 @@
 package cn.joey;
 
-import cn.joey.redis.RedisUtil;
 import org.junit.Before;
 import org.junit.Test;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -81,19 +80,8 @@ public class JedisSourceTest {
         }
     }
 
-    RedisUtil redisUtil = null;
-
-    @Before
-    public void before(){
-        ClassPathXmlApplicationContext applicationContext = new ClassPathXmlApplicationContext("spring-redis.xml");
-        redisUtil = (RedisUtil) applicationContext.getBean("redisUtil");
-    }
 
     @Test
     public void test1() throws InterruptedException {
-        System.out.println("---"+redisUtil.hasKey("mylist"));
-        System.out.println(redisUtil.expire("mylist",100));
-        Thread.sleep(10000);
-        System.out.println(redisUtil.getExpire("mylist"));
     }
 }
