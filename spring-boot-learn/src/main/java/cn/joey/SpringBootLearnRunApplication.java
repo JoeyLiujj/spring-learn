@@ -4,6 +4,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.amqp.RabbitAutoConfiguration;
 import org.springframework.boot.autoconfigure.freemarker.FreeMarkerAutoConfiguration;
 import org.springframework.boot.autoconfigure.mongo.MongoAutoConfiguration;
 import org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration;
@@ -33,7 +34,7 @@ import java.util.Arrays;
  * ⑫ @EnableScheduling //注解表示开启@Scheduling注解的解析
  * ⑬⑭⑮⑯⑰⑱⑲⑳
  */
-@SpringBootApplication(exclude = {FreeMarkerAutoConfiguration.class, MongoAutoConfiguration.class,HibernateJpaAutoConfiguration.class})
+@SpringBootApplication(exclude = {FreeMarkerAutoConfiguration.class, MongoAutoConfiguration.class,HibernateJpaAutoConfiguration.class,RabbitAutoConfiguration.class})
 @Slf4j
 public class SpringBootLearnRunApplication {
     public static void main(String[] args) {
