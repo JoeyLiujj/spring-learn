@@ -26,9 +26,9 @@ public class CommonGenericTest {
         int arr[] = {3, 534, 2, 3, 43, 54, 2123, 43};
         SortAlgorithm.bubbleSort(arr);
         for (int i = 0; i < arr.length; i++) {
-        System.out.println(arr[i] + "->");
+            System.out.println(arr[i] + "->");
+        }
     }
-}
 
     @Test
     public void testProxy(){
