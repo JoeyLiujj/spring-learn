@@ -68,23 +68,7 @@ public class CommonGenericTest {
 
 
     @Test
-    public void test() throws IOException {
-        InputStream resourceAsStream = null;
-        BufferedInputStream bis=null;
-        try {
-            resourceAsStream = Resources.getResourceAsStream("");
-            bis = new BufferedInputStream(resourceAsStream);
-            byte[] byt = new byte[1024];
-            while(bis.read(byt)!=-1){
-                System.out.println(new String(byt));
-            }
-        } catch (IOException e) {
-            e.printStackTrace();
-        }finally{
-            if (bis != null) {
-                bis.close();
-            }
-        }
+    public void test(){
 
     }
 

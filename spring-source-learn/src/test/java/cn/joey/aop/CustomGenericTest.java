@@ -5,6 +5,8 @@ import cn.joey.aop.introduction.*;
 import cn.joey.aop.xmlconfig.UserService;
 import cn.joey.condition.ConditionConfig;
 import cn.joey.jdbc.User;
+import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONObject;
 import lombok.extern.slf4j.Slf4j;
 import org.aspectj.lang.annotation.Aspect;
 import org.junit.Before;
@@ -182,6 +184,15 @@ public class CustomGenericTest {
         PuchaseService puchaseService = (PuchaseService)context.getBean("puchaseService");
         puchaseService.purchaseProduct("",0,"");
         log.info(puchaseService.toString());
+    }
+
+    @Test
+    public void testFastJson(){
+        User user = new User();
+        user.setUser_id("12345");
+        user.setUser_name("Joey");
+        Object json = JSON.toJSON(user);
+        System.out.println(json.toString());
     }
 
 }

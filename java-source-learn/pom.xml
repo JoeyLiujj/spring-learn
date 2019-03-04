@@ -19,7 +19,7 @@
                     <source>1.7</source>
                     <target>1.7</target>
                     <!--<compilerArguments>-->
-                        <!--<extdirs>src\main\webapp\WEB-INF\lib</extdirs>-->
+                    <!--<extdirs>src\main\webapp\WEB-INF\lib</extdirs>-->
                     <!--</compilerArguments>-->
                 </configuration>
             </plugin>
@@ -30,11 +30,6 @@
             <artifactId>mail</artifactId>
             <groupId>javax.mail</groupId>
             <version>1.4.7</version>
-        </dependency>
-        <dependency>
-            <groupId>com.alibaba</groupId>
-            <artifactId>fastjson</artifactId>
-            <version>1.2.36</version>
         </dependency>
         <dependency>
             <groupId>org.apache.httpcomponents</groupId>
@@ -50,18 +45,13 @@
             <artifactId>xfire-core</artifactId>
             <version>1.2.6</version>
         </dependency>
-        <dependency>
-            <groupId>org.apache.commons</groupId>
-            <artifactId>commons-lang3</artifactId>
-            <version>3.7</version>
-        </dependency>
 
         <!--<dependency>-->
-            <!--<groupId>com.taikang</groupId>-->
-            <!--<artifactId>taikang-3</artifactId>-->
-            <!--<version>1.0</version>-->
-            <!--<scope>system</scope>-->
-            <!--<systemPath>${basedir}/lib/toolkit.jar</systemPath>-->
+        <!--<groupId>com.taikang</groupId>-->
+        <!--<artifactId>taikang-3</artifactId>-->
+        <!--<version>1.0</version>-->
+        <!--<scope>system</scope>-->
+        <!--<systemPath>${basedir}/lib/toolkit.jar</systemPath>-->
         <!--</dependency>-->
 
         <!-- 可以使用该命令去将jar打包到maven仓库中
@@ -98,6 +88,16 @@
             <groupId>commons-collections</groupId>
             <artifactId>commons-collections</artifactId>
             <version>3.2.1</version>
+        </dependency>
+        <dependency>
+            <groupId>cn.joey</groupId>
+            <artifactId>dependencies</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <scope>compile</scope>
         </dependency>
     </dependencies>
 

@@ -1,5 +1,6 @@
 package cn.joey.entity;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.stereotype.Component;
@@ -8,7 +9,10 @@ import org.springframework.stereotype.Component;
 @PropertySource(value = {"classpath:user.properties"})
 @Component
 public class User {
+
+    @Value("username")
     private String username;
+    @Value("password")
     private String password;
     public User() {}
     public User(String username, String password) {

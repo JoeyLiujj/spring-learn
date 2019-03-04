@@ -9,15 +9,15 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping(value="/rabbitmq")
 public class RabbitMQController {
-    private final RabbitTemplate rabbitTemplate;
-
-    @Autowired
-    public RabbitMQController(RabbitTemplate rabbitTemplate){
-        this.rabbitTemplate = rabbitTemplate;
-    }
-
-    @GetMapping
-    public void defaultMessage(){
-        this.rabbitTemplate.convertAndSend("myDefaultMessage","我发送的消息");
-    }
+//    private final RabbitTemplate rabbitTemplate;
+//
+//    @Autowired
+//    public RabbitMQController(RabbitTemplate rabbitTemplate){
+//        this.rabbitTemplate = rabbitTemplate;
+//    }
+//
+//    @GetMapping
+//    public void defaultMessage(){
+//        this.rabbitTemplate.convertAndSend("myDefaultMessage","我发送的消息");
+//    }
 }
