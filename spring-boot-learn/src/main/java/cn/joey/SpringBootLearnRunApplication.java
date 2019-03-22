@@ -5,9 +5,11 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.amqp.RabbitAutoConfiguration;
+import org.springframework.boot.autoconfigure.data.redis.RedisAutoConfiguration;
 import org.springframework.boot.autoconfigure.freemarker.FreeMarkerAutoConfiguration;
 import org.springframework.boot.autoconfigure.mongo.MongoAutoConfiguration;
 import org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration;
+import org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
 import org.springframework.core.annotation.Order;
@@ -34,7 +36,9 @@ import java.util.Arrays;
  * ⑫ @EnableScheduling //注解表示开启@Scheduling注解的解析
  * ⑬⑭⑮⑯⑰⑱⑲⑳
  */
-@SpringBootApplication(exclude = {FreeMarkerAutoConfiguration.class, MongoAutoConfiguration.class,HibernateJpaAutoConfiguration.class,RabbitAutoConfiguration.class})
+@SpringBootApplication(exclude = {FreeMarkerAutoConfiguration.class, MongoAutoConfiguration.class,
+        HibernateJpaAutoConfiguration.class,RabbitAutoConfiguration.class,
+        RedisAutoConfiguration.class})
 @Slf4j
 public class SpringBootLearnRunApplication {
     public static void main(String[] args) {
