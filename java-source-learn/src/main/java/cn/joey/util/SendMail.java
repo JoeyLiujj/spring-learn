@@ -12,10 +12,7 @@ import javax.activation.FileDataSource;
 import javax.mail.*;
 import javax.mail.internet.*;
 import java.io.File;
-import java.util.Date;
-import java.util.List;
-import java.util.Properties;
-import java.util.ResourceBundle;
+import java.util.*;
 
 /**
  * @author liujiji
@@ -331,6 +328,12 @@ public class SendMail {
             log.info("发送普通邮件（" + receiver + "）异常", e);
             return false;
         }
+    }
+
+    public static void main(String[] args) {
+        ArrayList<String> lists = new ArrayList<>();
+        lists.add("E:/PreContNo.txt");
+        sendEmail("18903412633@sina.cn", "abcd", "abcd", lists);
     }
 }
 
