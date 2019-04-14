@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:myTag="http://localhost:3000/user"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
+        http://localhost:3000/user http://localhost:3000/user/user.xsd">
+    <myTag:user id="user" userName="zhangsan" email="8765432@qq.com"/>
+</beans>

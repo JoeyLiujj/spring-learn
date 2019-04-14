@@ -195,4 +195,13 @@ public class CustomGenericTest {
         System.out.println(json.toString());
     }
 
+
+    @Test
+    public void testCustomHandlers(){
+        ApplicationContext context = new ClassPathXmlApplicationContext("myTarg.xml");
+
+        cn.joey.spring.handler.User user = (cn.joey.spring.handler.User)context.getBean("user");
+        System.out.println(user.getUserName()+"----------"+user.getEmail());
+
+    }
 }
