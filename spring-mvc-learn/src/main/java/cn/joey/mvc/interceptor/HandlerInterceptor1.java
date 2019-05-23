@@ -10,7 +10,7 @@ public class HandlerInterceptor1 extends HandlerInterceptorAdapter {
 	@Override
 	public boolean preHandle(HttpServletRequest request,
 			HttpServletResponse response, Object handler) throws Exception {
-		System.out.println("============ handler HandlerInterceptor1 preHandle");
+		System.out.println("============ ifElseToStrategyMode HandlerInterceptor1 preHandle");
 		return true;
 	}
 	
@@ -18,13 +18,13 @@ public class HandlerInterceptor1 extends HandlerInterceptorAdapter {
 	public void postHandle(HttpServletRequest request,
 			HttpServletResponse response, Object handler,
 			ModelAndView modelAndView) throws Exception {
-		System.out.println("============ handler HandlerInterceptor1 postHandler");
+		System.out.println("============ ifElseToStrategyMode HandlerInterceptor1 postHandler");
 	}
 	
 	@Override
 	public void afterCompletion(HttpServletRequest request,
 			HttpServletResponse response, Object handler, Exception ex)
 			throws Exception {
-		System.out.println("============ handler HandlerInterceptor1 afterCompletion");
+		System.out.println("============ ifElseToStrategyMode HandlerInterceptor1 afterCompletion");
 	}
 }

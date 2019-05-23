@@ -4,6 +4,9 @@ import cn.joey.aop.annotationconfig.PuchaseService;
 import cn.joey.aop.introduction.*;
 import cn.joey.aop.xmlconfig.UserService;
 import cn.joey.condition.ConditionConfig;
+import cn.joey.demo.IOrderService;
+import cn.joey.demo.OrderDTO;
+import cn.joey.demo.OrderServiceV2Impl;
 import cn.joey.jdbc.User;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
@@ -32,6 +35,7 @@ import org.springframework.core.type.classreading.SimpleMetadataReaderFactory;
 
 import java.io.*;
 import java.lang.annotation.Annotation;
+import java.math.BigDecimal;
 import java.net.URL;
 import java.net.URLConnection;
 import java.util.*;
@@ -203,5 +207,34 @@ public class CustomGenericTest {
         cn.joey.spring.handler.User user = (cn.joey.spring.handler.User)context.getBean("user");
         System.out.println(user.getUserName()+"----------"+user.getEmail());
 
+    }
+
+
+    @Test
+    public void testIfElse() throws IllegalAccessException, InstantiationException {
+        ApplicationContext context=new AnnotationConfigApplicationContext("cn.joey.demo");
+
+        OrderServiceV2Impl v2 =(OrderServiceV2Impl) context.getBean("orderServiceV2Impl");
+        OrderDTO dto = new OrderDTO();
+        dto.setCode("1234");
+        dto.setPrice(new BigDecimal(1223));
+        dto.setType("3");
+        String handle = v2.handle(dto);
+        System.out.println(handle);
+    }
+
+
+
+    @Test
+    public void testIsAssignableFromMethod(){
+        String[] a = new String[2];
+        String b="111";
+
+        OrderServiceV2Impl impl = new OrderServiceV2Impl();
+        System.out.println(a.getClass().isAssignableFrom(Object.class));
+        System.out.println(b.getClass().isAssignableFrom(String.class));
+        System.out.println(impl.getClass().isAssignableFrom(IOrderService.class));
+        System.out.println(IOrderService.class.isAssignableFrom(OrderServiceV2Impl.class));
+        System.out.println(Object.class.isAssignableFrom(IOrderService.class));
     }
 }
