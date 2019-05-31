@@ -14,10 +14,8 @@ import sun.misc.Unsafe;
 import java.io.*;
 import java.lang.reflect.Field;
 import java.lang.reflect.Proxy;
-import java.util.LinkedList;
-import java.util.Queue;
-import java.util.Timer;
-import java.util.TimerTask;
+import java.util.*;
+import java.util.stream.Stream;
 
 public class CommonGenericTest {
 
@@ -64,12 +62,6 @@ public class CommonGenericTest {
         long nameOffset = unsafe.objectFieldOffset(User.class.getDeclaredField("name"));
         unsafe.putObject(user,nameOffset,"helloworld");
         System.out.println(user.getName());
-    }
-
-
-    @Test
-    public void test(){
-
     }
 
 }

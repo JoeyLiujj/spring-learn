@@ -1,6 +1,6 @@
 package cn.joey.expression;
 
-import cn.joey.aop.CustomGenericTest;
+import cn.joey.aop.CommonGenericTest;
 import org.junit.Test;
 import org.springframework.expression.EvaluationContext;
 import org.springframework.expression.Expression;
@@ -10,8 +10,6 @@ import org.springframework.expression.spel.standard.SpelExpressionParser;
 import org.springframework.expression.spel.support.StandardEvaluationContext;
 
 import java.lang.reflect.Method;
-import java.math.BigDecimal;
-import java.text.NumberFormat;
 import java.util.HashMap;
 
 public class TestExpression {
@@ -110,7 +108,7 @@ public class TestExpression {
         StandardEvaluationContext context = new StandardEvaluationContext();
         Method decimal = null;
         try {
-            decimal = CustomGenericTest.class.getDeclaredMethod("decimal",Object.class,int.class);
+            decimal = CommonGenericTest.class.getDeclaredMethod("decimal",Object.class,int.class);
         } catch (NoSuchMethodException e) {
             e.printStackTrace();
         }
