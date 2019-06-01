@@ -43,7 +43,7 @@
     <root level="${logging.level}">
         <appender-ref ref="STDOUT"/>
         <!--<appender-ref ref="FILE"/>-->
-        <appender-ref ref="RollFile"/>
+        <!--<appender-ref ref="RollFile"/>-->
    </root>
 
 </configuration>

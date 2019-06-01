@@ -1,4 +1,4 @@
-package cn.joey.aop;
+package cn.joey;
 
 import cn.joey.aop.annotationconfig.PuchaseService;
 import cn.joey.aop.introduction.*;
@@ -11,6 +11,7 @@ import cn.joey.jdbc.User;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.commons.lang3.StringUtils;
 import org.aspectj.lang.annotation.Aspect;
 import org.codehaus.groovy.runtime.powerassert.SourceText;
 import org.junit.Before;
@@ -25,7 +26,9 @@ import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.type.AnnotationMetadata;
 import org.springframework.core.type.ClassMetadata;
 import org.springframework.core.type.StandardAnnotationMetadata;
+import org.springframework.core.type.classreading.CachingMetadataReaderFactory;
 import org.springframework.core.type.classreading.MetadataReader;
+import org.springframework.core.type.classreading.MetadataReaderFactory;
 import org.springframework.expression.Expression;
 import org.springframework.expression.ExpressionParser;
 import org.springframework.expression.spel.standard.SpelExpressionParser;
@@ -37,6 +40,7 @@ import org.springframework.core.type.classreading.SimpleMetadataReaderFactory;
 import javax.servlet.ServletContainerInitializer;
 import java.io.*;
 import java.lang.annotation.Annotation;
+import java.lang.reflect.Method;
 import java.math.BigDecimal;
 import java.net.URL;
 import java.net.URLConnection;
@@ -53,7 +57,7 @@ public class CommonGenericTest {
 
     @Test
     public void testSpEL() {
-        System.out.println("can used");
+        log.info("can used");
     }
 
     @Test
@@ -204,7 +208,7 @@ public class CommonGenericTest {
         user.setUser_id("12345");
         user.setUser_name("Joey");
         Object json = JSON.toJSON(user);
-        System.out.println(json.toString());
+        log.info(json.toString());
     }
 
 
@@ -213,7 +217,7 @@ public class CommonGenericTest {
         ApplicationContext context = new ClassPathXmlApplicationContext("myTarg.xml");
 
         cn.joey.spring.handler.User user = (cn.joey.spring.handler.User)context.getBean("user");
-        System.out.println(user.getUserName()+"----------"+user.getEmail());
+        log.info(user.getUserName()+"----------"+user.getEmail());
 
     }
 
@@ -228,7 +232,7 @@ public class CommonGenericTest {
         dto.setPrice(new BigDecimal(1223));
         dto.setType("3");
         String handle = v2.handle(dto);
-        System.out.println(handle);
+        log.info(handle);
     }
 
 
@@ -259,9 +263,9 @@ public class CommonGenericTest {
         stream.filter(name -> name.equals("abc")).forEach(a -> log.info(a));
 
         Stream.of("one","two","three","four").filter(e -> e.length()>3)
-                .peek(e -> System.out.println("Filtered value:"+e))
+                .peek(e -> log.info("Filtered value:"+e))
                 .map(String::toUpperCase)
-                .peek(e -> System.out.println("Mapped value:"+e))
+                .peek(e -> log.info("Mapped value:"+e))
                 .collect(Collectors.toList());
 
 
@@ -282,7 +286,7 @@ public class CommonGenericTest {
         lists.add(user3);
         lists.add(user1);
         lists.add(user2);
-        lists.stream().sorted(cn.joey.socket.User::compareTo).forEach((user)-> System.out.println(user.toString()));
+        lists.stream().sorted(cn.joey.socket.User::compareTo).forEach((user)-> log.info(user.toString()));
 
 
         List<String> strs = Arrays.asList("好,好,学","习,天,天","向,上");
@@ -299,27 +303,19 @@ public class CommonGenericTest {
         List<ServletContainerInitializer> containerInitializers = new ArrayList<>();
         while(resources.hasMoreElements()){
             URL url = resources.nextElement();
-
             InputStream inputStream = url.openStream();
             BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
             String className;
             while((className = reader.readLine())!=null){
-                System.out.println(url.toString()+" "+className);
-
+                log.info(url.toString()+" "+className);
                 Class<?> clazz = loader.loadClass(className);
-
                 ServletContainerInitializer instance =(ServletContainerInitializer) clazz.newInstance();
-
                 containerInitializers.add(instance);
             }
-
-            System.out.println("--------------------------------");
-
-
+            log.info("--------------------------------");
         }
+        containerInitializers.forEach((initilizer) -> log.info(initilizer.toString()));
 
-        containerInitializers.forEach((initilizer) -> System.out.println(initilizer.toString()));
     }
-
 
 }
