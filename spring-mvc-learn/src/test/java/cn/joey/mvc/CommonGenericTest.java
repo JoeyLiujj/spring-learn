@@ -24,8 +24,5 @@ public class CommonGenericTest {
 //            System.out.println(obj.getCalCode()+":::"+obj.getRiskCode());
 //        }
 
-
-        DispatcherServlet dispatcherServlet = new DispatcherServlet();
-
     }
 }

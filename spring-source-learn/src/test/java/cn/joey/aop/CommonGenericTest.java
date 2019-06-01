@@ -4,11 +4,15 @@ import cn.joey.aop.annotationconfig.PuchaseService;
 import cn.joey.aop.introduction.*;
 import cn.joey.aop.xmlconfig.UserService;
 import cn.joey.condition.ConditionConfig;
+import cn.joey.demo.IOrderService;
+import cn.joey.demo.OrderDTO;
+import cn.joey.demo.OrderServiceV2Impl;
 import cn.joey.jdbc.User;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import lombok.extern.slf4j.Slf4j;
 import org.aspectj.lang.annotation.Aspect;
+import org.codehaus.groovy.runtime.powerassert.SourceText;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -30,14 +34,22 @@ import org.springframework.util.ClassUtils;
 import org.springframework.util.ResourceUtils;
 import org.springframework.core.type.classreading.SimpleMetadataReaderFactory;
 
+import javax.servlet.ServletContainerInitializer;
 import java.io.*;
 import java.lang.annotation.Annotation;
+import java.math.BigDecimal;
 import java.net.URL;
 import java.net.URLConnection;
+import java.nio.file.Files;
 import java.util.*;
+import java.util.stream.Collectors;
+import java.util.stream.IntStream;
+import java.util.stream.Stream;
+
+import static com.sun.org.apache.xalan.internal.xsltc.compiler.util.Type.Int;
 
 @Slf4j
-public class CustomGenericTest {
+public class CommonGenericTest {
 
     @Test
     public void testSpEL() {
@@ -204,4 +216,110 @@ public class CustomGenericTest {
         System.out.println(user.getUserName()+"----------"+user.getEmail());
 
     }
+
+
+    @Test
+    public void testIfElse() throws IllegalAccessException, InstantiationException {
+        ApplicationContext context=new AnnotationConfigApplicationContext("cn.joey.demo");
+
+        OrderServiceV2Impl v2 =(OrderServiceV2Impl) context.getBean("orderServiceV2Impl");
+        OrderDTO dto = new OrderDTO();
+        dto.setCode("1234");
+        dto.setPrice(new BigDecimal(1223));
+        dto.setType("3");
+        String handle = v2.handle(dto);
+        System.out.println(handle);
+    }
+
+
+
+    @Test
+    public void testIsAssignableFromMethod(){
+        String[] a = new String[2];
+        String b="111";
+
+        OrderServiceV2Impl impl = new OrderServiceV2Impl();
+        System.out.println(a.getClass().isAssignableFrom(Object.class));
+        System.out.println(b.getClass().isAssignableFrom(String.class));
+        System.out.println(impl.getClass().isAssignableFrom(IOrderService.class));
+        System.out.println(IOrderService.class.isAssignableFrom(OrderServiceV2Impl.class));
+        System.out.println(Object.class.isAssignableFrom(IOrderService.class));
+    }
+
+    @Test
+    public void testStreamApi(){
+        List<String> list = new ArrayList<>();
+
+        list.add("abc");
+        list.add("acd");
+        list.add("bce");
+        list.add("led");
+
+        Stream<String> stream = list.stream();
+        stream.filter(name -> name.equals("abc")).forEach(a -> log.info(a));
+
+        Stream.of("one","two","three","four").filter(e -> e.length()>3)
+                .peek(e -> System.out.println("Filtered value:"+e))
+                .map(String::toUpperCase)
+                .peek(e -> System.out.println("Mapped value:"+e))
+                .collect(Collectors.toList());
+
+
+        Optional.ofNullable("zhangsan").map(String::length).orElse(-1);
+
+
+        Stream.iterate(0,n->n+3).forEach(x -> System.out.print(x+" "));
+    }
+
+    @Test
+    public void testCompareTo(){
+        List<cn.joey.socket.User> lists = new ArrayList<>();
+
+        cn.joey.socket.User user1 = new cn.joey.socket.User("zhangsan","zhangsan1");
+        cn.joey.socket.User user3 = new cn.joey.socket.User("wangmazi","wangmazi1");
+        cn.joey.socket.User user2 = new cn.joey.socket.User("lisi","lisi1");
+
+        lists.add(user3);
+        lists.add(user1);
+        lists.add(user2);
+        lists.stream().sorted(cn.joey.socket.User::compareTo).forEach((user)-> System.out.println(user.toString()));
+
+
+        List<String> strs = Arrays.asList("好,好,学","习,天,天","向,上");
+
+        strs.stream().map((str) -> str.split(",")).forEach((str) -> System.out.println(str));
+
+    }
+
+    @Test
+    public void testSPI() throws IOException, ClassNotFoundException, IllegalAccessException, InstantiationException {
+        ClassLoader systemClassLoader = ClassLoader.getSystemClassLoader();
+        ClassLoader loader = ClassUtils.getDefaultClassLoader();
+        Enumeration<URL> resources = systemClassLoader.getResources("META-INF/services/javax.servlet.ServletContainerInitializer");
+        List<ServletContainerInitializer> containerInitializers = new ArrayList<>();
+        while(resources.hasMoreElements()){
+            URL url = resources.nextElement();
+
+            InputStream inputStream = url.openStream();
+            BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
+            String className;
+            while((className = reader.readLine())!=null){
+                System.out.println(url.toString()+" "+className);
+
+                Class<?> clazz = loader.loadClass(className);
+
+                ServletContainerInitializer instance =(ServletContainerInitializer) clazz.newInstance();
+
+                containerInitializers.add(instance);
+            }
+
+            System.out.println("--------------------------------");
+
+
+        }
+
+        containerInitializers.forEach((initilizer) -> System.out.println(initilizer.toString()));
+    }
+
+
 }
