@@ -17,6 +17,7 @@
         <module>spring-boot-learn</module>
         <module>netty-learn</module>
         <module>dependencies</module>
+        <module>formatter-spring-boot-starter</module>
     </modules>
     <build>
         <plugins>
