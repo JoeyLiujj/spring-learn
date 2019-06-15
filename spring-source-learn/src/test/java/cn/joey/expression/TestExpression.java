@@ -1,6 +1,6 @@
 package cn.joey.expression;
 
-import cn.joey.aop.CommonGenericTest;
+import cn.joey.CommonGenericTest;
 import org.junit.Test;
 import org.springframework.expression.EvaluationContext;
 import org.springframework.expression.Expression;

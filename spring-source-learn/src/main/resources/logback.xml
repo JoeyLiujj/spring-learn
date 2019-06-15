@@ -13,7 +13,7 @@
     </appender>
 
     <appender name="FILE" class="ch.qos.logback.core.FileAppender">
-        <file>../log/logFile.log</file>
+        <file>../../log/logFile.log</file>
         <!--是否在已存在的文件基础上追加-->
         <append>false</append>
         <!-- set immediateFlush to false for much higher logging throughput -->
@@ -26,7 +26,7 @@
     </appender>
 
     <appender name="RollFile" class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <file>../log/logRollFile.log</file>
+        <file>../../log/logRollFile.log</file>
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
             <!-- daily rollover -->
             <fileNamePattern>../log/logRollFile.%d{yyyy-MM-dd}.log</fileNamePattern>
@@ -39,11 +39,10 @@
         </encoder>
     </appender>
 
-
     <root level="${logging.level}">
         <appender-ref ref="STDOUT"/>
         <!--<appender-ref ref="FILE"/>-->
-        <appender-ref ref="RollFile"/>
+        <!--<appender-ref ref="RollFile"/>-->
    </root>
 
 </configuration>
