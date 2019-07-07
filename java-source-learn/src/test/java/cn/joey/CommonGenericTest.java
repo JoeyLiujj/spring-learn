@@ -14,6 +14,9 @@ import sun.misc.Unsafe;
 import java.io.*;
 import java.lang.reflect.Field;
 import java.lang.reflect.Proxy;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
 import java.util.*;
 import java.util.stream.Stream;
 
@@ -63,5 +66,4 @@ public class CommonGenericTest {
         unsafe.putObject(user,nameOffset,"helloworld");
         System.out.println(user.getName());
     }
-
 }

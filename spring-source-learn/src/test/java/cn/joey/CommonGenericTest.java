@@ -204,11 +204,12 @@ public class CommonGenericTest {
 
     @Test
     public void testFastJson(){
-        User user = new User();
-        user.setUser_id("12345");
-        user.setUser_name("Joey");
-        Object json = JSON.toJSON(user);
-        log.info(json.toString());
+        String value="   a,   ,b,c  d          ";
+        String[] values = value.split("\\s*[,]+\\s*");
+        for (int i = 0; i < values.length; i++) {
+            System.out.println(values[i]);
+        }
+        System.out.println(values.length);
     }
 
 
