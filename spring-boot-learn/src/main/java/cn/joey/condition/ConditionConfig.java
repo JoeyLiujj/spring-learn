@@ -14,20 +14,20 @@ import java.lang.annotation.Target;
  * @auther liujiji
  * @date 2018/12/20 17:10
  */
-@Configuration
+//@Configuration
 //@ConditionalOnBean(value = {DefaultListableBeanFactory.class})
-@ConditionalOnProperty(prefix= "spring",name="test",value = "false")
-@ComponentScan
+//@ConditionalOnProperty(prefix= "spring",name="test",value = "false")
+//@ComponentScan
 public class ConditionConfig {
 
-    @Bean
-    @Conditional(ManCondition.class)
+//    @Bean
+//    @Conditional(ManCondition.class)
     public Man getMan(){
         return new Man();
     }
 
-    @Bean
-    @Conditional(WomanCondition.class)
+//    @Bean
+//    @Conditional(WomanCondition.class)
     public Woman getWoman(){
         return new Woman();
     }
