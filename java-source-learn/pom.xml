@@ -47,37 +47,16 @@
         </dependency>
 
         <!--<dependency>-->
-        <!--<groupId>com.taikang</groupId>-->
-        <!--<artifactId>taikang-3</artifactId>-->
+        <!--<groupId>com.tm</groupId>-->
+        <!--<artifactId>tm-3</artifactId>-->
         <!--<version>1.0</version>-->
         <!--<scope>system</scope>-->
-        <!--<systemPath>${basedir}/lib/toolkit.jar</systemPath>-->
+        <!--<systemPath>${basedir}/lib/too.jar</systemPath>-->
         <!--</dependency>-->
 
         <!-- 可以使用该命令去将jar打包到maven仓库中
-            mvn install:install-file
-            -Dfile=C:\Users\liujiji\Desktop\tkcipher2015.jar
-            -DgroupId=com.taikang
-            -DartifactId=tkcipher2015 -Dversion=1.0 -Dpackaging=jar
+            mvn install:install-file -Dfile=jar包目录 -DgroupId=com.tm -DartifactId=tm1.0 -Dversion=1.0 -Dpackaging=jar
         -->
-
-        <dependency>
-            <groupId>com.taikang</groupId>
-            <artifactId>tktoolkit</artifactId>
-            <version>1.0</version>
-        </dependency>
-
-        <dependency>
-            <groupId>com.taikang</groupId>
-            <artifactId>tkcipher2015</artifactId>
-            <version>1.0</version>
-        </dependency>
-
-        <dependency>
-            <groupId>com.taikang</groupId>
-            <artifactId>tkRedis_simple</artifactId>
-            <version>1.0</version>
-        </dependency>
 
         <dependency>
             <groupId>commons-configuration</groupId>
