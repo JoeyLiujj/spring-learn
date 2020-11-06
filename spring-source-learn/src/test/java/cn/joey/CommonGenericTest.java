@@ -3,6 +3,7 @@ package cn.joey;
 import cn.joey.aop.annotationconfig.PuchaseService;
 import cn.joey.aop.introduction.*;
 import cn.joey.aop.xmlconfig.UserService;
+import cn.joey.circle.A;
 import cn.joey.condition.ConditionConfig;
 import cn.joey.demo.IOrderService;
 import cn.joey.demo.OrderDTO;
@@ -65,6 +66,13 @@ public class CommonGenericTest {
         ApplicationContext ac = new ClassPathXmlApplicationContext("applicationContext.xml");
         UserService userService = (UserService) ac.getBean("userService");
         userService.add();
+    }
+
+    @Test
+    public void testCircle() {
+        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("circle.xml");
+        A a =(A) context.getBean("a");
+        System.out.println(a.toString());
     }
 
     @Test

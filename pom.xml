@@ -17,7 +17,6 @@
         <module>spring-boot-learn</module>
         <module>netty-learn</module>
         <module>dependencies</module>
-        <module>formatter-spring-boot-starter</module>
     </modules>
     <build>
         <plugins>
@@ -369,10 +368,12 @@
             <!--<scope>test</scope>-->
             <!--</dependency>-->
 
+            <!-- https://mvnrepository.com/artifact/org.testng/testng -->
             <dependency>
                 <groupId>org.testng</groupId>
                 <artifactId>testng</artifactId>
-                <version>RELEASE</version>
+                <version>7.0.0</version>
+                <scope>test</scope>
             </dependency>
             <dependency>
                 <groupId>org.projectlombok</groupId>
@@ -383,6 +384,16 @@
                 <groupId>com.alibaba</groupId>
                 <artifactId>fastjson</artifactId>
                 <version>${fastjson.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.f1j</groupId>
+                <artifactId>F1J9Swing</artifactId>
+                <version>1.0.0</version>
+            </dependency>
+            <dependency>
+                <groupId>com.enterprisedt</groupId>
+                <artifactId>edtFTPj</artifactId>
+                <version>1.5.3</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

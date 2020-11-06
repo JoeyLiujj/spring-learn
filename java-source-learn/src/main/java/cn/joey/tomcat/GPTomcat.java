@@ -1,7 +1,6 @@
 package cn.joey.tomcat;
 
 
-import com.taikang.common.propertyUtil.PropertiesUtil;
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.*;
 import io.netty.channel.nio.NioEventLoopGroup;

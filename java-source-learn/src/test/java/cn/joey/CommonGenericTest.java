@@ -4,21 +4,13 @@ import cn.joey.proxy.CustomInvocationHandler;
 import cn.joey.proxy.HelloWorld;
 import cn.joey.proxy.HelloWorldImpl;
 import cn.joey.socket.User;
-import cn.joey.thread.Consumer;
-import cn.joey.thread.Producer;
 import cn.joey.util.SortAlgorithm;
-import org.apache.ibatis.io.Resources;
 import org.junit.Test;
 import sun.misc.Unsafe;
 
-import java.io.*;
 import java.lang.reflect.Field;
-import java.lang.reflect.Proxy;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
-import java.util.*;
-import java.util.stream.Stream;
+import java.util.Timer;
+import java.util.TimerTask;
 
 public class CommonGenericTest {
 
@@ -32,7 +24,7 @@ public class CommonGenericTest {
     }
 
     @Test
-    public void testProxy(){
+    public void testProxy() {
         System.getProperties().put("sun.misc.ProxyGenerator.saveGeneratedFiles", "true");
         System.out.println(System.getProperty("sun.misc.ProxyGenerator.saveGeneratedFiles"));
         CustomInvocationHandler handler = new CustomInvocationHandler(new HelloWorldImpl());
@@ -40,7 +32,7 @@ public class CommonGenericTest {
         //当调用代理类的方法时，实际上在代理类的字节码文件中会调用handler的invoke方法
         //即调用CustomInvocationHandler的invoke方法
         helloWorld.sayHello("Joey");
-        System.out.println("打印代理类的Class名称："+helloWorld.getClass().getName());
+        System.out.println("打印代理类的Class名称：" + helloWorld.getClass().getName());
     }
 
     @Test
@@ -51,7 +43,7 @@ public class CommonGenericTest {
             public void run() {
                 System.out.println("打印");
             }
-        },1000,2000);
+        }, 1000, 2000);
         // 单元测试不支持多线程，因为单元测试会直接结束，不会等待子线程结束而结束
         Thread.currentThread().join();//     Thread.sleep(1000000);
     }
@@ -61,9 +53,31 @@ public class CommonGenericTest {
         Field field = Unsafe.class.getDeclaredField("theUnsafe");
         field.setAccessible(true);
         Unsafe unsafe = (Unsafe) field.get(null);
-        User user = new User("","");
+        User user = new User("", "");
         long nameOffset = unsafe.objectFieldOffset(User.class.getDeclaredField("name"));
-        unsafe.putObject(user,nameOffset,"helloworld");
+        unsafe.putObject(user, nameOffset, "helloworld");
         System.out.println(user.getName());
+    }
+
+
+    @Test
+    public void testBinarySearch(){
+        int[] nums={};
+        int target = 10;
+
+        int left=0;
+        int right = nums.length-1;
+
+        while (left <= right) {
+            int mid= (left+right)/2;
+            if (nums[mid] == target) {
+                System.out.println(mid);
+            }else if(nums[mid] < target){
+                left = nums[mid]+1;
+            }else if(nums[mid] > target){
+                right = nums[mid]-1;
+            }
+        }
+        System.out.println(-1);
     }
 }
